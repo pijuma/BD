@@ -1,4 +1,4 @@
-CREATE TABLE Usuario(
+CREATE TABLE Usuario( 
 	nome varchar(40),
 	sobrenome varchar(100), 
 	telefone text CHECK (telefone ~ '^\(\d{2}\) \d{4,5}-\d{4}$'),
