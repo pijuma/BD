@@ -65,7 +65,7 @@ CREATE TABLE Professor(
 	area_especializacao text, 
 	titulacao text,
 	num_sala int NOT NULL,
-	codigo_dept int NOT NULL REFERENCES Departamento(codigo),
+	codigo_dept int NOT NULL,
 	FOREIGN KEY (nome, sobrenome, telefone) REFERENCES Usuario(nome, sobrenome, telefone),
 	PRIMARY KEY (nome, sobrenome, telefone), 
 	FOREIGN KEY (num_sala) REFERENCES Sala(num_sala)
@@ -109,13 +109,14 @@ CREATE TABLE chat_direto(
 
 CREATE TABLE Turma(
 	id_turma int PRIMARY KEY, 
-	semestre_ano text, --como padrão usar "ano.1" "ano.2" primeiro ou 2o semestre do respectivo ano
+	semestre int CHECK(semestre BETWEEN 1 AND 2), 
+    ano int, 
 	nome_prof varchar(40), 
 	sobrenome_prof varchar(100),
 	telefone_prof text CHECK (telefone_prof ~ '^\(\d{2}\) \d{4,5}-\d{4}$'),
 	codigo_disc int REFERENCES Disciplina(codigo_disc),
 	qtd_alunos int, 
-	UNIQUE(semestre_ano, nome_prof, sobrenome_prof, telefone_prof, codigo_disc), 
+	UNIQUE(semestre, ano, nome_prof, sobrenome_prof, telefone_prof, codigo_disc), 
 	FOREIGN KEY (nome_prof, sobrenome_prof, telefone_prof) REFERENCES Usuario(nome, sobrenome,telefone)
 );
 
@@ -135,14 +136,6 @@ CREATE TABLE Matriculas(
 	PRIMARY KEY(nome_aluno, sobrenome_aluno, telefone_aluno, id_turma), 
 	FOREIGN KEY (nome_aluno, sobrenome_aluno, telefone_aluno) REFERENCES Aluno(nome, sobrenome, telefone), 
 	FOREIGN KEY (id_turma) REFERENCES Turma(id_turma)
-);
-
-CREATE TABLE Aula(
-	num_sala int REFERENCES Sala(num_sala), 
-	horario timestamp, 
-	dia int, 
-	id_turma int REFERENCES Turma(id_turma),
-	PRIMARY KEY(num_sala, horario, dia, id_turma)
 );
 
 CREATE TABLE chat_turma(
@@ -273,9 +266,16 @@ CREATE TABLE Descontos_Matricula(
 	sobrenome_aluno, telefone_aluno, id_turma)
 );
 
-CREATE TABLE Quando_Turma(
-	id_turma int REFERENCES Turma(id_turma), 
-	horario TIMESTAMP, 
-	dia int, 
-	PRIMARY KEY(id_turma, horario, dia) 
+CREATE TABLE Horario(
+    dia_semana int CHECK(dia_semana BETWEEN 1 AND 7), 
+    hora_ini TIMESTAMP, 
+    id_turma int REFERENCES Turma(id_turma), 
+    num_sala int REFERENCES Sala(num_sala), 
+    hora_fim TIMESTAMP, 
+    PRIMARY KEY (dia_semana, hora_ini, id_turma)
 );
+
+--para permitir referencia circular 
+ALTER TABLE Professor
+ADD CONSTRAINT fk_professor_departamento
+FOREIGN KEY (codigo_dept) REFERENCES Departamento(codigo);
