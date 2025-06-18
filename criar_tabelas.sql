@@ -69,3 +69,69 @@ CREATE TABLE Professor(
 	PRIMARY KEY (nome, sobrenome, telefone), 
 	FOREIGN KEY (num_sala) REFERENCES Sala(num_sala)
 );
+
+CREATE TABLE Avisos_gerais(
+	id_aviso int PRIMARY KEY, 
+	texto text, 
+	nome_adm varchar(40) NOT NULL,
+	sobrenome_adm varchar(100) NOT NULL, 
+	telefone_adm text CHECK (telefone_adm ~ '^\(\d{2}\) \d{4,5}-\d{4}$') NOT NULL,
+	FOREIGN KEY (nome_adm, sobrenome_adm, telefone_adm) REFERENCES Administrador(nome, sobrenome, telefone)
+);
+
+CREATE TABLE Infraestrutura(
+	id_estrutura int PRIMARY KEY, 
+	descricao text
+);
+
+CREATE TABLE Disciplina(
+	codigo_disc int PRIMARY KEY, 
+	qtd_aulas_semana int,
+	material text
+);
+
+CREATE TABLE chat_direto(
+	id_msg int PRIMARY KEY, 
+	nome_remetente varchar(40), 
+	sobrenome_remetente varchar(100), 
+	telefone_remetente text CHECK (telefone_remetente ~ '^\(\d{2}\) \d{4,5}-\d{4}$'),
+	nome_destinatario varchar(40), 
+	sobrenome_destinatario varchar(100), 
+	telefone_destinatario text CHECK (telefone_destinatario ~ '^\(\d{2}\) \d{4,5}-\d{4}$'),
+	timestamp TIMESTAMP, 
+	texto text, 
+	UNIQUE(nome_remetente, sobrenome_remetente, telefone_remetente, 
+	nome_destinatario, sobrenome_destinatario, telefone_destinatario,timestamp),
+	FOREIGN KEY (nome_remetente, sobrenome_remetente, telefone_remetente) REFERENCES Usuario(nome, sobrenome, telefone), 
+	FOREIGN KEY (nome_destinatario, sobrenome_destinatario, telefone_destinatario) REFERENCES Usuario(nome, sobrenome, telefone)
+);
+
+CREATE TABLE Turma(
+	id_turma int PRIMARY KEY, 
+	semestre_ano text, 
+	nome_prof varchar(40), 
+	sobrenome_prof varchar(100),
+	telefone_prof text CHECK (telefone_prof ~ '^\(\d{2}\) \d{4,5}-\d{4}$'),
+	codigo_disc int REFERENCES Disciplina(codigo_disc),
+	qtd_alunos int, 
+	UNIQUE(semestre_ano, nome_prof, sobrenome_prof, telefone_prof, codigo_disc), 
+	FOREIGN KEY (nome_prof, sobrenome_prof, telefone_prof) REFERENCES Usuario(nome, sobrenome,telefone)
+);
+
+CREATE TABLE Matriculas(
+	nome_aluno varchar(40), 
+	sobrenome_aluno varchar(100), 
+	telefone_aluno text CHECK (telefone_aluno ~ '^\(\d{2}\) \d{4,5}-\d{4}$'),
+	id_turma int, 
+	dia_matricula int NOT NULL, 
+	mes_matricula int NOT NULL, 
+	ano_matricula int NOT NULL, 
+	status_matricula VARCHAR(10) NOT NULL CHECK (status_matricula IN ('Ativa', 'Inativa', 'Pendente', 'Cancelada')),
+	dia_mudanca int, 
+	mes_mudanca int, 
+	ano_mudanca int, 
+	taxa int,
+	PRIMARY KEY(nome_aluno, sobrenome_aluno, telefone_aluno, id_turma), 
+	FOREIGN KEY (nome_aluno, sobrenome_aluno, telefone_aluno) REFERENCES Aluno(nome, sobrenome, telefone), 
+	FOREIGN KEY (id_turma) REFERENCES Turma(id_turma)
+);
