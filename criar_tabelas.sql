@@ -135,3 +135,91 @@ CREATE TABLE Matriculas(
 	FOREIGN KEY (nome_aluno, sobrenome_aluno, telefone_aluno) REFERENCES Aluno(nome, sobrenome, telefone), 
 	FOREIGN KEY (id_turma) REFERENCES Turma(id_turma)
 );
+
+CREATE TABLE Aula(
+	num_sala int REFERENCES Sala(num_sala), 
+	horario timestamp, 
+	dia int, 
+	id_turma int REFERENCES Turma(id_turma),
+	PRIMARY KEY(num_sala, horario, dia, id_turma)
+);
+
+CREATE TABLE chat_turma(
+	id_msg int PRIMARY KEY, 
+	nome_prof varchar(40),
+	sobrenome_prof varchar(100), 
+	telefone_prof text CHECK (telefone_prof ~ '^\(\d{2}\) \d{4,5}-\d{4}$'),
+	id_turma int REFERENCES Turma(id_turma), 
+	timestamp TIMESTAMP, 
+	texto text, 
+	UNIQUE(nome_prof, sobrenome_prof, telefone_prof, id_turma, timestamp), 
+	FOREIGN KEY (nome_prof, sobrenome_prof, telefone_prof) REFERENCES Professor(nome, sobrenome, telefone)
+);
+
+CREATE TABLE Departamento(
+	codigo int PRIMARY KEY, 
+	nome_dept varchar(40), 
+	nome varchar(40) NOT NULL,
+	sobrenome varchar(100) NOT NULL, 
+	telefone text CHECK (telefone ~ '^\(\d{2}\) \d{4,5}-\d{4}$') NOT NULL,
+	FOREIGN KEY (nome, sobrenome, telefone) REFERENCES Professor(nome, sobrenome, telefone)
+);
+
+CREATE TABLE Curso(
+	codigo_unico int PRIMARY KEY, 
+	nivel VARCHAR(10) NOT NULL CHECK (nivel IN ('Fundamental', 'Técnico', 'Graduação', 'Médio')),
+	carga_horaria int, 
+	numero_vagas int, 
+	codigo_dept int NOT NULL REFERENCES Departamento(codigo), 
+	id_unidade int NOT NULL REFERENCES Unidade(id_unidade)
+);
+
+CREATE TABLE Curso_pre_disc(
+	codigo_unico_curso int REFERENCES Curso(codigo_unico),
+	codigo_disc int REFERENCES Disciplina(codigo_disc),
+	PRIMARY KEY(codigo_unico_curso, codigo_disc)
+);
+
+CREATE TABLE Composicao_curso(
+	codigo_unico_curso int REFERENCES Curso(codigo_unico),
+	codigo_disc int REFERENCES Disciplina(codigo_disc),
+	PRIMARY KEY(codigo_unico_curso, codigo_disc)
+);
+
+CREATE TABLE Agendamento_salas(
+	id_turma int REFERENCES Turma(id_turma), 
+	num_sala int REFERENCES Sala(num_sala),
+	PRIMARY KEY(id_turma, num_sala)
+);
+
+CREATE TABLE Responsaveis_disc(
+	nome varchar(40),
+	sobrenome varchar(100), 
+	telefone text CHECK (telefone ~ '^\(\d{2}\) \d{4,5}-\d{4}$'),
+	codigo_disc int REFERENCES Disciplina(codigo_disc),
+	PRIMARY KEY(nome, sobrenome, telefone, codigo_disc)
+);
+
+CREATE TABLE Infras_sala(
+	num_sala int REFERENCES Sala(num_sala), 
+	id_estrutura int REFERENCES Infraestrutura(id_estrutura),
+	PRIMARY KEY(num_sala, id_estrutura)
+);
+
+CREATE TABLE Necessidade_curso(
+	id_estrutura int REFERENCES Infraestrutura(id_estrutura),
+	codigo_unico int REFERENCES Curso(codigo_unico), 
+	PRIMARY KEY(id_estrutura, codigo_unico)
+);
+
+CREATE TABLE Regras_Curso(
+	codigo_unico_curso int REFERENCES Curso(codigo_unico),
+	regra text, 
+	PRIMARY KEY(codigo_unico_curso, regra) 
+);
+
+CREATE TABLE Nomes_Curso(
+	codigo_unico_curso int REFERENCES Curso(codigo_unico),
+	nome varchar(100), 
+	PRIMARY KEY(nome, codigo_unico_curso)
+);
