@@ -108,7 +108,7 @@ CREATE TABLE chat_direto(
 
 CREATE TABLE Turma(
 	id_turma int PRIMARY KEY, 
-	semestre_ano text, 
+	semestre_ano text, --como padrão usar "ano.1" "ano.2" primeiro ou 2o semestre do respectivo ano
 	nome_prof varchar(40), 
 	sobrenome_prof varchar(100),
 	telefone_prof text CHECK (telefone_prof ~ '^\(\d{2}\) \d{4,5}-\d{4}$'),
