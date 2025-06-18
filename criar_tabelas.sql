@@ -65,6 +65,7 @@ CREATE TABLE Professor(
 	area_especializacao text, 
 	titulacao text,
 	num_sala int NOT NULL,
+	codigo_dept int NOT NULL REFERENCES Departamento(codigo),
 	FOREIGN KEY (nome, sobrenome, telefone) REFERENCES Usuario(nome, sobrenome, telefone),
 	PRIMARY KEY (nome, sobrenome, telefone), 
 	FOREIGN KEY (num_sala) REFERENCES Sala(num_sala)
