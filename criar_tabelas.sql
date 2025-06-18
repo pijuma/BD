@@ -223,3 +223,58 @@ CREATE TABLE Nomes_Curso(
 	nome varchar(100), 
 	PRIMARY KEY(nome, codigo_unico_curso)
 );
+CREATE TABLE Avaliacao_Matricula(
+	nome_aluno varchar(40),
+	sobrenome_aluno varchar(100), 
+	telefone_aluno text CHECK (telefone_aluno ~ '^\(\d{2}\) \d{4,5}-\d{4}$'),
+	id_turma int, 
+	comentario text, 
+	classificacao_didatica INT CHECK (classificacao_didatica BETWEEN 0 AND 5),
+	material_apoio text, 
+	relevancia_conteudo INT CHECK (relevancia_conteudo BETWEEN 0 AND 5), 
+	infraestrutura_sala INT CHECK (infraestrutura_sala BETWEEN 0 AND 5),
+	PRIMARY KEY(nome_aluno, sobrenome_aluno, telefone_aluno, id_turma),
+	FOREIGN KEY (nome_aluno, sobrenome_aluno, telefone_aluno, id_turma) REFERENCES Matriculas(nome_aluno, 
+	sobrenome_aluno, telefone_aluno, id_turma)
+);
+
+CREATE TABLE Notas_Matricula(
+	nome_aluno varchar(40),
+	sobrenome_aluno varchar(100), 
+	telefone_aluno text CHECK (telefone_aluno ~ '^\(\d{2}\) \d{4,5}-\d{4}$'),
+	id_turma int, 
+	nota int,
+	PRIMARY KEY(nome_aluno, sobrenome_aluno, telefone_aluno, id_turma, nota),
+	FOREIGN KEY (nome_aluno, sobrenome_aluno, telefone_aluno, id_turma) REFERENCES Matriculas(nome_aluno, 
+	sobrenome_aluno, telefone_aluno, id_turma)
+);
+
+CREATE TABLE Bolsas_Estudo_Matricula(
+	nome_aluno varchar(40),
+	sobrenome_aluno varchar(100), 
+	telefone_aluno text CHECK (telefone_aluno ~ '^\(\d{2}\) \d{4,5}-\d{4}$'),
+	id_turma int, 
+	bolsa text,
+	PRIMARY KEY(nome_aluno, sobrenome_aluno, telefone_aluno, id_turma, bolsa),
+	FOREIGN KEY (nome_aluno, sobrenome_aluno, telefone_aluno, id_turma) REFERENCES Matriculas(nome_aluno, 
+	sobrenome_aluno, telefone_aluno, id_turma)
+);
+
+
+CREATE TABLE Descontos_Matricula(
+	nome_aluno varchar(40),
+	sobrenome_aluno varchar(100), 
+	telefone_aluno text CHECK (telefone_aluno ~ '^\(\d{2}\) \d{4,5}-\d{4}$'),
+	id_turma int, 
+	desconto int,
+	PRIMARY KEY(nome_aluno, sobrenome_aluno, telefone_aluno, id_turma, desconto),
+	FOREIGN KEY (nome_aluno, sobrenome_aluno, telefone_aluno, id_turma) REFERENCES Matriculas(nome_aluno, 
+	sobrenome_aluno, telefone_aluno, id_turma)
+);
+
+CREATE TABLE Quando_Turma(
+	id_turma int REFERENCES Turma(id_turma), 
+	horario TIMESTAMP, 
+	dia int, 
+	PRIMARY KEY(id_turma, horario, dia) 
+);
