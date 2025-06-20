@@ -42,14 +42,14 @@ SELECT D.codigo_disc
 --5)
 --Alunos que fizeram alguma disciplina 
 --mais de uma vez (em semestres diferentes) com a quantidade
---de vezes que eles fizeram
+--de vezes que eles fizeram 
 SELECT A.nome, A.sobrenome, A.telefone, D.codigo_disc, COUNT(*) AS Vezes_cursada
 	FROM Aluno As A
 	JOIN Matriculas AS M ON (M.nome_aluno, M.sobrenome_aluno, M.telefone_aluno) = (A.nome, A.sobrenome, A.telefone)
 	JOIN Turma T using(id_turma)
 	JOIN Disciplina AS D using(codigo_disc)
 	GROUP BY (A.nome, A.sobrenome, A.telefone, D.codigo_disc)
-	ORDER BY Vezes_cursada DESC;
+	HAVING COUNT(*) > 1;
 --6) 
 -- listar disciplinas que tiveram mais alunos matriculados
 SELECT D.codigo_disc, D.codigo_disc, COUNT(M.id_turma) AS total_matriculas
