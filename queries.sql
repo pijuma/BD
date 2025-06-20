@@ -9,10 +9,12 @@ WHERE (T.semestre = 2 AND T.ano = 2025 AND D.codigo_disc = 127);
 
 --2)
 --calcular media de notas de um aluno numa disciplina 
-SELECT M.nome_aluno, M.sobrenome_aluno, M.telefone_aluno, AVG(N.nota) AS Nota_final
+SELECT M.nome_aluno, M.sobrenome_aluno, M.telefone_aluno, T.codigo_disc, AVG(N.nota) AS Nota_final
 	FROM matriculas AS M
+	JOIN Turma AS T using(id_turma)
 	JOIN Notas_Matricula AS N using(nome_aluno, sobrenome_aluno, telefone_aluno)
-	GROUP BY(M.nome_aluno, M.sobrenome_aluno, M.telefone_aluno)
+	GROUP BY(M.nome_aluno, M.sobrenome_aluno, M.telefone_aluno, T.codigo_disc)
+
 
 --3)
 --listar os professores de um departamento com suas respectivas
