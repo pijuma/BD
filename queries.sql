@@ -52,12 +52,13 @@ SELECT A.nome, A.sobrenome, A.telefone, D.codigo_disc, COUNT(*) AS Vezes_cursada
 
 --6) 
 -- listar disciplinas que tiveram mais alunos matriculados
-SELECT D.codigo_disc, D.nome_disc, COUNT(M.id_turma) AS total_matriculas
+SELECT D.codigo_disc, D.codigo_disc, COUNT(M.id_turma) AS total_matriculas
     FROM Disciplina AS D
     JOIN Turma AS T ON D.codigo_disc = T.codigo_disc
     JOIN Matriculas AS M ON M.id_turma = T.id_turma
-    GROUP BY D.codigo_disc, D.nome_disc
+    GROUP BY D.codigo_disc, D.codigo_disc
     ORDER BY total_matriculas DESC;
+
 
 -- 7)
 -- listar disciplinas que cada aluno cursou com média acima de 7
