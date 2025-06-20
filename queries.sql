@@ -23,7 +23,7 @@ SELECT P.nome, P.sobrenome, P.telefone, T.codigo_disc
 	FROM Professor AS P
 	JOIN Departamento AS D ON ((D.codigo)=(P.codigo_dept))
 	JOIN Turma AS T ON ((P.nome, P.sobrenome, P.telefone)=(T.nome_prof, T.sobrenome_prof, T.telefone_prof))
-WHERE (D.codigo = 124 AND T.semestre = 2 AND T.ano = 2025)
+WHERE (D.codigo = 1 AND T.semestre = 1 AND T.ano = 2025)
 --criar indice em semestre_ano de turma pra agilizar a query 
 
 --4)
