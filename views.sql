@@ -19,11 +19,14 @@ SELECT M.nome_aluno, D.codigo_disc, AVG(N.nota) AS media
 	GROUP BY M.nome_aluno, D.codigo_disc
 	HAVING AVG(N.nota) >= 5;
 
---manter todas materias que estão com turmas ativas, ou seja que tiveram matriculados no ultimo periodo
-CREATE VIEW Turmas_ativas AS
-SELECT D.codigo_disc, COUNT(M.id_turma) AS total_matriculas
-    FROM Disciplina AS D
-    JOIN Turma AS T ON D.codigo_disc = T.codigo_disc
-    JOIN Matriculas AS M ON M.id_turma = T.id_turma
-    GROUP BY D.codigo_disc, D.codigo_disc
-    ORDER BY total_matriculas DESC;
+--manter todas materias que estão com turmas inativas, ou seja que não tiveram matriculados no ultimo periodo
+CREATE VIEW Turmas_inativas AS
+SELECT D.codigo_disc
+	FROM Disciplina AS D 
+	JOIN Turma AS T ON D.codigo_disc = T.codigo_disc
+	LEFT JOIN Matriculas AS M ON M.id_turma = T.id_turma
+	WHERE T.ano = 2025 AND T.semestre = 1 AND NOT EXISTS (
+       SELECT 1
+       FROM  Matriculas AS M2 
+       WHERE  M2.id_turma=T.id_turma 
+);
