@@ -161,7 +161,7 @@ CREATE TABLE Departamento(
 
 CREATE TABLE Curso(
 	codigo_unico int PRIMARY KEY, 
-	nivel VARCHAR(10) NOT NULL CHECK (nivel IN ('Fundamental', 'Técnico', 'Graduação', 'Médio')),
+	nivel VARCHAR(12) NOT NULL CHECK (nivel IN ('Fundamental', 'Técnico', 'Graduação', 'Médio')),
 	carga_horaria int, 
 	numero_vagas int, 
 	codigo_dept int NOT NULL REFERENCES Departamento(codigo), 
