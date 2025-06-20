@@ -61,7 +61,7 @@ SELECT D.codigo_disc, D.codigo_disc, COUNT(M.id_turma) AS total_matriculas
 
 
 -- 7)
--- listar disciplinas que cada aluno cursou com média acima de 7
+-- listar disciplinas que cada aluno cursou com média acima de 5 (aprovados)
 SELECT M.nome_aluno, D.codigo_disc, AVG(N.nota) AS media
 	FROM Matriculas AS M
 	JOIN Notas_Matricula AS N USING(nome_aluno, sobrenome_aluno, telefone_aluno)
@@ -69,5 +69,5 @@ SELECT M.nome_aluno, D.codigo_disc, AVG(N.nota) AS media
 	JOIN Disciplina AS D ON T.codigo_disc = D.codigo_disc
 	
 	GROUP BY M.nome_aluno, D.codigo_disc
-	HAVING AVG(N.nota) >= 7;
+	HAVING AVG(N.nota) >= 5;
 
