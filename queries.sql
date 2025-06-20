@@ -49,7 +49,7 @@ SELECT A.nome, A.sobrenome, A.telefone, D.codigo_disc, COUNT(*) AS Vezes_cursada
 	JOIN Turma T using(id_turma)
 	JOIN Disciplina AS D using(codigo_disc)
 	GROUP BY (A.nome, A.sobrenome, A.telefone, D.codigo_disc);
-
+	ORDER BY vezes_realizado DESC;
 --6) 
 -- listar disciplinas que tiveram mais alunos matriculados
 SELECT D.codigo_disc, D.codigo_disc, COUNT(M.id_turma) AS total_matriculas
