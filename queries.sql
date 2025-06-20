@@ -1,6 +1,6 @@
 --1)
---listar todos alunos que se matricularam na disciplina 123 no 2o semestre 
--- de 2024
+--listar todos alunos que se matricularam na disciplina 127 no 2o semestre 
+-- de 2025
 SELECT M.nome_aluno, M.sobrenome_aluno, M.telefone_aluno
 	FROM matriculas AS M
 	JOIN Turma AS T ON(M.id_turma=T.id_turma)
