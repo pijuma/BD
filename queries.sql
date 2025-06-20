@@ -48,8 +48,8 @@ SELECT A.nome, A.sobrenome, A.telefone, D.codigo_disc, COUNT(*) AS Vezes_cursada
 	JOIN Matriculas AS M ON (M.nome_aluno, M.sobrenome_aluno, M.telefone_aluno) = (A.nome, A.sobrenome, A.telefone)
 	JOIN Turma T using(id_turma)
 	JOIN Disciplina AS D using(codigo_disc)
-	GROUP BY (A.nome, A.sobrenome, A.telefone, D.codigo_disc);
-	ORDER BY vezes_realizado DESC;
+	GROUP BY (A.nome, A.sobrenome, A.telefone, D.codigo_disc)
+	ORDER BY Vezes_cursada DESC;
 --6) 
 -- listar disciplinas que tiveram mais alunos matriculados
 SELECT D.codigo_disc, D.codigo_disc, COUNT(M.id_turma) AS total_matriculas
@@ -62,12 +62,12 @@ SELECT D.codigo_disc, D.codigo_disc, COUNT(M.id_turma) AS total_matriculas
 
 -- 7)
 -- listar disciplinas que cada aluno cursou com média acima de 7
-SELECT M.nome_aluno, D.nome_disc, AVG(N.nota) AS media
+SELECT M.nome_aluno, D.codigo_disc, AVG(N.nota) AS media
 	FROM Matriculas AS M
 	JOIN Notas_Matricula AS N USING(nome_aluno, sobrenome_aluno, telefone_aluno)
 	JOIN Turma AS T ON M.id_turma = T.id_turma
 	JOIN Disciplina AS D ON T.codigo_disc = D.codigo_disc
 	
-	GROUP BY M.nome_aluno, D.nome_disc
+	GROUP BY M.nome_aluno, D.codigo_disc
 	HAVING AVG(N.nota) >= 7;
 
