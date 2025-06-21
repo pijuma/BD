@@ -33,10 +33,10 @@ VALUES
 ('Xênia',     'Braga',          '(28) 97678-9013', 27, 10, 1999, NULL,            NULL, 'Brasil', 'Ap 505',       'xenia.braga@dom.io',         'Xb^1999',           'Feminino',    'Aluno'),
 ('Yara',      'Falcão',         '(29) 98789-0124', 17,  5, 1994, 'Aracaju',       'SE', 'Brasil', NULL,           'yara.falcao@mail.org',       'Yf#94Sec',          'Feminino',    NULL),
 ('Zeca',      'Brito',          '(30) 99890-1235', 31,  1, 1986, 'Cuiabá',        'MT', 'Brasil', 'Casa 9',       'zeca.brito@exemplo.com',     'Zb$1986',           'Masculino',   'Aluno'),
-('Álvaro',    'Tavares',        '(32) 90901-2346', 26,  6, 1992, 'Vitória',       'ES', 'Brasil', NULL,           'alvaro.tavares@corp.com',    'At!2025',           'Masculino',   'Professor'),
-('Béatrice',  'Dupont',         '(33) 92012-3457', 10,  9, 1984, 'Paris',         NULL, 'França', 'Apt 102',      'beatrice.dupont@ex.fr',      'Bd#1984',           'Feminino',    NULL),
-('César',     'Aguilar',        '(34) 93123-4568', 15, 12, 1993, 'Lima',          NULL, 'Peru',   NULL,           'cesar.aguilar@mail.pe',      'CaPwd!93',          'Masculino',   'Aluno'),
-('Dália',     'Kovács',         '(35) 94234-5679', 24,  4, 1991, NULL,            NULL, NULL,     'Bloco D',      'dalia.kovacs@ex.hu',         'Dk_1991$',          'Feminino',    'Responsável');
+('Pedro',    'Monteiro',        '(32) 90901-2346', 26,  6, 1992, 'Vitória',       'ES', 'Brasil', NULL,           'alvaro.tavares@corp.com',    'At!2025',           'Masculino',   'Professor'),
+('Luana',  'Prudenciato',         '(33) 92012-3457', 10,  9, 1984, 'Paris',         NULL, 'França', 'Apt 102',      'beatrice.dupont@ex.fr',      'Bd#1984',           'Feminino',    NULL),
+('Theo',     'Guimarães',        '(34) 93123-4568', 15, 12, 1993, 'Lima',          NULL, 'Peru',   NULL,           'cesar.aguilar@mail.pe',      'CaPwd!93',          'Masculino',   'Aluno'),
+('Eduardo',     'Camargo',         '(35) 94234-5679', 24,  4, 1991, NULL,            NULL, NULL,     'Bloco D',      'dalia.kovacs@ex.hu',         'Dk_1991$',          'Feminino',    'Responsável');
 
 /* ------------------------------------------------------
    Tabela 2 – Unidade  (30 linhas)
