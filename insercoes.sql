@@ -16,7 +16,7 @@ VALUES
 ('Gabriela',  'Fernandes',      '(71) 98901-2346', 28,  9, 1996, 'Salvador',      'BA', 'Brasil', NULL,           'gabi.fernandes@example.io',  'GfPwd!987',         'Feminino',    'Aluno'),
 ('Henrique',  'Gomes',          '(81) 90012-3457',  2, 12, 1988, NULL,            NULL, 'Brasil', 'Sala Térrea',  'henrique.gomes@empresa.com', 'Hg_2025$',          'Masculino',   NULL),
 ('Iara',      'Cruz',           '(91) 91123-4568', 19,  7, 1997, 'Belém',         'PA', 'Brasil', NULL,           'iara.cruz@exemplo.net',      'IcPass!55',         'Feminino',    'Aluno'),
-('João',      'Souza',          '(12) 92234-5679',  5,  5, 1993, 'Taubaté',       'SP', 'Brasil', 'Casa 2',       'joao.souza@example.com',     'Js#2025seg',        'Masculino',   'Responsável'),
+('João',      'Souza',          '(12) 92234-5679',  5,  5, 1993, 'Taubaté',       'SP', 'Brasil', 'Casa 2',       'joao.souza@example.com',     'Js#2025seg',        'Masculino',   'Administrador'),
 ('Karina',    'Martins',        '(13) 93345-6780', 16,  1, 1994, 'Santos',        'SP', 'Brasil', NULL,           'karina.martins@mail.com',    'KmPass@77',         'Feminino',    'Aluno'),
 ('Luís',      'Mendes',         '(14) 94456-7891',  9, 10, 1985, 'São Carlos',    'SP', 'Brasil', 'Ap 302',       'luis.mendes@dominio.com',    'Lm!85Seg',          'Masculino',   NULL),
 ('Mariana',   'Rocha',          '(15) 95567-8902', 25,  3, 1998, 'Bauru',         'SP', 'Brasil', NULL,           'mariana.rocha@ex.com',       'Mr@1998',           'Feminino',    'Aluno'),
@@ -36,13 +36,13 @@ VALUES
 ('Pedro',    'Monteiro',        '(32) 90901-2346', 26,  6, 1992, 'Vitória',       'ES', 'Brasil', NULL,           'alvaro.tavares@corp.com',    'At!205',           'Masculino',   'Professor'),
 ('Luana',  'Prudenciato',         '(33) 92012-3457', 10,  9, 1984, 'Paris',         NULL, 'França', 'Apt 102',      'beatrice.dupont@ex.fr',      'Bd#194',           'Feminino',    NULL),
 ('Theo',     'Guimaraes',        '(34) 93123-4568', 15, 12, 1993, 'Lima',          NULL, 'Peru',   NULL,           'cesar.aguilar@mail.pe',      'CaPwd!9',          'Masculino',   'Aluno'),
-('Eduardo',     'Camargo',         '(35) 94234-5679', 24,  4, 1991, NULL,            NULL, NULL,     'Bloco D',      'dalia.kovacs@ex.hu',         'Dk_191$',          'Feminino',    'Responsável'),
+('Eduardo',     'Camargo',         '(35) 94234-5679', 24,  4, 1991, NULL,            NULL, NULL,     'Bloco D',      'dalia.kovacs@ex.hu',         'Dk_191$',          'Feminino',    'Administrador'),
 
 
 ('Álvaro',    'Tavares',        '(32) 90901-2346', 26,  6, 1992, 'Vitória',       'ES', 'Brasil', NULL,           'alvaro.tavares@corp.com',    'At!2025',           'Masculino',   'Professor'),
 ('Béatrice',  'Dupont',         '(33) 92012-3457', 10,  9, 1984, 'Paris',         NULL, 'França', 'Apt 102',      'beatrice.dupont@ex.fr',      'Bd#1984',           'Feminino',    NULL),
 ('César',     'Aguilar',        '(34) 93123-4568', 15, 12, 1993, 'Lima',          NULL, 'Peru',   NULL,           'cesar.aguilar@mail.pe',      'CaPwd!93',          'Masculino',   'Aluno'),
-('Dália',     'Kovács',         '(35) 94234-5679', 24,  4, 1991, NULL,            NULL, NULL,     'Bloco D',      'dalia.kovacs@ex.hu',         'Dk_1991$',          'Feminino',    'Responsável');
+('Dália',     'Kovács',         '(35) 94234-5679', 24,  4, 1991, NULL,            NULL, NULL,     'Bloco D',      'dalia.kovacs@ex.hu',         'Dk_1991$',          'Feminino',    'Administrador');
 
 /* ------------------------------------------------------
    Tabela 2 – Unidade  (30 linhas)
@@ -780,12 +780,12 @@ VALUES
 ('Pedro',   'Monteiro',        '(32) 90901-2346', 327,  3,  3, 2025, 'Ativa', 20,   4,   2025, NULL),
 ('Luana', 'Prudenciato',         '(33) 92012-3457', 327,  4,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1140),
 ('Theo',    'Guimaraes',        '(34) 93123-4568', 327,  5,  3, 2025, 'Ativa',  NULL, NULL, NULL, NULL),
-('Eduardo',    'Camargo',         '(35) 94234-5679', 327,  6,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1160),
+('Eduardo',    'Camargo',         '(35) 94234-5679', 327,  6,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1160);
 
-('Álvaro',   'Tavares',        '(32) 90901-2346', 327,  3,  3, 2025, 'Ativa', 20,   4,   2025, NULL),
-('Béatrice', 'Dupont',         '(33) 92012-3457', 327,  4,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1140),
-('César',    'Aguilar',        '(34) 93123-4568', 327,  5,  3, 2025, 'Ativa',  NULL, NULL, NULL, NULL),
-('Dália',    'Kovács',         '(35) 94234-5679', 327,  6,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1160);
+-- ('Álvaro',   'Tavares',        '(32) 90901-2346', 327,  3,  3, 2025, 'Ativa', 20,   4,   2025, NULL),
+-- ('Béatrice', 'Dupont',         '(33) 92012-3457', 327,  4,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1140),
+-- ('César',    'Aguilar',        '(34) 93123-4568', 327,  5,  3, 2025, 'Ativa',  NULL, NULL, NULL, NULL),
+-- ('Dália',    'Kovács',         '(35) 94234-5679', 327,  6,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1160);
 
 /* ======================================================
    Tabela 23 – Avaliacao_Matricula  (30 linhas)
