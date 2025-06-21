@@ -880,9 +880,9 @@ VALUES
 ('Yara',     'Falcão',         '(29) 98789-0124', 325, 'Parcial 40%'),
 ('Zeca',     'Brito',          '(30) 99890-1235', 326, 'Monitoria'),
 ('Álvaro',   'Tavares',        '(32) 90901-2346', 327, 'Integral'),
-('Béatrice', 'Dupont',         '(33) 92012-3457', 328, 'Parcial 30%'),
-('César',    'Aguilar',        '(34) 93123-4568', 329, 'Pesquisa'),
-('Dália',    'Kovács',         '(35) 94234-5679', 330, 'Integral');
+('Béatrice', 'Dupont',         '(33) 92012-3457', 327, 'Parcial 30%'),
+('César',    'Aguilar',        '(34) 93123-4568', 327, 'Pesquisa'),
+('Dália',    'Kovács',         '(35) 94234-5679', 327, 'Integral');
 
 /* ======================================================
    Tabela 26 – Descontos_Matricula  (30 linhas)
