@@ -274,8 +274,3 @@ CREATE TABLE Horario(
     hora_fim TIMESTAMP, 
     PRIMARY KEY (dia_semana, hora_ini, id_turma)
 );
-
---para permitir referencia circular 
-ALTER TABLE Professor
-ADD CONSTRAINT fk_professor_departamento
-FOREIGN KEY (codigo_dept) REFERENCES Departamento(codigo);
