@@ -766,10 +766,10 @@ VALUES
 ('Xênia',    'Braga',          '(28) 97678-9013', 324, 28,  2, 2025, 'Ativa',     NULL, NULL, NULL, 1070),
 ('Yara',     'Falcão',         '(29) 98789-0124', 325,  1,  3, 2025, 'Pendente',  NULL, NULL, NULL, NULL),
 ('Zeca',     'Brito',          '(30) 99890-1235', 326,  2,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1090),
-('Álvaro',   'Tavares',        '(32) 90901-2346', 327,  3,  3, 2025, 'Ativa', 20,   4,   2025, NULL),
-('Béatrice', 'Dupont',         '(33) 92012-3457', 327,  4,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1140),
-('César',    'Aguilar',        '(34) 93123-4568', 327,  5,  3, 2025, 'Ativa',  NULL, NULL, NULL, NULL),
-('Dália',    'Kovács',         '(35) 94234-5679', 327,  6,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1160);
+('Pedro',   'Monteiro',        '(32) 90901-2346', 327,  3,  3, 2025, 'Ativa', 20,   4,   2025, NULL),
+('Luana', 'Prudenciato',         '(33) 92012-3457', 327,  4,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1140),
+('Theo',    'Guimaraes',        '(34) 93123-4568', 327,  5,  3, 2025, 'Ativa',  NULL, NULL, NULL, NULL),
+('Eduardo',    'Camargo',         '(35) 94234-5679', 327,  6,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1160);
 
 /* ======================================================
    Tabela 23 – Avaliacao_Matricula  (30 linhas)
