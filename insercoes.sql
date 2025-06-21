@@ -806,9 +806,9 @@ VALUES
 ('Yara',     'Falcão',         '(29) 98789-0124', 325, 'Precisa melhorar slides.',       3,  NULL,                         3, 3),
 ('Zeca',     'Brito',          '(30) 99890-1235', 326, NULL,                             4,  'Infográficos',               4, 4),
 ('Álvaro',   'Tavares',        '(32) 90901-2346', 327, 'Excelente laboratório.',         5,  NULL,                         5, 5),
-('Béatrice', 'Dupont',         '(33) 92012-3457', 328, NULL,                             4,  'Exercícios extras',          4, 4),
-('César',    'Aguilar',        '(34) 93123-4568', 329, 'Conteúdo avançado.',             4,  NULL,                         4, 4),
-('Dália',    'Kovács',         '(35) 94234-5679', 330, NULL,                             5,  'Casos de estudo',            5, 5);
+('Béatrice', 'Dupont',         '(33) 92012-3457', 327, NULL,                             4,  'Exercícios extras',          4, 4),
+('César',    'Aguilar',        '(34) 93123-4568', 327, 'Conteúdo avançado.',             4,  NULL,                         4, 4),
+('Dália',    'Kovács',         '(35) 94234-5679', 327, NULL,                             5,  'Casos de estudo',            5, 5);
 
 /* ======================================================
    Tabela 24 – Notas_Matricula  (30 linhas)
