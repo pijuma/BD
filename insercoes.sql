@@ -16,7 +16,7 @@ VALUES
 ('Gabriela',  'Fernandes',      '(71) 98901-2346', 28,  9, 1996, 'Salvador',      'BA', 'Brasil', NULL,           'gabi.fernandes@example.io',  'GfPwd!987',         'Feminino',    'Aluno'),
 ('Henrique',  'Gomes',          '(81) 90012-3457',  2, 12, 1988, NULL,            NULL, 'Brasil', 'Sala Térrea',  'henrique.gomes@empresa.com', 'Hg_2025$',          'Masculino',   NULL),
 ('Iara',      'Cruz',           '(91) 91123-4568', 19,  7, 1997, 'Belém',         'PA', 'Brasil', NULL,           'iara.cruz@exemplo.net',      'IcPass!55',         'Feminino',    'Aluno'),
-('João',      'Souza',          '(12) 92234-5679',  5,  5, 1993, 'Taubaté',       'SP', 'Brasil', 'Casa 2',       'joao.souza@example.com',     'Js#2025seg',        'Masculino',   'Administrador'),
+('João',      'Souza',          '(12) 92234-5679',  5,  5, 1993, 'Taubaté',       'SP', 'Brasil', 'Casa 2',       'joao.souza@example.com',     'Js#2025seg',        'Masculino',   'Responsável'),
 ('Karina',    'Martins',        '(13) 93345-6780', 16,  1, 1994, 'Santos',        'SP', 'Brasil', NULL,           'karina.martins@mail.com',    'KmPass@77',         'Feminino',    'Aluno'),
 ('Luís',      'Mendes',         '(14) 94456-7891',  9, 10, 1985, 'São Carlos',    'SP', 'Brasil', 'Ap 302',       'luis.mendes@dominio.com',    'Lm!85Seg',          'Masculino',   NULL),
 ('Mariana',   'Rocha',          '(15) 95567-8902', 25,  3, 1998, 'Bauru',         'SP', 'Brasil', NULL,           'mariana.rocha@ex.com',       'Mr@1998',           'Feminino',    'Aluno'),
@@ -33,16 +33,10 @@ VALUES
 ('Xênia',     'Braga',          '(28) 97678-9013', 27, 10, 1999, NULL,            NULL, 'Brasil', 'Ap 505',       'xenia.braga@dom.io',         'Xb^1999',           'Feminino',    'Aluno'),
 ('Yara',      'Falcão',         '(29) 98789-0124', 17,  5, 1994, 'Aracaju',       'SE', 'Brasil', NULL,           'yara.falcao@mail.org',       'Yf#94Sec',          'Feminino',    NULL),
 ('Zeca',      'Brito',          '(30) 99890-1235', 31,  1, 1986, 'Cuiabá',        'MT', 'Brasil', 'Casa 9',       'zeca.brito@exemplo.com',     'Zb$1986',           'Masculino',   'Aluno'),
-('Pedro',    'Monteiro',        '(32) 90901-2346', 26,  6, 1992, 'Vitória',       'ES', 'Brasil', NULL,           'alvaro.tavares@corp.com',    'At!205',           'Masculino',   'Professor'),
-('Luana',  'Prudenciato',         '(33) 92012-3457', 10,  9, 1984, 'Paris',         NULL, 'França', 'Apt 102',      'beatrice.dupont@ex.fr',      'Bd#194',           'Feminino',    NULL),
-('Theo',     'Guimaraes',        '(34) 93123-4568', 15, 12, 1993, 'Lima',          NULL, 'Peru',   NULL,           'cesar.aguilar@mail.pe',      'CaPwd!9',          'Masculino',   'Aluno'),
-('Eduardo',     'Camargo',         '(35) 94234-5679', 24,  4, 1991, NULL,            NULL, NULL,     'Bloco D',      'dalia.kovacs@ex.hu',         'Dk_191$',          'Feminino',    'Administrador'),
-
-
 ('Álvaro',    'Tavares',        '(32) 90901-2346', 26,  6, 1992, 'Vitória',       'ES', 'Brasil', NULL,           'alvaro.tavares@corp.com',    'At!2025',           'Masculino',   'Professor'),
 ('Béatrice',  'Dupont',         '(33) 92012-3457', 10,  9, 1984, 'Paris',         NULL, 'França', 'Apt 102',      'beatrice.dupont@ex.fr',      'Bd#1984',           'Feminino',    NULL),
 ('César',     'Aguilar',        '(34) 93123-4568', 15, 12, 1993, 'Lima',          NULL, 'Peru',   NULL,           'cesar.aguilar@mail.pe',      'CaPwd!93',          'Masculino',   'Aluno'),
-('Dália',     'Kovács',         '(35) 94234-5679', 24,  4, 1991, NULL,            NULL, NULL,     'Bloco D',      'dalia.kovacs@ex.hu',         'Dk_1991$',          'Feminino',    'Administrador');
+('Dália',     'Kovács',         '(35) 94234-5679', 24,  4, 1991, NULL,            NULL, NULL,     'Bloco D',      'dalia.kovacs@ex.hu',         'Dk_1991$',          'Feminino',    'Responsável');
 
 /* ------------------------------------------------------
    Tabela 2 – Unidade  (30 linhas)
@@ -150,11 +144,6 @@ VALUES
 ('Xênia',     'Braga',          '(28) 97678-9013', 25),
 ('Yara',      'Falcão',         '(29) 98789-0124', 29),
 ('Zeca',      'Brito',          '(30) 99890-1235', 23),
-('Pedro',    'Monteiro',        '(32) 90901-2346', 28),
-('Luana',  'Prudenciato',         '(33) 92012-3457', 30),
-('Theo',     'Guimaraes',        '(34) 93123-4568', 16),
-('Eduardo',     'Camargo',         '(35) 94234-5679', 17),
-
 ('Álvaro',    'Tavares',        '(32) 90901-2346', 28),
 ('Béatrice',  'Dupont',         '(33) 92012-3457', 30),
 ('César',     'Aguilar',        '(34) 93123-4568', 16),
@@ -777,15 +766,10 @@ VALUES
 ('Xênia',    'Braga',          '(28) 97678-9013', 324, 28,  2, 2025, 'Ativa',     NULL, NULL, NULL, 1070),
 ('Yara',     'Falcão',         '(29) 98789-0124', 325,  1,  3, 2025, 'Pendente',  NULL, NULL, NULL, NULL),
 ('Zeca',     'Brito',          '(30) 99890-1235', 326,  2,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1090),
-('Pedro',   'Monteiro',        '(32) 90901-2346', 327,  3,  3, 2025, 'Ativa', 20,   4,   2025, NULL),
-('Luana', 'Prudenciato',         '(33) 92012-3457', 327,  4,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1140),
-('Theo',    'Guimaraes',        '(34) 93123-4568', 327,  5,  3, 2025, 'Ativa',  NULL, NULL, NULL, NULL),
-('Eduardo',    'Camargo',         '(35) 94234-5679', 327,  6,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1160);
-
--- ('Álvaro',   'Tavares',        '(32) 90901-2346', 327,  3,  3, 2025, 'Ativa', 20,   4,   2025, NULL),
--- ('Béatrice', 'Dupont',         '(33) 92012-3457', 327,  4,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1140),
--- ('César',    'Aguilar',        '(34) 93123-4568', 327,  5,  3, 2025, 'Ativa',  NULL, NULL, NULL, NULL),
--- ('Dália',    'Kovács',         '(35) 94234-5679', 327,  6,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1160);
+('Álvaro',   'Tavares',        '(32) 90901-2346', 327,  3,  3, 2025, 'Cancelada', 20,   4,   2025, NULL),
+('Béatrice', 'Dupont',         '(33) 92012-3457', 328,  4,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1140),
+('César',    'Aguilar',        '(34) 93123-4568', 329,  5,  3, 2025, 'Pendente',  NULL, NULL, NULL, NULL),
+('Dália',    'Kovács',         '(35) 94234-5679', 330,  6,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1160);
 
 /* ======================================================
    Tabela 23 – Avaliacao_Matricula  (30 linhas)
@@ -822,9 +806,9 @@ VALUES
 ('Yara',     'Falcão',         '(29) 98789-0124', 325, 'Precisa melhorar slides.',       3,  NULL,                         3, 3),
 ('Zeca',     'Brito',          '(30) 99890-1235', 326, NULL,                             4,  'Infográficos',               4, 4),
 ('Álvaro',   'Tavares',        '(32) 90901-2346', 327, 'Excelente laboratório.',         5,  NULL,                         5, 5),
-('Béatrice', 'Dupont',         '(33) 92012-3457', 327, NULL,                             4,  'Exercícios extras',          4, 4),
-('César',    'Aguilar',        '(34) 93123-4568', 327, 'Conteúdo avançado.',             4,  NULL,                         4, 4),
-('Dália',    'Kovács',         '(35) 94234-5679', 327, NULL,                             5,  'Casos de estudo',            5, 5);
+('Béatrice', 'Dupont',         '(33) 92012-3457', 328, NULL,                             4,  'Exercícios extras',          4, 4),
+('César',    'Aguilar',        '(34) 93123-4568', 329, 'Conteúdo avançado.',             4,  NULL,                         4, 4),
+('Dália',    'Kovács',         '(35) 94234-5679', 330, NULL,                             5,  'Casos de estudo',            5, 5);
 
 /* ======================================================
    Tabela 24 – Notas_Matricula  (30 linhas)
@@ -859,9 +843,9 @@ VALUES
 ('Yara',     'Falcão',         '(29) 98789-0124', 325,  79),
 ('Zeca',     'Brito',          '(30) 99890-1235', 326,  84),
 ('Álvaro',   'Tavares',        '(32) 90901-2346', 327,  97),
-('Béatrice', 'Dupont',         '(33) 92012-3457', 327,  85),
-('César',    'Aguilar',        '(34) 93123-4568', 327,  88),
-('Dália',    'Kovács',         '(35) 94234-5679', 327,  92);
+('Béatrice', 'Dupont',         '(33) 92012-3457', 328,  85),
+('César',    'Aguilar',        '(34) 93123-4568', 329,  88),
+('Dália',    'Kovács',         '(35) 94234-5679', 330,  92);
 
 /* ======================================================
    Tabela 25 – Bolsas_Estudo_Matricula  (30 linhas)
@@ -896,9 +880,9 @@ VALUES
 ('Yara',     'Falcão',         '(29) 98789-0124', 325, 'Parcial 40%'),
 ('Zeca',     'Brito',          '(30) 99890-1235', 326, 'Monitoria'),
 ('Álvaro',   'Tavares',        '(32) 90901-2346', 327, 'Integral'),
-('Béatrice', 'Dupont',         '(33) 92012-3457', 327, 'Parcial 30%'),
-('César',    'Aguilar',        '(34) 93123-4568', 327, 'Pesquisa'),
-('Dália',    'Kovács',         '(35) 94234-5679', 327, 'Integral');
+('Béatrice', 'Dupont',         '(33) 92012-3457', 328, 'Parcial 30%'),
+('César',    'Aguilar',        '(34) 93123-4568', 329, 'Pesquisa'),
+('Dália',    'Kovács',         '(35) 94234-5679', 330, 'Integral');
 
 /* ======================================================
    Tabela 26 – Descontos_Matricula  (30 linhas)
@@ -933,9 +917,9 @@ VALUES
 ('Yara',     'Falcão',         '(29) 98789-0124', 325, 15),
 ('Zeca',     'Brito',          '(30) 99890-1235', 326, 12),
 ('Álvaro',   'Tavares',        '(32) 90901-2346', 327, 17),
-('Béatrice', 'Dupont',         '(33) 92012-3457', 327,  8),
-('César',    'Aguilar',        '(34) 93123-4568', 327, 14),
-('Dália',    'Kovács',         '(35) 94234-5679', 327, 10);
+('Béatrice', 'Dupont',         '(33) 92012-3457', 328,  8),
+('César',    'Aguilar',        '(34) 93123-4568', 329, 14),
+('Dália',    'Kovács',         '(35) 94234-5679', 330, 10);
 
 
 /* ======================================================
@@ -972,9 +956,9 @@ VALUES
 (4,'2025-03-04 09:00:00',325,1025,'2025-03-04 11:00:00'),
 (5,'2025-03-04 10:00:00',326,1026,'2025-03-04 12:00:00'),
 (6,'2025-03-04 11:00:00',327,1027,'2025-03-04 13:00:00'),
-(7,'2025-03-04 12:00:00',327,1028,'2025-03-04 14:00:00'),
-(1,'2025-03-04 13:00:00',327,1029,'2025-03-04 15:00:00'),
-(2,'2025-03-04 14:00:00',327,1030,'2025-03-04 16:00:00');
+(7,'2025-03-04 12:00:00',328,1028,'2025-03-04 14:00:00'),
+(1,'2025-03-04 13:00:00',329,1029,'2025-03-04 15:00:00'),
+(2,'2025-03-04 14:00:00',330,1030,'2025-03-04 16:00:00');
 
 
 /* ======================================================
@@ -1053,9 +1037,9 @@ VALUES
 (2025,'Yara','Falcão','(29) 98789-0124',325,'2025-06-20 14:00:00','Dúvidas? Enviem mensagem.'),
 (2026,'Zeca','Brito','(30) 99890-1235',326,'2025-06-20 14:05:00',NULL),
 (2027,'Álvaro','Tavares','(32) 90901-2346',327,'2025-06-20 14:10:00','Exercício 3 corrigido.'),
-(2028,'Béatrice','Dupont','(33) 92012-3457',327,'2025-06-20 14:15:00',NULL),
-(2029,'César','Aguilar','(34) 93123-4568',327,'2025-06-20 14:20:00','Bibliografia adicional postada.'),
-(2030,'Dália','Kovács','(35) 94234-5679',327,'2025-06-20 14:25:00',NULL);
+(2028,'Béatrice','Dupont','(33) 92012-3457',328,'2025-06-20 14:15:00',NULL),
+(2029,'César','Aguilar','(34) 93123-4568',329,'2025-06-20 14:20:00','Bibliografia adicional postada.'),
+(2030,'Dália','Kovács','(35) 94234-5679',330,'2025-06-20 14:25:00',NULL);
 
 
 /* ------------------------------------------------------------------
