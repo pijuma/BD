@@ -5,7 +5,7 @@ SELECT M.nome_aluno, M.sobrenome_aluno, M.telefone_aluno
 	FROM matriculas AS M
 	JOIN Turma AS T ON(M.id_turma=T.id_turma)
 	JOIN Disciplina AS D ON(T.codigo_disc=D.codigo_disc)
-WHERE (T.semestre = 2 AND T.ano = 2025 AND D.codigo_disc = 127 AND M.status_matricula <> 'cancelada');
+WHERE (T.semestre = 2 AND T.ano = 2025 AND D.codigo_disc = 127 AND M.status_matricula <> 'Cancelada');
 
 --2)
 --calcular media de notas de um aluno numa disciplina 
