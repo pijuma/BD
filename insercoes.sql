@@ -246,12 +246,12 @@ INSERT INTO Professor
      num_sala, codigo_dept)
 VALUES
 ('Ana',       'Silva',          '(11) 91234-5678',  'Bioquímica',          'Doutora',     1001,  1),
-('Bruno',     'Costa',          '(21) 93456-7891',  'Redes',               'Mestre',      1002,  2),
-('Carla',     'Oliveira',       '(31) 94567-8902',  'Literatura',          NULL,          1003,  3),
-('Diego',     'Pereira',        '(41) 95678-9013',  NULL,                  'Especialista',1004,  4),
-('Eliane',    'Santos',         '(51) 96789-0124',  'Eng. Produção',       'Doutora',     1005,  5),
-('Felipe',    'Ramos',          '(61) 97890-1235',  'História',            'Mestre',      1006,  6),
-('Gabriela',  'Fernandes',      '(71) 98901-2346',  'Psicologia',          NULL,          1007,  7),
+('Bruno',     'Costa',          '(21) 93456-7891',  'Redes',               'Mestre',      1002,  1),
+('Carla',     'Oliveira',       '(31) 94567-8902',  'Literatura',          NULL,          1003,  1),
+('Diego',     'Pereira',        '(41) 95678-9013',  NULL,                  'Especialista',1004,  1),
+('Eliane',    'Santos',         '(51) 96789-0124',  'Eng. Produção',       'Doutora',     1005,  1),
+('Felipe',    'Ramos',          '(61) 97890-1235',  'História',            'Mestre',      1006,  1),
+('Gabriela',  'Fernandes',      '(71) 98901-2346',  'Psicologia',          NULL,          1007,  1),
 ('Henrique',  'Gomes',          '(81) 90012-3457',  'Direito',             'Doutor',      1008,  8),
 ('Iara',      'Cruz',           '(91) 91123-4568',  NULL,                  NULL,          1009,  9),
 ('João',      'Souza',          '(12) 92234-5679',  'Matemática',          'Especialista',1010, 10),
