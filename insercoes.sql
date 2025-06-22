@@ -94,6 +94,31 @@ VALUES
 ('Ulisses',   'Teixeira',     '(25) 94345-6780',  4,  3, 1986, 'Brasília',       'DF', 'Brasil', NULL,            'ulisses.teix@corp.com',      'Ut_pass86',    'Masculino','Professor'),
 ('Pedro',     'Monteiro',     '(32) 90000-1234', 26,  6, 1992, 'Vitória',        'ES', 'Brasil', NULL,            'pedro.monteiro@corp.com',    'Pm@2025',      'Masculino','Professor'),
 ('Álvaro',    'Tavares',      '(32) 90901-2346', 26,  6, 1992, 'Vitória',        'ES', 'Brasil', NULL,            'alvaro.tavares@corp.com',    'At!2025',      'Masculino','Professor'),
+('Bruno',    'Almeida', '(11) 90001-0001',  5,  3, 1980, 'Santo André',           'SP', 'Brasil', 'Sala 101', 'bruno.almeida@bio.uni.br',  'Ba@1980Bio',   'Masculino', 'Professor'),
+
+('Camila',   'Garcia',  '(11) 90002-0002', 14,  7, 1984, 'Campinas',              'SP', 'Brasil', 'Casa 8',
+ 'camila.garcia@bio.uni.br',  'Cg#1984!',     'Feminino',  'Professor'),
+
+('Daniel',   'Moreira', '(11) 90003-0003', 22, 11, 1979, 'Ribeirão Preto',        'SP', 'Brasil', NULL,
+ 'daniel.moreira@bio.uni.br', 'Dm*1979Bio',   'Masculino', 'Professor'),
+
+('Elisa',    'Pereira', '(11) 90004-0004',  9,  2, 1985, 'Santos',                'SP', 'Brasil', 'Apt 33',
+ 'elisa.pereira@bio.uni.br',  'Ep@1985#',     'Feminino',  'Professor'),
+
+('Fernando', 'Rocha',   '(11) 90005-0005', 18,  9, 1978, 'São Paulo',             'SP', 'Brasil', NULL,
+ 'fernando.rocha@bio.uni.br', 'Fr$1978',      'Masculino', 'Professor'),
+
+('Gabriela', 'Lima',    '(11) 90006-0006', 27,  5, 1983, 'Guarulhos',             'SP', 'Brasil', 'Bloco D',
+ 'gabriela.lima@bio.uni.br',  'Gl@1983!',     'Feminino',  'Professor'),
+
+('Henrique', 'Barros',  '(11) 90007-0007',  3, 12, 1981, 'São Bernardo do Campo', 'SP', 'Brasil', NULL,
+ 'henrique.barros@bio.uni.br','Hb*1981Bio',   'Masculino', 'Professor'),
+
+('Isabela',  'Nunes',   '(11) 90008-0008', 30,  4, 1986, 'São Paulo',             'SP', 'Brasil', 'Ap 404',
+ 'isabela.nunes@bio.uni.br',  'In1986$',      'Feminino',  'Professor'),
+
+('João',     'Martins', '(11) 90009-0009', 11,  8, 1982, 'São José dos Campos',   'SP', 'Brasil', 'Casa 21',
+ 'joao.martins@bio.uni.br',   'Jm@1982!',     'Masculino', 'Professor'),
 
 -- ---------- 30 ADMINISTRADORES ----------
 ('Adriano',  'Abreu',         '(96) 90010-1001',  1,  1, 1980, 'Macapá',              'AP', 'Brasil', NULL,           'adriano.abreu@example.com',     'Aa#1980',  'Masculino','Administrador'),
@@ -401,7 +426,16 @@ VALUES
 ('Emanuela',  'Cardoso',  '(95) 95539-2922', 'Turismo',                'Mestre',        1006, 60),
 ('Eduardo',  'Barros',   '(70) 97774-7474', 'Engenharia Civil',       'Doutor', 1015, 35),
 ('Ulisses',  'Teixeira', '(25) 94345-6780', 'Administração',          'Mestre', 1012, 21),
-('Pedro',    'Monteiro', '(32) 90000-1234', 'Engenharia de Software', 'Mestre', 1024, 26);
+('Pedro',    'Monteiro', '(32) 90000-1234', 'Engenharia de Software', 'Mestre', 1024, 26),
+('Bruno',    'Almeida',  '(11) 90001-0001', 'Microbiologia',   'Mestre',   1024, 1),
+('Camila',   'Garcia',   '(11) 90002-0002', 'Botânica',        'Doutora',  1025, 1),
+('Daniel',   'Moreira',  '(11) 90003-0003', 'Genética',        'Doutor',   1026, 1),
+('Elisa',    'Pereira',  '(11) 90004-0004', 'Zoologia',        'Mestre',   1027, 1),
+('Fernando', 'Rocha',    '(11) 90005-0005', 'Imunologia',      'Doutor',   1028, 1),
+('Gabriela', 'Lima',     '(11) 90006-0006', 'Ecologia',        'Doutora',  1029, 1),
+('Henrique', 'Barros',   '(11) 90007-0007', 'Parasitologia',   'Mestre',   1030, 1),
+('Isabela',  'Nunes',    '(11) 90008-0008', 'Bioinformática',  'Doutora',  1004, 1),
+('João',     'Martins',  '(11) 90009-0009', 'Fisiologia',      'Doutor',   1005, 1);
 
 
 /* ------------------------------------------------------
@@ -521,7 +555,16 @@ VALUES
 (138, 3, NULL),
 (139, 4, 'Manual de Campo'),
 (140, 3, NULL),
-(141, 2, NULL);
+(141, 2, NULL),
+(142, 3, 'Livro-texto'),
+(143, 2, NULL),
+(144, 4, 'Slides PDF'),
+(145, 3, NULL),
+(146, 2, 'Manual de laboratório'),
+(147, 4, NULL),
+(148, 3, NULL),
+(149, 2, NULL),
+(150, 3, 'Artigos');
 
 
 /* ======================================================
@@ -725,7 +768,16 @@ VALUES
 (216, 1, 2025, 'Ana', 'Silva', '(11) 91234-5678', 138, 0),
 (217, 1, 2025, 'Ana', 'Silva', '(11) 91234-5678', 139, 0),
 (218, 1, 2025, 'Ana', 'Silva', '(11) 91234-5678', 140, 0),
-(219, 1, 2025, 'Ana', 'Silva', '(11) 91234-5678', 141, 0);
+(219, 1, 2025, 'Ana', 'Silva', '(11) 91234-5678', 141, 0),
+(221, 1, 2025, 'Bruno',    'Almeida', '(11) 90001-0001', 142, 0),
+(222, 1, 2025, 'Camila',   'Garcia',  '(11) 90002-0002', 143, 0),
+(223, 1, 2025, 'Daniel',   'Moreira', '(11) 90003-0003', 144, 0),
+(224, 1, 2025, 'Elisa',    'Pereira', '(11) 90004-0004', 145, 0),
+(225, 1, 2025, 'Fernando', 'Rocha',   '(11) 90005-0005', 146, 0),
+(226, 1, 2025, 'Gabriela', 'Lima',    '(11) 90006-0006', 147, 0),
+(227, 1, 2025, 'Henrique', 'Barros',  '(11) 90007-0007', 148, 0),
+(228, 1, 2025, 'Isabela',  'Nunes',   '(11) 90008-0008', 149, 0),
+(229, 1, 2025, 'João',     'Martins', '(11) 90009-0009', 150, 0);
 
 /* ------------------------------------------------------
    Tabela 16 – Agendamento_salas  (30 linhas)
