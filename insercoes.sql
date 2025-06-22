@@ -1,5 +1,5 @@
 /* ------------------------------------------------------
-   Tabela 1 – Usuario  (30 linhas)
+   Tabela 1 – Usuario 
 ------------------------------------------------------ */
 INSERT INTO Usuario
     (nome, sobrenome, telefone,
@@ -7,42 +7,136 @@ INSERT INTO Usuario
      cidade, estado, pais, complemento,
      email, senha_acesso, sexo, vinculo)
 VALUES
-('Ana',       'Silva',          '(11) 91234-5678', 12,  6, 1995, 'São Paulo',    'SP', 'Brasil', 'Apt 12',        'ana.silva@example.com',      'S3gura@123',        'Feminino',    'Aluno'),
-('Bruno',     'Costa',          '(21) 93456-7891',  3,  1, 1993, 'Rio de Janeiro','RJ', 'Brasil', NULL,           'bruno.costa@example.com',    'Br#2025seg',        'Masculino',   'Professor'),
-('Carla',     'Oliveira',       '(31) 94567-8902', 23, 11, 1994, NULL,            NULL, NULL,     'Casa 1',       'carla.oliveira@dominio.com', 'C@rl@2024',         'Feminino',    NULL),
-('Diego',     'Pereira',        '(41) 95678-9013', 30,  4, 1992, 'Curitiba',      'PR', 'Brasil', 'Bloco B',      'diego.pereira@exemplo.org',  'D!ego#432',         'Masculino',   'Aluno'),
-('Eliane',    'Santos',         '(51) 96789-0124',  7,  8, 1990, 'Porto Alegre',  'RS', 'Brasil', NULL,           'eliane.santos@mail.com',     'SenhaSegura1',      'Feminino',    'Administrador'),
-('Felipe',    'Ramos',          '(61) 97890-1235', 14,  2, 1989, 'Brasília',      'DF', 'Brasil', 'Apt 44',       'felipe.ramos@edu.br',        'Fr@123456',         'Masculino',   'Aluno'),
-('Gabriela',  'Fernandes',      '(71) 98901-2346', 28,  9, 1996, 'Salvador',      'BA', 'Brasil', NULL,           'gabi.fernandes@example.io',  'GfPwd!987',         'Feminino',    'Aluno'),
-('Henrique',  'Gomes',          '(81) 90012-3457',  2, 12, 1988, NULL,            NULL, 'Brasil', 'Sala Térrea',  'henrique.gomes@empresa.com', 'Hg_2025$',          'Masculino',   NULL),
-('Iara',      'Cruz',           '(91) 91123-4568', 19,  7, 1997, 'Belém',         'PA', 'Brasil', NULL,           'iara.cruz@exemplo.net',      'IcPass!55',         'Feminino',    'Aluno'),
-('João',      'Souza',          '(12) 92234-5679',  5,  5, 1993, 'Taubaté',       'SP', 'Brasil', 'Casa 2',       'joao.souza@example.com',     'Js#2025seg',        'Masculino',   'Administrador'),
-('Karina',    'Martins',        '(13) 93345-6780', 16,  1, 1994, 'Santos',        'SP', 'Brasil', NULL,           'karina.martins@mail.com',    'KmPass@77',         'Feminino',    'Aluno'),
-('Luís',      'Mendes',         '(14) 94456-7891',  9, 10, 1985, 'São Carlos',    'SP', 'Brasil', 'Ap 302',       'luis.mendes@dominio.com',    'Lm!85Seg',          'Masculino',   NULL),
-('Mariana',   'Rocha',          '(15) 95567-8902', 25,  3, 1998, 'Bauru',         'SP', 'Brasil', NULL,           'mariana.rocha@ex.com',       'Mr@1998',           'Feminino',    'Aluno'),
-('Nilo',      'Azevedo',        '(16) 96678-9013',  1,  6, 1991, 'Ribeirão Preto','SP', 'Brasil', 'Casa 5',       'nilo.azevedo@corp.co',       'Na*Seg1',           'Masculino',   'Professor'),
-('Otávia',    'Cardoso',        '(17) 97789-0124', 21,  2, 1992, 'Piracicaba',    'SP', 'Brasil', NULL,           'otavia.cardoso@edu.org',     'Oc@Pa$$w0rd',       'Feminino',    NULL),
-('Paulo',     'Albuquerque',    '(18) 98890-1235', 11, 11, 1987, 'Recife',        'PE', 'Brasil', 'Apt 1101',     'paulo.albuq@ex.net',        'Pa$$87',            'Masculino',   'Administrador'),
-('Quitéria',  'Lima',           '(19) 99901-2346',  6,  4, 1996, NULL,            NULL, NULL,     NULL,           'quiteria.lima@mail.org',     'Ql@2024',           'Feminino',    'Aluno'),
-('Rodrigo',   'Bastos',         '(22) 91012-3457', 18,  9, 1989, 'Niterói',       'RJ', 'Brasil', 'Sala B-3',     'rodrigo.bastos@ex.com',      'Rb#1989',           'Masculino',   'Professor'),
-('Sabrina',   'Barros',         '(23) 92123-4568', 29, 12, 1997, 'Uberlândia',    'MG', 'Brasil', NULL,           'sabrina.barros@dom.com',     'SbPwd!24',          'Feminino',    NULL),
-('Tiago',     'Figueiredo',     '(24) 93234-5679', 13,  8, 1995, 'Florianópolis', 'SC', 'Brasil', 'Cobertura',    'tiago.fig@exemplo.com',      'Tf@2025!',          'Masculino',   'Aluno'),
-('Ulisses',   'Teixeira',       '(25) 94345-6780',  4,  3, 1986, 'Brasília',      'DF', 'Brasil', NULL,           'ulisses.teix@corp.com',      'Ut_pass86',         'Masculino',   'Professor'),
-('Valéria',   'Duarte',         '(26) 95456-7891', 22,  7, 1990, 'Palmas',        'TO', 'Brasil', 'Casa 7',       'valeria.duarte@mail.com',    'VdSeg#90',          'Feminino',    NULL),
-('Wagner',    'Pacheco',        '(27) 96567-8902',  8,  2, 1988, 'Maceió',        'AL', 'Brasil', NULL,           'wagner.pacheco@ex.net',      'Wp2025*',           'Masculino',   'Administrador'),
-('Xênia',     'Braga',          '(28) 97678-9013', 27, 10, 1999, NULL,            NULL, 'Brasil', 'Ap 505',       'xenia.braga@dom.io',         'Xb^1999',           'Feminino',    'Aluno'),
-('Yara',      'Falcão',         '(29) 98789-0124', 17,  5, 1994, 'Aracaju',       'SE', 'Brasil', NULL,           'yara.falcao@mail.org',       'Yf#94Sec',          'Feminino',    NULL),
-('Zeca',      'Brito',          '(30) 99890-1235', 31,  1, 1986, 'Cuiabá',        'MT', 'Brasil', 'Casa 9',       'zeca.brito@exemplo.com',     'Zb$1986',           'Masculino',   'Aluno'),
-('Pedro',    'Monteiro',        '(32) 90901-2346', 26,  6, 1992, 'Vitória',       'ES', 'Brasil', NULL,           'alvaro.tavares@corp.com',    'At!205',           'Masculino',   'Professor'),
-('Luana',  'Prudenciato',         '(33) 92012-3457', 10,  9, 1984, 'Paris',         NULL, 'França', 'Apt 102',      'beatrice.dupont@ex.fr',      'Bd#194',           'Feminino',    NULL),
-('Theo',     'Guimaraes',        '(34) 93123-4568', 15, 12, 1993, 'Lima',          NULL, 'Peru',   NULL,           'cesar.aguilar@mail.pe',      'CaPwd!9',          'Masculino',   'Aluno'),
-('Eduardo',     'Camargo',         '(35) 94234-5679', 24,  4, 1991, NULL,            NULL, NULL,     'Bloco D',      'dalia.kovacs@ex.hu',         'Dk_191$',          'Feminino',    'Administrador'),
+-- ---------- 30 ALUNOS ----------
+('Adriana',  'Mendonça',      '(36) 90011-1111',  4,  2, 2000, 'Juiz de Fora',        'MG', 'Brasil', NULL,           'adriana.mendonca@example.com',  'Am#2000',  'Feminino', 'Aluno'),
+('Bernardo', 'Vieira',        '(37) 91122-2222', 18,  7, 1999, 'Divinópolis',         'MG', 'Brasil', 'Casa 12',      'bernardo.vieira@example.com',   'Bv!1999',  'Masculino','Aluno'),
+('Camila',   'Albuquerque',   '(38) 92233-3333', 30, 11, 1998, 'Montes Claros',       'MG', 'Brasil', 'Apt 05',       'camila.albuquerque@example.com','Ca_1998',  'Feminino', 'Aluno'),
+('Daniel',   'Siqueira',      '(39) 93344-4444',  9,  5, 1997, 'Porto Velho',         'RO', 'Brasil', NULL,           'daniel.siqueira@example.com',   'Ds$1997',  'Masculino','Aluno'),
+('Elisa',    'Moura',         '(40) 94455-5555', 21, 12, 2001, 'Londrina',            'PR', 'Brasil', 'Bloco C',      'elisa.moura@example.com',       'Em@2001',  'Feminino', 'Aluno'),
+('Fábio',    'Queiroz',       '(41) 95566-6666', 11,  1, 1999, 'Joinville',           'SC', 'Brasil', NULL,           'fabio.queiroz@example.com',     'Fq*1999',  'Masculino','Aluno'),
+('Giovana',  'Nunes',         '(42) 96677-7777', 28,  8, 2000, 'Ponta Grossa',        'PR', 'Brasil', 'Apt 3',        'giovana.nunes@example.com',     'Gn@2000',  'Feminino', 'Aluno'),
+('Heitor',   'Batista',       '(43) 97788-8888', 12,  3, 1996, 'Maringá',             'PR', 'Brasil', NULL,           'heitor.batista@example.com',    'Hb#1996',  'Masculino','Aluno'),
+('Isabela',  'Correia',       '(44) 98899-9999',  5,  9, 1998, 'Cascavel',            'PR', 'Brasil', 'Casa 4',       'isabela.correia@example.com',   'Ic!1998',  'Feminino', 'Aluno'),
+('João',     'Peixoto',       '(45) 90110-1010',  2,  4, 1997, 'Foz do Iguaçu',       'PR', 'Brasil', NULL,           'joao.peixoto@example.com',      'Jp_1997',  'Masculino','Aluno'),
+('Kelly',    'Reis',          '(46) 91221-2121', 16, 10, 2000, 'Chapecó',             'SC', 'Brasil', NULL,           'kelly.reis@example.com',        'Kr@2000',  'Feminino', 'Aluno'),
+('Leonardo', 'Pires',         '(47) 92332-3232', 27,  6, 1997, 'Blumenau',            'SC', 'Brasil', 'Apt 11',       'leonardo.pires@example.com',    'Lp#1997',  'Masculino','Aluno'),
+('Marina',   'Barbosa',       '(48) 93443-4343',  8,  5, 1999, 'Itajaí',              'SC', 'Brasil', NULL,           'marina.barbosa@example.com',    'Mb$1999',  'Feminino', 'Aluno'),
+('Natália',  'Araújo',        '(49) 94554-5454', 14,  2, 2001, 'Palmas',              'TO', 'Brasil', 'Casa 8',       'natalia.araujo@example.com',    'Na!2001',  'Feminino', 'Aluno'),
+('Omar',     'Rodrigues',     '(50) 95665-6565',  7,  8, 1996, 'Macapá',              'AP', 'Brasil', NULL,           'omar.rodrigues@example.com',    'Or*1996',  'Masculino','Aluno'),
+('Patrícia', 'Freitas',       '(51) 96776-7676',  3,  3, 1998, 'Caxias do Sul',       'RS', 'Brasil', 'Bloco D',      'patricia.freitas@example.com',  'Pf@1998',  'Feminino', 'Aluno'),
+('Rafael',   'Barcellos',     '(52) 97887-8787', 24,  1, 1997, 'Pelotas',             'RS', 'Brasil', NULL,           'rafael.barcellos@example.com',  'Rb_1997',  'Masculino','Aluno'),
+('Sara',     'Meireles',      '(53) 98998-9898', 10, 12, 2000, 'Santa Maria',         'RS', 'Brasil', 'Apt 9',        'sara.meireles@example.com',     'Sm#2000',  'Feminino', 'Aluno'),
+('Thiago',   'Damasceno',     '(54) 90009-0909', 22,  6, 1999, 'Caxias',              'MA', 'Brasil', NULL,           'thiago.damasceno@example.com',  'Td!1999',  'Masculino','Aluno'),
+('Úrsula',   'Valente',       '(55) 91119-1919',  1,  9, 1998, 'São Luís',            'MA', 'Brasil', NULL,           'ursula.valente@example.com',    'Uv@1998',  'Feminino', 'Aluno'),
+('Victor',   'Galvão',        '(56) 92229-2929', 11, 11, 1997, 'Belém',               'PA', 'Brasil', 'Casa 6',       'victor.galvao@example.com',     'Vg$1997',  'Masculino','Aluno'),
+('Wallace',  'Lacerda',       '(57) 93339-3939', 18, 10, 1996, 'Anápolis',            'GO', 'Brasil', NULL,           'wallace.lacerda@example.com',   'Wl*1996',  'Masculino','Aluno'),
+('Xuxa',     'Costa',         '(58) 94449-4949',  9,  5, 2002, 'Boa Vista',           'RR', 'Brasil', NULL,           'xuxa.costa@example.com',        'Xc@2002',  'Feminino', 'Aluno'),
+('Yuri',     'Campos',        '(59) 95559-5959',  6,  2, 2001, 'Manaus',              'AM', 'Brasil', 'Apt 2',        'yuri.campos@example.com',       'Yc!2001',  'Masculino','Aluno'),
+('Zélia',    'Sales',         '(60) 96669-6969', 13,  7, 2000, 'Crato',               'CE', 'Brasil', NULL,           'zelia.sales@example.com',       'Zs#2000',  'Feminino', 'Aluno'),
+('Artur',    'Cavalcante',    '(61) 97779-7979', 12,  8, 1999, 'Sobral',              'CE', 'Brasil', 'Casa 3',       'artur.cavalcante@example.com',  'Ac_1999',  'Masculino','Aluno'),
+('Brisa',    'Machado',       '(62) 98889-8989', 21,  3, 1998, 'Goiânia',             'GO', 'Brasil', NULL,           'brisa.machado@example.com',     'Bm!1998',  'Feminino', 'Aluno'),
+('Caio',     'Lins',          '(63) 90019-1910', 25, 12, 1998, 'Palmas',              'TO', 'Brasil', 'Apt 10',       'caio.lins@example.com',         'Cl@1998',  'Masculino','Aluno'),
+('Denise',   'Pinto',         '(64) 91191-9101',  9,  6, 1997, 'Uberaba',             'MG', 'Brasil', NULL,           'denise.pinto@example.com',      'Dp#1997',  'Feminino', 'Aluno'),
+('Eduarda',  'Farias',        '(65) 92292-0202',  4,  4, 2002, 'Aracaju',             'SE', 'Brasil', 'Casa 13',      'eduarda.farias@example.com',    'Ef!2002',  'Feminino', 'Aluno'),
+('Diego',     'Pereira',      '(41) 95678-9013', 30,  4, 1992, 'Curitiba',            'PR', 'Brasil', 'Bloco B',       'diego.pereira@exemplo.org',  'D!ego#432',    'Masculino','Aluno'),
+('Felipe',    'Ramos',        '(61) 97890-1235', 14,  2, 1989, 'Brasília',            'DF', 'Brasil', 'Apt 44',        'felipe.ramos@edu.br',        'Fr@123456',    'Masculino','Aluno'),
+('Gabriela',  'Fernandes',    '(71) 98901-2346', 28,  9, 1996, 'Salvador',            'BA', 'Brasil', NULL,            'gabi.fernandes@example.io',  'GfPwd!987',    'Feminino', 'Aluno'),
+('Iara',      'Cruz',         '(91) 91123-4568', 19,  7, 1997, 'Belém',               'PA', 'Brasil', NULL,            'iara.cruz@exemplo.net',      'IcPass!55',    'Feminino', 'Aluno'),
+('Karina',    'Martins',      '(13) 93345-6780', 16,  1, 1994, 'Santos',              'SP', 'Brasil', NULL,            'karina.martins@mail.com',    'KmPass@77',    'Feminino', 'Aluno'),
+('Mariana',   'Rocha',        '(15) 95567-8902', 25,  3, 1998, 'Bauru',               'SP', 'Brasil', NULL,            'mariana.rocha@ex.com',       'Mr@1998',      'Feminino', 'Aluno'),
+('Otávia',    'Cardoso',      '(17) 97789-0124', 21,  2, 1992, 'Piracicaba',          'SP', 'Brasil', NULL,            'otavia.cardoso@edu.org',     'Oc@Pa$$w0rd',  'Feminino', 'Aluno'),
+('Quitéria',  'Lima',         '(19) 99901-2346',  6,  4, 1996, 'Fortaleza',           'CE', 'Brasil', NULL,            'quiteria.lima@mail.org',     'Ql@2024',      'Feminino', 'Aluno'),
+('Tiago',     'Figueiredo',   '(24) 93234-5679', 13,  8, 1995, 'Florianópolis',       'SC', 'Brasil', 'Cobertura',     'tiago.fig@exemplo.com',      'Tf@2025!',     'Masculino','Aluno'),
+('Xênia',     'Braga',        '(28) 97678-9013', 27, 10, 1999, 'Belo Horizonte',      'MG', 'Brasil', 'Ap 505',        'xenia.braga@dom.io',         'Xb^1999',      'Feminino', 'Aluno'),
+('Yara',      'Falcão',       '(29) 98789-0124', 17,  5, 1994, 'Aracaju',             'SE', 'Brasil', NULL,            'yara.falcao@mail.org',       'Yf#94Sec',     'Feminino', 'Aluno'),
+('Zeca',      'Brito',        '(30) 99890-1235', 31,  1, 1986, 'Cuiabá',              'MT', 'Brasil', 'Casa 9',        'zeca.brito@exemplo.com',     'Zb$1986',      'Masculino','Aluno'),
+('Luana',     'Prudenciato',  '(33) 92012-3457', 10,  9, 1984, 'Paris',               NULL, 'França', 'Apt 102',       'luana.prudenciato@ex.fr',    'Lp#1984',      'Feminino', 'Aluno'),
+('Theo',      'Guimarães',    '(34) 93000-1122', 15, 12, 1993, 'Lima',                NULL, 'Peru',   NULL,            'theo.guimaraes@mail.pe',     'TgPwd!93',     'Masculino','Aluno'),
+('Béatrice',  'Dupont',       '(33) 92012-3457', 10,  9, 1984, 'Paris',               NULL, 'França', 'Apt 102',       'beatrice.dupont@ex.fr',      'Bd#1984',      'Feminino', 'Aluno'),
+('César',     'Aguilar',      '(34) 93123-4568', 15, 12, 1993, 'Lima',                NULL, 'Peru',   NULL,            'cesar.aguilar@mail.pe',      'CaPwd!93',     'Masculino','Aluno'),
 
+-- ---------- 30 PROFESSORES ----------
+('Alberto',  'Silveira',      '(66) 93330-3030',  5,  1, 1982, 'Campo Grande',        'MS', 'Brasil', 'Sala 12',      'alberto.silveira@example.com',  'As^1982',  'Masculino','Professor'),
+('Bianca',   'Teixeira',      '(67) 94441-4141', 17,  5, 1985, 'Dourados',            'MS', 'Brasil', 'Bloco G',      'bianca.teixeira@example.com',   'Bt!1985',  'Feminino', 'Professor'),
+('Cristiano','Lopes',         '(68) 95552-5252', 11, 11, 1983, 'Rio Branco',          'AC', 'Brasil', NULL,           'cristiano.lopes@example.com',   'Cl#1983',  'Masculino','Professor'),
+('Dora',     'Ferraz',        '(69) 96663-6363',  1,  7, 1979, 'Porto Velho',         'RO', 'Brasil', 'Apt 400',      'dora.ferraz@example.com',       'Df*1979',  'Feminino', 'Professor'),
+('Eduardo',  'Barros',        '(70) 97774-7474', 25,  9, 1980, 'Rio de Janeiro',      'RJ', 'Brasil', NULL,           'eduardo.barros@example.com',    'Eb@1980',  'Masculino','Professor'),
+('Fernanda', 'Assis',         '(71) 98885-8585', 22,  3, 1984, 'Salvador',            'BA', 'Brasil', 'Casa 14',      'fernanda.assis@example.com',    'Fa$1984',  'Feminino', 'Professor'),
+('Gabriel',  'Prado',         '(72) 90096-9696', 29,  2, 1986, 'Ilhéus',              'BA', 'Brasil', NULL,           'gabriel.prado@example.com',     'Gp_1986',  'Masculino','Professor'),
+('Helena',   'Soares',        '(73) 91107-0707', 14,  6, 1988, 'Itabuna',             'BA', 'Brasil', 'Bloco E',      'helena.soares@example.com',     'Hs!1988',  'Feminino', 'Professor'),
+('Igor',     'Castro',        '(74) 92218-1818', 18, 12, 1982, 'Juazeiro',            'BA', 'Brasil', NULL,           'igor.castro@example.com',       'Ic^1982',  'Masculino','Professor'),
+('Juliana',  'Barreto',       '(75) 93329-2929', 10,  8, 1981, 'Feira de Santana',    'BA', 'Brasil', 'Apt 23',       'juliana.barreto@example.com',   'Jb@1981',  'Feminino', 'Professor'),
+('Kleber',   'Amaral',        '(76) 94430-3031',  3,  3, 1987, 'Imperatriz',          'MA', 'Brasil', NULL,           'kleber.amaral@example.com',     'Ka*1987',  'Masculino','Professor'),
+('Larissa',  'Macedo',        '(77) 95541-4142', 27,  4, 1984, 'Vitória da Conquista','BA', 'Brasil', 'Sala 5',       'larissa.macedo@example.com',    'Lm#1984',  'Feminino', 'Professor'),
+('Maurício', 'Rezende',       '(78) 96652-5253',  6,  9, 1983, 'Belo Horizonte',      'MG', 'Brasil', NULL,           'mauricio.rezende@example.com',  'Mr@1983',  'Masculino','Professor'),
+('Nádia',    'Ribeiro',       '(79) 97763-6364',  9,  5, 1985, 'Aracaju',             'SE', 'Brasil', 'Apt 7',        'nadia.ribeiro@example.com',     'Nr!1985',  'Feminino', 'Professor'),
+('Otávio',   'Godoy',         '(80) 98874-7475', 12, 11, 1980, 'Curitiba',            'PR', 'Brasil', NULL,           'otavio.godoy@example.com',      'Og^1980',  'Masculino','Professor'),
+('Priscila', 'Fidalgo',       '(81) 90085-8586', 16,  2, 1982, 'Recife',              'PE', 'Brasil', 'Bloco R',      'priscila.fidalgo@example.com',  'Pf@1982',  'Feminino', 'Professor'),
+('Rogério',  'Batista',       '(82) 91196-9697', 20, 10, 1983, 'Maceió',              'AL', 'Brasil', NULL,           'rogerio.batista@example.com',   'Rb@1983',  'Masculino','Professor'),
+('Sílvia',   'Pimentel',      '(83) 92217-0708',  4, 12, 1978, 'João Pessoa',         'PB', 'Brasil', 'Casa 18',      'silvia.pimentel@example.com',   'Sp$1978',  'Feminino', 'Professor'),
+('Tadeu',    'Guedes',        '(84) 93328-1819', 27,  1, 1986, 'Natal',               'RN', 'Brasil', NULL,           'tadeu.guedes@example.com',      'Tg*1986',  'Masculino','Professor'),
+('Ursula',   'Rezende',       '(85) 94439-2920', 23,  6, 1981, 'Fortaleza',           'CE', 'Brasil', 'Apt 15',       'ursula.rezende@example.com',    'Ur_1981',  'Feminino', 'Professor'),
+('Valter',   'Carvalho',      '(86) 95540-3032',  5,  4, 1979, 'Teresina',            'PI', 'Brasil', NULL,           'valter.carvalho@example.com',   'Vc^1979',  'Masculino','Professor'),
+('Waleska',  'Braga',         '(87) 96651-4143', 30,  8, 1987, 'Petrolina',           'PE', 'Brasil', 'Bloco P',      'waleska.braga@example.com',    'Wb@1987',  'Feminino', 'Professor'),
+('Xavier',   'Fonseca',       '(88) 97762-5254',  8,  9, 1980, 'Crato',               'CE', 'Brasil', NULL,           'xavier.fonseca@example.com',    'Xf_1980',  'Masculino','Professor'),
+('Yasmin',   'Duarte',        '(89) 98873-6365', 21,  2, 1984, 'Palmas',              'TO', 'Brasil', 'Casa 19',      'yasmin.duarte@example.com',     'Yd!1984',  'Feminino', 'Professor'),
+('Zélio',    'Santiago',      '(90) 90084-7476', 14, 11, 1982, 'Belém',               'PA', 'Brasil', NULL,           'zelio.santiago@example.com',    'Zs*1982',  'Masculino','Professor'),
+('Aline',    'Vasques',       '(91) 91195-8587', 18,  3, 1983, 'Manaus',              'AM', 'Brasil', NULL,           'aline.vasques@example.com',     'Av@1983',  'Feminino', 'Professor'),
+('Bruno',    'Henrique',      '(92) 92206-9698', 26,  5, 1981, 'Manaus',              'AM', 'Brasil', 'Apt 19',      'bruno.henrique@example.com',   'Bh#1981',  'Masculino','Professor'),
+('Cláudia',  'Alencar',       '(93) 93317-0709', 13,  8, 1985, 'Santarém',            'PA', 'Brasil', NULL,           'claudia.alencar@example.com',   'Ca$1985',  'Feminino', 'Professor'),
+('Davi',     'Serra',         '(94) 94428-1821', 17,  9, 1984, 'Marabá',              'PA', 'Brasil', 'Sala 2',       'davi.serra@example.com',        'Ds^1984',  'Masculino','Professor'),
+('Emanuela', 'Cardoso',       '(95) 95539-2922',  6, 12, 1980, 'Boa Vista',           'RR', 'Brasil', NULL,           'emanuela.cardoso@example.com',  'Ec@1980',  'Feminino', 'Professor'),
+('Ana',       'Silva',        '(11) 91234-5678', 12,  6, 1995, 'São Paulo',      'SP', 'Brasil', 'Apt 12',        'ana.silva@example.com',      'S3gura@123',   'Feminino', 'Professor'),
+('Bruno',     'Costa',        '(21) 93456-7891',  3,  1, 1993, 'Rio de Janeiro', 'RJ', 'Brasil', NULL,            'bruno.costa@example.com',    'Br#2025seg',   'Masculino','Professor'),
+('Carla',     'Oliveira',     '(31) 94567-8902', 23, 11, 1994, 'Belo Horizonte', 'MG', 'Brasil', 'Casa 1',        'carla.oliveira@dominio.com', 'C@rl@2024',    'Feminino', 'Professor'),
+('Nilo',      'Azevedo',      '(16) 96678-9013',  1,  6, 1991, 'Ribeirão Preto', 'SP', 'Brasil', 'Casa 5',        'nilo.azevedo@corp.co',       'Na*Seg1',      'Masculino','Professor'),
+('Rodrigo',   'Bastos',       '(22) 91012-3457', 18,  9, 1989, 'Niterói',        'RJ', 'Brasil', 'Sala B-3',      'rodrigo.bastos@ex.com',      'Rb#1989',      'Masculino','Professor'),
+('Ulisses',   'Teixeira',     '(25) 94345-6780',  4,  3, 1986, 'Brasília',       'DF', 'Brasil', NULL,            'ulisses.teix@corp.com',      'Ut_pass86',    'Masculino','Professor'),
+('Pedro',     'Monteiro',     '(32) 90000-1234', 26,  6, 1992, 'Vitória',        'ES', 'Brasil', NULL,            'pedro.monteiro@corp.com',    'Pm@2025',      'Masculino','Professor'),
+('Álvaro',    'Tavares',      '(32) 90901-2346', 26,  6, 1992, 'Vitória',        'ES', 'Brasil', NULL,            'alvaro.tavares@corp.com',    'At!2025',      'Masculino','Professor'),
 
-('Álvaro',    'Tavares',        '(32) 90901-2346', 26,  6, 1992, 'Vitória',       'ES', 'Brasil', NULL,           'alvaro.tavares@corp.com',    'At!2025',           'Masculino',   'Professor'),
-('Béatrice',  'Dupont',         '(33) 92012-3457', 10,  9, 1984, 'Paris',         NULL, 'França', 'Apt 102',      'beatrice.dupont@ex.fr',      'Bd#1984',           'Feminino',    NULL),
-('César',     'Aguilar',        '(34) 93123-4568', 15, 12, 1993, 'Lima',          NULL, 'Peru',   NULL,           'cesar.aguilar@mail.pe',      'CaPwd!93',          'Masculino',   'Aluno'),
-('Dália',     'Kovács',         '(35) 94234-5679', 24,  4, 1991, NULL,            NULL, NULL,     'Bloco D',      'dalia.kovacs@ex.hu',         'Dk_1991$',          'Feminino',    'Administrador');
+-- ---------- 30 ADMINISTRADORES ----------
+('Adriano',  'Abreu',         '(96) 90010-1001',  1,  1, 1980, 'Macapá',              'AP', 'Brasil', NULL,           'adriano.abreu@example.com',     'Aa#1980',  'Masculino','Administrador'),
+('Beatriz',  'Garrido',       '(97) 91121-2102', 12,  6, 1982, 'Manaus',              'AM', 'Brasil', 'Bloco G',      'beatriz.garrido@example.com',   'Bg@1982',  'Feminino', 'Administrador'),
+('Carlos',   'Navarro',       '(98) 92232-3203', 23, 12, 1979, 'São Luís',            'MA', 'Brasil', 'Casa 10',      'carlos.navarro@example.com',    'Cn_1979',  'Masculino','Administrador'),
+('Daniele',  'Pereira',       '(99) 93343-4304',  8,  5, 1986, 'Imperatriz',          'MA', 'Brasil', NULL,           'daniele.pereira@example.com',   'Dp$1986',  'Feminino', 'Administrador'),
+('Edgar',    'Macedo',        '(20) 94454-5405', 14,  9, 1981, 'Niterói',             'RJ', 'Brasil', 'Apt 14',      'edgar.macedo@example.com',      'Em*1981',  'Masculino','Administrador'),
+('Flávia',   'Soares',        '(30) 95565-6506', 25,  3, 1983, 'Cuiabá',              'MT', 'Brasil', NULL,           'flavia.soares@example.com',     'Fs!1983',  'Feminino', 'Administrador'),
+('Gustavo',  'Pacheco',       '(31) 96676-7607', 11,  7, 1980, 'Belo Horizonte',      'MG', 'Brasil', 'Casa 5',       'gustavo.pacheco@example.com',   'Gp#1980',  'Masculino','Administrador'),
+('Helena',   'Ramos',         '(32) 97787-8708', 19, 11, 1981, 'Juiz de Fora',        'MG', 'Brasil', NULL,           'helena.ramos@example.com',      'Hr_1981',  'Feminino', 'Administrador'),
+('Israel',   'Queiroz',       '(33) 98898-9809',  3,  2, 1986, 'Vitória',             'ES', 'Brasil', 'Bloco Q',      'israel.queiroz@example.com',    'Iq@1986',  'Masculino','Administrador'),
+('Júlia',    'Nogueira',      '(34) 90009-0910',  6, 12, 1982, 'Uberlândia',          'MG', 'Brasil', NULL,           'julia.nogueira@example.com',    'Jn*1982',  'Feminino', 'Administrador'),
+('Kaio',     'Ferreira',      '(35) 91110-1011', 13, 10, 1979, 'Poços de Caldas',     'MG', 'Brasil', 'Apt 2',        'kaio.ferreira@example.com',     'Kf#1979',  'Masculino','Administrador'),
+('Larissa',  'Guimarães',     '(36) 92221-1112', 28,  8, 1984, 'Ponta Grossa',        'PR', 'Brasil', 'Casa 11',      'larissa.guimaraes@example.com', 'Lg^1984',  'Feminino', 'Administrador'),
+('Marcelo',  'Oliveira',      '(37) 93332-1213', 20,  5, 1985, 'Campo Grande',        'MS', 'Brasil', NULL,           'marcelo.oliveira@example.com',  'Mo@1985',  'Masculino','Administrador'),
+('Natália',  'Tavares',       '(38) 94443-1314',  9,  4, 1980, 'Montes Claros',       'MG', 'Brasil', 'Apt 7',        'natalia.tavares@example.com',   'Nt!1980',  'Feminino', 'Administrador'),
+('Orlando',  'Dias',          '(39) 95554-1415', 15,  6, 1982, 'Porto Velho',         'RO', 'Brasil', NULL,           'orlando.dias@example.com',      'Od*1982',  'Masculino','Administrador'),
+('Patrícia', 'Castro',        '(40) 96665-1516', 24,  9, 1981, 'Londrina',            'PR', 'Brasil', 'Casa 3',       'patricia.castro@example.com',   'Pc$1981',  'Feminino', 'Administrador'),
+('Quirino',  'Almeida',       '(41) 97776-1617', 27,  2, 1985, 'Joinville',           'SC', 'Brasil', NULL,           'quirino.almeida@example.com',   'Qa@1985',  'Masculino','Administrador'),
+('Renata',   'Dorneles',      '(42) 98887-1718', 10,  1, 1986, 'Pato Branco',         'PR', 'Brasil', 'Bloco A',      'renata.dorneles@example.com',   'Rd#1986',  'Feminino', 'Administrador'),
+('Samuel',   'Franca',        '(43) 90098-1819',  5,  3, 1983, 'Lages',               'SC', 'Brasil', NULL,           'samuel.franca@example.com',     'Sf$1983',  'Masculino','Administrador'),
+('Tatiana',  'Gouveia',       '(44) 91109-1920', 13, 11, 1984, 'Cascavel',            'PR', 'Brasil', 'Apt 9',        'tatiana.gouveia@example.com',   'Tg_1984',  'Feminino', 'Administrador'),
+('Ulisses',  'Matos',         '(45) 92220-2021', 22, 10, 1981, 'Foz do Iguaçu',       'PR', 'Brasil', NULL,           'ulisses.matos@example.com',     'Um@1981',  'Masculino','Administrador'),
+('Vera',     'Rezende',       '(46) 93331-2122',  9,  5, 1980, 'Chapecó',             'SC', 'Brasil', 'Casa 6',       'vera.rezende@example.com',      'Vr!1980',  'Feminino', 'Administrador'),
+('Walter',   'Campos',        '(47) 94442-2223', 29, 12, 1982, 'Blumenau',            'SC', 'Brasil', NULL,           'walter.campos@example.com',     'Wc#1982',  'Masculino','Administrador'),
+('Ximena',   'Silva',         '(48) 95553-2324',  7,  7, 1985, 'Itajaí',              'SC', 'Brasil', NULL,           'ximena.silva@example.com',      'Xs^1985',  'Feminino', 'Administrador'),
+('Ygor',     'Lacerda',       '(49) 96664-2425', 16,  8, 1981, 'Palmas',              'TO', 'Brasil', 'Bloco F',      'ygor.lacerda@example.com',      'Yl*1981',  'Masculino','Administrador'),
+('Zenaide',  'Pires',         '(50) 97775-2526', 21,  6, 1983, 'Macapá',              'AP', 'Brasil', NULL,           'zenaide.pires@example.com',     'Zp_1983',  'Feminino', 'Administrador'),
+('André',    'Borges',        '(51) 98886-2627', 18,  9, 1982, 'Porto Alegre',        'RS', 'Brasil', 'Apt 22',      'andre.borges@example.com',      'Ab@1982',  'Masculino','Administrador'),
+('Brígida',  'Santos',        '(52) 90097-2728', 12,  1, 1984, 'Pelotas',             'RS', 'Brasil', NULL,           'brigida.santos@example.com',    'Bs#1984',  'Feminino', 'Administrador'),
+('Celso',    'Vieira',        '(53) 91108-2829', 28,  4, 1980, 'Rio Grande',          'RS', 'Brasil', 'Casa 12',      'celso.vieira@example.com',      'Cv$1980',  'Masculino','Administrador'),
+('Dalva',    'Moreira',       '(54) 92219-2930', 14,  2, 1983, 'Caxias',              'MA', 'Brasil', NULL,           'dalva.moreira@example.com',     'Dm!1983',  'Feminino', 'Administrador'),
+('Eliane',    'Santos',       '(51) 96789-0124',  7,  8, 1990, 'Porto Alegre',   'RS', 'Brasil', NULL,            'eliane.santos@mail.com',     'SenhaSegura1', 'Feminino', 'Administrador'),
+('Henrique',  'Gomes',        '(81) 90012-3457',  2, 12, 1988, 'Recife',         'PE', 'Brasil', 'Sala Térrea',   'henrique.gomes@empresa.com', 'Hg_2025$',     'Masculino','Administrador'),
+('João',      'Souza',        '(12) 92234-5679',  5,  5, 1993, 'Taubaté',        'SP', 'Brasil', 'Casa 2',        'joao.souza@example.com',     'Js#2025seg',   'Masculino','Administrador'),
+('Luís',      'Mendes',       '(14) 94456-7891',  9, 10, 1985, 'São Carlos',     'SP', 'Brasil', 'Ap 302',        'luis.mendes@dominio.com',    'Lm!85Seg',     'Masculino','Administrador'),
+('Paulo',     'Albuquerque',  '(18) 98890-1235', 11, 11, 1987, 'Recife',         'PE', 'Brasil', 'Apt 1101',      'paulo.albuq@ex.net',         'Pa$$87',       'Masculino','Administrador'),
+('Sabrina',   'Barros',       '(23) 92123-4568', 29, 12, 1997, 'Uberlândia',     'MG', 'Brasil', NULL,            'sabrina.barros@dom.com',     'SbPwd!24',     'Feminino', 'Administrador'),
+('Valéria',   'Duarte',       '(26) 95456-7891', 22,  7, 1990, 'Palmas',         'TO', 'Brasil', 'Casa 7',        'valeria.duarte@mail.com',    'VdSeg#90',     'Feminino', 'Administrador'),
+('Wagner',    'Pacheco',      '(27) 96567-8902',  8,  2, 1988, 'Maceió',         'AL', 'Brasil', NULL,            'wagner.pacheco@ex.net',      'Wp2025*',      'Masculino','Administrador'),
+('Eduardo',   'Camargo',      '(35) 94000-5678', 24,  4, 1991, 'Campinas',       'SP', 'Brasil', 'Bloco D',       'eduardo.camargo@ex.hu',      'Ec_1991$',     'Masculino','Administrador'),
+('Dália',     'Kovács',       '(35) 94234-5679', 24,  4, 1991, 'Budapeste',      NULL, 'Hungria','Bloco D',       'dalia.kovacs@ex.hu',         'Dk_1991$',     'Feminino','Administrador');
+
 
 /* ------------------------------------------------------
    Tabela 2 – Unidade  (30 linhas)
@@ -61,24 +155,24 @@ VALUES
 (9,  'Manaus',          'AM', 'Brasil'),
 (10, 'Campinas',        'SP', 'Brasil'),
 (11, 'Florianópolis',   'SC', 'Brasil'),
-(12, NULL,              'GO', 'Brasil'),   -- cidade nula
+(12, NULL,              'GO', 'Brasil'),   
 (13, 'Vitória',         'ES', 'Brasil'),
 (14, 'Fortaleza',       'CE', 'Brasil'),
 (15, 'Belém',           'PA', 'Brasil'),
 (16, 'Natal',           'RN', 'Brasil'),
 (17, 'João Pessoa',     'PB', 'Brasil'),
-(18, NULL,              'AL', 'Brasil'),   -- cidade nula
+(18, NULL,              'AL', 'Brasil'),   
 (19, 'Teresina',        'PI', 'Brasil'),
 (20, 'Campo Grande',    'MS', 'Brasil'),
 (21, 'Cuiabá',          'MT', 'Brasil'),
 (22, 'Aracaju',         'SE', 'Brasil'),
 (23, 'Londrina',        'PR', 'Brasil'),
 (24, 'Santos',          'SP', 'Brasil'),
-(25, 'Sorocaba',        NULL, 'Brasil'),   -- estado nulo
+(25, 'Sorocaba',        NULL, 'Brasil'),   
 (26, 'Ribeirão Preto',  'SP', 'Brasil'),
 (27, 'Uberlândia',      'MG', 'Brasil'),
 (28, 'Pelotas',         'RS', 'Brasil'),
-(29, 'Blumenau',        'SC', NULL),       -- país nulo
+(29, 'Blumenau',        'SC', NULL),       
 (30, 'Joinville',       'SC', 'Brasil');
 
 /* ------------------------------------------------------
@@ -119,89 +213,110 @@ VALUES
 (30, 3);
 
 /* ------------------------------------------------------
-   Tabela 4 – Aluno  (30 linhas)
+   Tabela 4 – Aluno
 ------------------------------------------------------ */
 INSERT INTO Aluno
     (nome, sobrenome, telefone, id_unidade)
 VALUES
-('Ana',       'Silva',          '(11) 91234-5678',  1),
-('Bruno',     'Costa',          '(21) 93456-7891',  2),
-('Carla',     'Oliveira',       '(31) 94567-8902',  3),
-('Diego',     'Pereira',        '(41) 95678-9013',  4),
-('Eliane',    'Santos',         '(51) 96789-0124',  5),
-('Felipe',    'Ramos',          '(61) 97890-1235',  6),
-('Gabriela',  'Fernandes',      '(71) 98901-2346',  7),
-('Henrique',  'Gomes',          '(81) 90012-3457',  8),
-('Iara',      'Cruz',           '(91) 91123-4568', 15),
-('João',      'Souza',          '(12) 92234-5679', 10),
-('Karina',    'Martins',        '(13) 93345-6780', 24),
-('Luís',      'Mendes',         '(14) 94456-7891', 26),
-('Mariana',   'Rocha',          '(15) 95567-8902', 11),
-('Nilo',      'Azevedo',        '(16) 96678-9013', 13),
-('Otávia',    'Cardoso',        '(17) 97789-0124', 14),
-('Paulo',     'Albuquerque',    '(18) 98890-1235',  8),
-('Quitéria',  'Lima',           '(19) 99901-2346', 12),
-('Rodrigo',   'Bastos',         '(22) 91012-3457', 22),
-('Sabrina',   'Barros',         '(23) 92123-4568', 27),
-('Tiago',     'Figueiredo',     '(24) 93234-5679', 18),
-('Ulisses',   'Teixeira',       '(25) 94345-6780', 21),
-('Valéria',   'Duarte',         '(26) 95456-7891', 19),
-('Wagner',    'Pacheco',        '(27) 96567-8902', 20),
-('Xênia',     'Braga',          '(28) 97678-9013', 25),
-('Yara',      'Falcão',         '(29) 98789-0124', 29),
-('Zeca',      'Brito',          '(30) 99890-1235', 23),
-('Pedro',    'Monteiro',        '(32) 90901-2346', 28),
-('Luana',  'Prudenciato',         '(33) 92012-3457', 30),
-('Theo',     'Guimaraes',        '(34) 93123-4568', 16),
-('Eduardo',     'Camargo',         '(35) 94234-5679', 17),
+('Ana',       'Silva',       '(11) 91234-5678',  1),  
+('Diego',     'Pereira',     '(41) 95678-9013',  4),   
+('Felipe',    'Ramos',       '(61) 97890-1235',  6),   
+('Gabriela',  'Fernandes',   '(71) 98901-2346',  7),   
+('Iara',      'Cruz',        '(91) 91123-4568', 15),   
+('Karina',    'Martins',     '(13) 93345-6780', 24),   
+('Mariana',   'Rocha',       '(15) 95567-8902', 11),   
+('Quitéria',  'Lima',        '(19) 99901-2346', 12),   
+('César',     'Aguilar',     '(34) 93123-4568', 16),   
+('Theo',      'Guimarães',   '(34) 93000-1122', 16),
+('Heitor',   'Batista',   '(43) 97788-8888', 19),
+('João',     'Peixoto',   '(45) 90110-1010',  3),
+('Denise',   'Pinto',     '(64) 91191-9101', 27),
+('Victor',   'Galvão',    '(56) 92229-2929', 16),
+('Camila',   'Albuquerque','(38) 92233-3333', 25),
+('Kelly',    'Reis',      '(46) 91221-2121', 13),
+('Sara',     'Meireles',  '(53) 98998-9898', 30),
+('Leonardo', 'Pires',     '(47) 92332-3232',  7),
+('Zélia',    'Sales',     '(60) 96669-6969', 10),
+('Caio',     'Lins',      '(63) 90019-1910', 23),
+('Giovana',  'Nunes',     '(42) 96677-7777', 17),
+('Fábio',    'Queiroz',   '(41) 95566-6666', 11),
+('Artur',    'Cavalcante','(61) 97779-7979', 28),
+('Wallace',  'Lacerda',   '(57) 93339-3939', 20),
+('Rafael',   'Barcellos', '(52) 97887-8787', 14),
+('Brisa',    'Machado',   '(62) 98889-8989',  4),
+('Daniel',   'Siqueira',  '(39) 93344-4444',  6),
+('Thiago',   'Damasceno', '(54) 90009-0909',  1),
+('Marina',   'Barbosa',   '(48) 93443-4343', 12),
+('Adriana',  'Mendonça',  '(36) 90011-1111', 26),
+('Elisa',    'Moura',     '(40) 94455-5555',  5),
+('Yuri',     'Campos',    '(59) 95559-5959', 22),
+('Isabela',  'Correia',   '(44) 98899-9999', 24),
+('Natália',  'Araújo',    '(49) 94554-5454', 18),
+('Omar',     'Rodrigues', '(50) 95665-6565',  9),
+('Patrícia', 'Freitas',   '(51) 96776-7676', 21),
+('Xuxa',     'Costa',     '(58) 94449-4949',  2),
+('Eduarda',  'Farias',    '(65) 92292-0202', 29),
+('Úrsula',   'Valente',   '(55) 91119-1919',  8),
+('Bernardo', 'Vieira', '(37) 91122-2222',  6),
+('Otávia',   'Cardoso', '(17) 97789-0124', 15),
+('Tiago',    'Figueiredo', '(24) 93234-5679', 12),
+('Xênia',    'Braga', '(28) 97678-9013', 19),
+('Yara',     'Falcão', '(29) 98789-0124', 17),
+('Zeca',     'Brito', '(30) 99890-1235', 23),
+('Luana',    'Prudenciato', '(33) 92012-3457', 13),
+('Béatrice', 'Dupont', '(33) 92012-3457', 26);
 
-('Álvaro',    'Tavares',        '(32) 90901-2346', 28),
-('Béatrice',  'Dupont',         '(33) 92012-3457', 30),
-('César',     'Aguilar',        '(34) 93123-4568', 16),
-('Dália',     'Kovács',         '(35) 94234-5679', 17);
 
 /* ------------------------------------------------------
-   Tabela 5 – Administrador  (30 linhas)
-   (referencia Usuario)
+   Tabela 5 – Administrador  
 ------------------------------------------------------ */
 INSERT INTO Administrador
     (nome, sobrenome, telefone)
 VALUES
-('Ana',       'Silva',          '(11) 91234-5678'),
-('Bruno',     'Costa',          '(21) 93456-7891'),
-('Carla',     'Oliveira',       '(31) 94567-8902'),
-('Diego',     'Pereira',        '(41) 95678-9013'),
-('Eliane',    'Santos',         '(51) 96789-0124'),
-('Felipe',    'Ramos',          '(61) 97890-1235'),
-('Gabriela',  'Fernandes',      '(71) 98901-2346'),
-('Henrique',  'Gomes',          '(81) 90012-3457'),
-('Iara',      'Cruz',           '(91) 91123-4568'),
-('João',      'Souza',          '(12) 92234-5679'),
-('Karina',    'Martins',        '(13) 93345-6780'),
-('Luís',      'Mendes',         '(14) 94456-7891'),
-('Mariana',   'Rocha',          '(15) 95567-8902'),
-('Nilo',      'Azevedo',        '(16) 96678-9013'),
-('Otávia',    'Cardoso',        '(17) 97789-0124'),
-('Paulo',     'Albuquerque',    '(18) 98890-1235'),
-('Quitéria',  'Lima',           '(19) 99901-2346'),
-('Rodrigo',   'Bastos',         '(22) 91012-3457'),
-('Sabrina',   'Barros',         '(23) 92123-4568'),
-('Tiago',     'Figueiredo',     '(24) 93234-5679'),
-('Ulisses',   'Teixeira',       '(25) 94345-6780'),
-('Valéria',   'Duarte',         '(26) 95456-7891'),
-('Wagner',    'Pacheco',        '(27) 96567-8902'),
-('Xênia',     'Braga',          '(28) 97678-9013'),
-('Yara',      'Falcão',         '(29) 98789-0124'),
-('Zeca',      'Brito',          '(30) 99890-1235'),
-('Álvaro',    'Tavares',        '(32) 90901-2346'),
-('Béatrice',  'Dupont',         '(33) 92012-3457'),
-('César',     'Aguilar',        '(34) 93123-4568'),
-('Dália',     'Kovács',         '(35) 94234-5679');
+('Eliane',    'Santos',      '(51) 96789-0124'),   
+('João',      'Souza',       '(12) 92234-5679'),   
+('Paulo',     'Albuquerque', '(18) 98890-1235'),   
+('Dália',     'Kovács',      '(35) 94234-5679'),   
+('Eduardo',   'Camargo',     '(35) 94000-5678'),   
+('Henrique',  'Gomes',       '(81) 90012-3457'),   
+('Luís',      'Mendes',      '(14) 94456-7891'),   
+('Sabrina',   'Barros',      '(23) 92123-4568'),   
+('Valéria',   'Duarte',      '(26) 95456-7891'),
+('Wagner',    'Pacheco',     '(27) 96567-8902'),
+('Adriano',  'Abreu',         '(96) 90010-1001'),
+('Beatriz',  'Garrido',       '(97) 91121-2102'),
+('Carlos',   'Navarro',       '(98) 92232-3203'),
+('Daniele',  'Pereira',       '(99) 93343-4304'),
+('Edgar',    'Macedo',        '(20) 94454-5405'),
+('Flávia',   'Soares',        '(30) 95565-6506'),
+('Gustavo',  'Pacheco',       '(31) 96676-7607'),
+('Helena',   'Ramos',         '(32) 97787-8708'),
+('Israel',   'Queiroz',       '(33) 98898-9809'),
+('Júlia',    'Nogueira',      '(34) 90009-0910'),
+('Kaio',     'Ferreira',      '(35) 91110-1011'),
+('Larissa',  'Guimarães',     '(36) 92221-1112'),
+('Marcelo',  'Oliveira',      '(37) 93332-1213'),
+('Natália',  'Tavares',       '(38) 94443-1314'),
+('Orlando',  'Dias',          '(39) 95554-1415'),
+('Patrícia', 'Castro',        '(40) 96665-1516'),
+('Quirino',  'Almeida',       '(41) 97776-1617'),
+('Renata',   'Dorneles',      '(42) 98887-1718'),
+('Samuel',   'Franca',        '(43) 90098-1819'),
+('Tatiana',  'Gouveia',       '(44) 91109-1920'),
+('Ulisses',  'Matos',         '(45) 92220-2021'),
+('Vera',     'Rezende',       '(46) 93331-2122'),
+('Walter',   'Campos',        '(47) 94442-2223'),
+('Ximena',   'Silva',         '(48) 95553-2324'),
+('Ygor',     'Lacerda',       '(49) 96664-2425'),
+('Zenaide',  'Pires',         '(50) 97775-2526'),
+('André',    'Borges',        '(51) 98886-2627'),
+('Brígida',  'Santos',        '(52) 90097-2728'),
+('Celso',    'Vieira',        '(53) 91108-2829'),
+('Dalva',    'Moreira',       '(54) 92219-2930');
 
 
 /* ------------------------------------------------------
    Tabela 6 – Sala  (30 linhas)
-   (id_unidade e bloco_sala compatíveis com Blocos_Unidade)
 ------------------------------------------------------ */
 INSERT INTO Sala
     (num_sala, max_alunos, bloco_sala, id_unidade)
@@ -238,43 +353,55 @@ VALUES
 (1030, 30, 3, 30);
 
 /* ------------------------------------------------------
-   Tabela 7 – Professor  (30 linhas)
+   Tabela 7 – Professor  
 ------------------------------------------------------ */
 INSERT INTO Professor
     (nome, sobrenome, telefone,
      area_especializacao, titulacao,
      num_sala, codigo_dept)
 VALUES
-('Ana',       'Silva',          '(11) 91234-5678',  'Bioquímica',          'Doutora',     1001,  1),
-('Bruno',     'Costa',          '(21) 93456-7891',  'Redes',               'Mestre',      1002,  1),
-('Carla',     'Oliveira',       '(31) 94567-8902',  'Literatura',          NULL,          1003,  1),
-('Diego',     'Pereira',        '(41) 95678-9013',  NULL,                  'Especialista',1004,  1),
-('Eliane',    'Santos',         '(51) 96789-0124',  'Eng. Produção',       'Doutora',     1005,  1),
-('Felipe',    'Ramos',          '(61) 97890-1235',  'História',            'Mestre',      1006,  1),
-('Gabriela',  'Fernandes',      '(71) 98901-2346',  'Psicologia',          NULL,          1007,  1),
-('Henrique',  'Gomes',          '(81) 90012-3457',  'Direito',             'Doutor',      1008,  8),
-('Iara',      'Cruz',           '(91) 91123-4568',  NULL,                  NULL,          1009,  9),
-('João',      'Souza',          '(12) 92234-5679',  'Matemática',          'Especialista',1010, 10),
-('Karina',    'Martins',        '(13) 93345-6780',  'Marketing',           'Mestre',      1011, 11),
-('Luís',      'Mendes',         '(14) 94456-7891',  'Física',              'Doutor',      1012, 12),
-('Mariana',   'Rocha',          '(15) 95567-8902',  NULL,                  'Mestre',      1013, 13),
-('Nilo',      'Azevedo',        '(16) 96678-9013',  'Computação',          'Doutor',      1014, 14),
-('Otávia',    'Cardoso',        '(17) 97789-0124',  'Enfermagem',          NULL,          1015, 15),
-('Paulo',     'Albuquerque',    '(18) 98890-1235',  'Economia',            'Mestre',      1016, 16),
-('Quitéria',  'Lima',           '(19) 99901-2346',  'Artes Visuais',       'Especialista',1017, 17),
-('Rodrigo',   'Bastos',         '(22) 91012-3457',  NULL,                  'Doutor',      1018, 18),
-('Sabrina',   'Barros',         '(23) 92123-4568',  'Química',             NULL,          1019, 19),
-('Tiago',     'Figueiredo',     '(24) 93234-5679',  'Eng. Civil',          'Mestre',      1020, 20),
-('Ulisses',   'Teixeira',       '(25) 94345-6780',  'Administração',       'Doutor',      1021, 21),
-('Valéria',   'Duarte',         '(26) 95456-7891',  NULL,                  NULL,          1022, 22),
-('Wagner',    'Pacheco',        '(27) 96567-8902',  'Geografia',           'Mestre',      1023, 23),
-('Xênia',     'Braga',          '(28) 97678-9013',  'Biologia',            'Doutora',     1024, 24),
-('Yara',      'Falcão',         '(29) 98789-0124',  NULL,                  'Especialista',1025, 25),
-('Zeca',      'Brito',          '(30) 99890-1235',  'Educação Física',     NULL,          1026, 26),
-('Álvaro',    'Tavares',        '(32) 90901-2346',  'Estatística',         'Doutor',      1027, 27),
-('Béatrice',  'Dupont',         '(33) 92012-3457',  'Francês',             'Mestre',      1028, 28),
-('César',     'Aguilar',        '(34) 93123-4568',  NULL,                  'Doutor',      1029, 29),
-('Dália',     'Kovács',         '(35) 94234-5679',  'Filosofia',           NULL,          1030, 30);
+('Bruno',     'Costa',    '(21) 93456-7891', 'Redes',                  'Mestre',        1002,  2),  
+('Nilo',      'Azevedo',  '(16) 96678-9013', 'Computação',             'Doutor',        1014, 14),  
+('Rodrigo',   'Bastos',   '(22) 91012-3457', 'Eng. Elétrica',          'Doutor',        1018, 18),  
+('Álvaro',    'Tavares',  '(32) 90901-2346', 'Economia',               'Mestre',        1027, 27),  
+('Ana',       'Silva',    '(11) 91234-5678', 'Bioquímica',             'Doutora',       1001,  1),  
+('Carla',     'Oliveira', '(31) 94567-8902', 'Literatura',             'Especialista',  1003,  3),  
+('Eliane',    'Santos',   '(51) 96789-0124', 'Eng. Produção',          'Doutora',       1005,  5),  
+('Henrique',  'Gomes',    '(81) 90012-3457', 'Direito',                'Doutor',        1008,  8),  
+('Iara',      'Cruz',     '(91) 91123-4568', 'Psicologia',             NULL,            1009,  9),  
+('Quitéria',  'Lima',     '(19) 99901-2346', 'Artes Visuais',          'Especialista',  1017, 17),
+('Alberto',   'Silveira', '(66) 93330-3030', 'Matemática',             'Mestre',        1010, 31),
+('Bianca',    'Teixeira', '(67) 94441-4141', 'Física',                 'Doutora',       1011, 32),
+('Cristiano', 'Lopes',    '(68) 95552-5252', 'Química',                'Doutor',        1012, 33),
+('Dora',      'Ferraz',   '(69) 96663-6363', 'Biologia',               'Mestre',        1013, 34),
+('Fernanda',  'Assis',    '(71) 98885-8585', 'Letras',                 'Mestre',        1016, 36),
+('Gabriel',   'Prado',    '(72) 90096-9696', 'História',               'Doutor',        1019, 37),
+('Helena',    'Soares',   '(73) 91107-0707', 'Ciência da Computação',  'Doutora',       1020, 38),
+('Igor',      'Castro',   '(74) 92218-1818', 'Economia',               'Mestre',        1021, 39),
+('Juliana',   'Barreto',  '(75) 93329-2929', 'Psicologia',             'Doutora',       1022, 40),
+('Kleber',    'Amaral',   '(76) 94430-3031', 'Engenharia Elétrica',    'Doutor',        1023, 41),
+('Larissa',   'Macedo',   '(77) 95541-4142', 'Geografia',              'Mestre',        1024, 42),
+('Maurício',  'Rezende',  '(78) 96652-5253', 'Filosofia',              'Doutor',        1025, 43),
+('Nádia',     'Ribeiro',  '(79) 97763-6364', 'Administração',          'Mestre',        1026, 44),
+('Otávio',    'Godoy',    '(80) 98874-7475', 'Engenharia Mecânica',    'Doutor',        1028, 45),
+('Priscila',  'Fidalgo',  '(81) 90085-8586', 'Direito',                'Doutora',       1029, 46),
+('Rogério',   'Batista',  '(82) 91196-9697', 'Sociologia',             'Mestre',        1030, 47),
+('Sílvia',    'Pimentel', '(83) 92217-0708', 'Enfermagem',             'Mestre',        1004, 48),
+('Tadeu',     'Guedes',   '(84) 93328-1819', 'Estatística',            'Doutor',        1006, 49),
+('Ursula',    'Rezende',  '(85) 94439-2920', 'Fisioterapia',           'Doutora',       1007, 50),
+('Valter',    'Carvalho', '(86) 95540-3032', 'Agronomia',              'Mestre',        1011, 51),
+('Waleska',   'Braga',    '(87) 96651-4143', 'Arquitetura',            'Doutora',       1013, 52),
+('Xavier',    'Fonseca',  '(88) 97762-5254', 'Artes Visuais',          'Doutor',        1015, 53),
+('Yasmin',    'Duarte',   '(89) 98873-6365', 'Medicina',               'Doutora',       1016, 54),
+('Zélio',     'Santiago', '(90) 90084-7476', 'Ciência de Dados',       'Mestre',        1018, 55),
+('Aline',     'Vasques',  '(91) 91195-8587', 'Gestão Pública',         'Mestre',        1023, 56),
+('Bruno',     'Henrique', '(92) 92206-9698', 'Engenharia de Produção', 'Doutor',        1026, 57),
+('Cláudia',   'Alencar',  '(93) 93317-0709', 'Pedagogia',              'Mestre',        1002, 58),
+('Davi',      'Serra',    '(94) 94428-1821', 'Música',                 'Doutor',        1004, 59),
+('Emanuela',  'Cardoso',  '(95) 95539-2922', 'Turismo',                'Mestre',        1006, 60),
+('Eduardo',  'Barros',   '(70) 97774-7474', 'Engenharia Civil',       'Doutor', 1015, 35),
+('Ulisses',  'Teixeira', '(25) 94345-6780', 'Administração',          'Mestre', 1012, 21),
+('Pedro',    'Monteiro', '(32) 90000-1234', 'Engenharia de Software', 'Mestre', 1024, 26);
 
 
 /* ------------------------------------------------------
@@ -284,76 +411,71 @@ INSERT INTO Avisos_gerais
     (id_aviso, texto,
      nome_adm, sobrenome_adm, telefone_adm)
 VALUES
-(1,  'Reunião pedagógica dia 30.',                    'Ana',      'Silva',          '(11) 91234-5678'),
-(2,  'Manutenção da rede amanhã às 08h.',             'Bruno',    'Costa',          '(21) 93456-7891'),
-(3,  NULL,                                            'Carla',    'Oliveira',       '(31) 94567-8902'),
-(4,  'Entrega de diários até sexta.',                 'Diego',    'Pereira',        '(41) 95678-9013'),
-(5,  'Vacinação contra gripe, bloco A.',              'Eliane',   'Santos',         '(51) 96789-0124'),
-(6,  NULL,                                            'Felipe',   'Ramos',          '(61) 97890-1235'),
-(7,  'Formatura – ensaio geral dia 12.',              'Gabriela', 'Fernandes',      '(71) 98901-2346'),
-(8,  'Sistema estará indisponível domingo.',          'Henrique', 'Gomes',          '(81) 90012-3457'),
-(9,  NULL,                                            'Iara',     'Cruz',           '(91) 91123-4568'),
-(10, 'Semana da Matemática no auditório principal.',  'João',     'Souza',          '(12) 92234-5679'),
-(11, 'Inscrições para monitoria abertas.',            'Karina',   'Martins',        '(13) 93345-6780'),
-(12, NULL,                                            'Luís',     'Mendes',         '(14) 94456-7891'),
-(13, 'Campanha do agasalho – doações no bloco C.',    'Mariana',  'Rocha',          '(15) 95567-8902'),
-(14, 'Treinamento de segurança dia 5.',               'Nilo',     'Azevedo',        '(16) 96678-9013'),
-(15, NULL,                                            'Otávia',   'Cardoso',        '(17) 97789-0124'),
-(16, 'Atualização do Moodle nesta noite.',            'Paulo',    'Albuquerque',    '(18) 98890-1235'),
-(17, 'Resultados de bolsas publicados.',              'Quitéria', 'Lima',           '(19) 99901-2346'),
-(18, NULL,                                            'Rodrigo',  'Bastos',         '(22) 91012-3457'),
-(19, 'Circuito de palestras começa dia 25.',          'Sabrina',  'Barros',         '(23) 92123-4568'),
-(20, 'Feira de estágios no ginásio.',                 'Tiago',    'Figueiredo',     '(24) 93234-5679'),
-(21, NULL,                                            'Ulisses',  'Teixeira',       '(25) 94345-6780'),
-(22, 'Oficina de primeiros socorros – vagas limitadas.','Valéria','Duarte',         '(26) 95456-7891'),
-(23, 'Nota de pesar: Prof. Almeida.',                 'Wagner',   'Pacheco',        '(27) 96567-8902'),
-(24, NULL,                                            'Xênia',    'Braga',          '(28) 97678-9013'),
-(25, 'Prova substitutiva dia 18.',                    'Yara',     'Falcão',         '(29) 98789-0124'),
-(26, 'Novo regulamento de bolsas disponível.',        'Zeca',     'Brito',          '(30) 99890-1235'),
-(27, NULL,                                            'Álvaro',   'Tavares',        '(32) 90901-2346'),
-(28, 'Evento cultural francês – participe!',          'Béatrice', 'Dupont',         '(33) 92012-3457'),
-(29, NULL,                                            'César',    'Aguilar',        '(34) 93123-4568'),
-(30, 'Biblioteca: horário especial de férias.',       'Dália',    'Kovács',         '(35) 94234-5679');
-
+( 1, 'Reunião pedagógica dia 30.',                       'Adriano',  'Abreu',       '(96) 90010-1001'),
+( 2, 'Manutenção da rede amanhã às 08h.',                'Beatriz',  'Garrido',     '(97) 91121-2102'),
+( 3,  NULL,                                              'Carlos',   'Navarro',     '(98) 92232-3203'),
+( 4, 'Entrega de diários até sexta.',                    'Daniele',  'Pereira',     '(99) 93343-4304'),
+( 5, 'Vacinação contra gripe, bloco A.',                 'Eliane',   'Santos',      '(51) 96789-0124'),
+( 6,  NULL,                                              'Edgar',    'Macedo',      '(20) 94454-5405'),
+( 7, 'Formatura – ensaio geral dia 12.',                 'Flávia',   'Soares',      '(30) 95565-6506'),
+( 8, 'Sistema estará indisponível domingo.',             'Henrique', 'Gomes',       '(81) 90012-3457'),
+( 9,  NULL,                                              'Gustavo',  'Pacheco',     '(31) 96676-7607'),
+(10, 'Semana da Matemática no auditório principal.',     'João',     'Souza',       '(12) 92234-5679'),
+(11, 'Inscrições para monitoria abertas.',               'Helena',   'Ramos',       '(32) 97787-8708'),
+(12,  NULL,                                              'Luís',     'Mendes',      '(14) 94456-7891'),
+(13, 'Campanha do agasalho – doações no bloco C.',       'Israel',   'Queiroz',     '(33) 98898-9809'),
+(14, 'Treinamento de segurança dia 5.',                  'Júlia',    'Nogueira',    '(34) 90009-0910'),
+(15,  NULL,                                              'Kaio',     'Ferreira',    '(35) 91110-1011'),
+(16, 'Atualização do Moodle nesta noite.',               'Paulo',    'Albuquerque', '(18) 98890-1235'),
+(17, 'Resultados de bolsas publicados.',                 'Larissa',  'Guimarães',   '(36) 92221-1112'),
+(18,  NULL,                                              'Marcelo',  'Oliveira',    '(37) 93332-1213'),
+(19, 'Circuito de palestras começa dia 25.',             'Sabrina',  'Barros',      '(23) 92123-4568'),
+(20, 'Feira de estágios no ginásio.',                    'Natália',  'Tavares',     '(38) 94443-1314'),
+(21,  NULL,                                              'Orlando',  'Dias',        '(39) 95554-1415'),
+(22, 'Oficina de primeiros socorros – vagas limitadas.', 'Valéria',  'Duarte',      '(26) 95456-7891'),
+(23, 'Nota de pesar: Prof. Almeida.',                    'Wagner',   'Pacheco',     '(27) 96567-8902'),
+(24,  NULL,                                              'Patrícia', 'Castro',      '(40) 96665-1516'),
+(25, 'Prova substitutiva dia 18.',                       'Quirino',  'Almeida',     '(41) 97776-1617'),
+(26, 'Novo regulamento de bolsas disponível.',           'Renata',   'Dorneles',    '(42) 98887-1718'),
+(27,  NULL,                                              'Samuel',   'Franca',      '(43) 90098-1819'),
+(28, 'Evento cultural francês – participe!',             'Tatiana',  'Gouveia',     '(44) 91109-1920'),
+(29,  NULL,                                              'Ulisses',  'Matos',       '(45) 92220-2021'),
+(30, 'Biblioteca: horário especial de férias.',          'Eduardo',  'Camargo',     '(35) 94000-5678');
 
 /* ------------------------------------------------------
    Tabela 9 – Departamento  (30 linhas)
-   (cada professor agora tem seu departamento correspondente)
 ------------------------------------------------------ */
 INSERT INTO Departamento
     (codigo, nome_dept, nome, sobrenome, telefone)
 VALUES
-(1,  'Ciências Biológicas',               'Ana',       'Silva',          '(11) 91234-5678'),
-(2,  'Tecnologia da Informação',          'Bruno',     'Costa',          '(21) 93456-7891'),
-(3,  'Letras',                            'Carla',     'Oliveira',       '(31) 94567-8902'),
-(4,  NULL,                                'Diego',     'Pereira',        '(41) 95678-9013'),
-(5,  'Engenharia de Produção',            'Eliane',    'Santos',         '(51) 96789-0124'),
-(6,  'História',                          'Felipe',    'Ramos',          '(61) 97890-1235'),
-(7,  NULL,                                'Gabriela',  'Fernandes',      '(71) 98901-2346'),
-(8,  'Direito',                           'Henrique',  'Gomes',          '(81) 90012-3457'),
-(9,  'Psicologia',                        'Iara',      'Cruz',           '(91) 91123-4568'),
-(10, 'Matemática',                        'João',      'Souza',          '(12) 92234-5679'),
-(11, NULL,                                'Karina',    'Martins',        '(13) 93345-6780'),
-(12, 'Física',                            'Luís',      'Mendes',         '(14) 94456-7891'),
-(13, 'Ciências Humanas',                  'Mariana',   'Rocha',          '(15) 95567-8902'),
-(14, 'Computação',                        'Nilo',      'Azevedo',        '(16) 96678-9013'),
-(15, NULL,                                'Otávia',    'Cardoso',        '(17) 97789-0124'),
-(16, 'Economia',                          'Paulo',     'Albuquerque',    '(18) 98890-1235'),
-(17, 'Artes',                             'Quitéria',  'Lima',           '(19) 99901-2346'),
-(18, 'Ciências Sociais',                  'Rodrigo',   'Bastos',         '(22) 91012-3457'),
-(19, NULL,                                'Sabrina',   'Barros',         '(23) 92123-4568'),
-(20, 'Engenharia Civil',                  'Tiago',     'Figueiredo',     '(24) 93234-5679'),
-(21, 'Administração',                     'Ulisses',   'Teixeira',       '(25) 94345-6780'),
-(22, NULL,                                'Valéria',   'Duarte',         '(26) 95456-7891'),
-(23, 'Geografia',                         'Wagner',    'Pacheco',        '(27) 96567-8902'),
-(24, 'Biologia',                          'Xênia',     'Braga',          '(28) 97678-9013'),
-(25, 'Educação',                          'Yara',      'Falcão',         '(29) 98789-0124'),
-(26, NULL,                                'Zeca',      'Brito',          '(30) 99890-1235'),
-(27, 'Estatística',                       'Álvaro',    'Tavares',        '(32) 90901-2346'),
-(28, 'Línguas Estrangeiras',              'Béatrice',  'Dupont',         '(33) 92012-3457'),
-(29, NULL,                                'César',     'Aguilar',        '(34) 93123-4568'),
-(30, 'Filosofia',                         'Dália',     'Kovács',         '(35) 94234-5679');
-
+( 1,  'Ciências Biológicas',        'Ana',       'Silva',     '(11) 91234-5678'),
+( 2,  'Tecnologia da Informação',   'Bruno',     'Costa',     '(21) 93456-7891'),
+( 3,  'Letras',                     'Carla',     'Oliveira',  '(31) 94567-8902'),
+( 5,  'Engenharia de Produção',     'Eliane',    'Santos',    '(51) 96789-0124'),
+( 7,  NULL,                         'Fernanda',  'Assis',     '(71) 98885-8585'),
+( 8,  'Direito',                    'Henrique',  'Gomes',     '(81) 90012-3457'),
+( 9,  'Psicologia',                 'Iara',      'Cruz',      '(91) 91123-4568'),
+(10,  'Matemática',                 'Alberto',   'Silveira',  '(66) 93330-3030'),
+(11,  NULL,                         'Juliana',   'Barreto',   '(75) 93329-2929'),
+(12,  'Física',                     'Bianca',    'Teixeira',  '(67) 94441-4141'),
+(13,  'Ciências Humanas',           'Gabriel',   'Prado',     '(72) 90096-9696'),
+(14,  'Computação',                 'Nilo',      'Azevedo',   '(16) 96678-9013'),
+(15,  NULL,                         'Dora',      'Ferraz',    '(69) 96663-6363'),
+(16,  'Economia',                   'Igor',      'Castro',    '(74) 92218-1818'),
+(17,  'Artes',                      'Quitéria',  'Lima',      '(19) 99901-2346'),
+(18,  'Ciências Sociais',           'Rodrigo',   'Bastos',    '(22) 91012-3457'),
+(19,  NULL,                         'Nádia',     'Ribeiro',   '(79) 97763-6364'),
+(20,  'Engenharia Civil',           'Eduardo',   'Barros',    '(70) 97774-7474'),
+(21,  'Administração',              'Ulisses',   'Teixeira',  '(25) 94345-6780'),
+(22,  NULL,                         'Priscila',  'Fidalgo',   '(81) 90085-8586'),
+(23,  'Geografia',                  'Larissa',   'Macedo',    '(77) 95541-4142'),
+(24,  'Biologia',                   'Ursula',    'Rezende',   '(85) 94439-2920'),
+(25,  'Educação',                   'Xavier',    'Fonseca',   '(88) 97762-5254'),
+(26,  NULL,                         'Valter',    'Carvalho',  '(86) 95540-3032'),
+(27,  'Estatística',                'Álvaro',    'Tavares',   '(32) 90901-2346'),
+(28,  'Línguas Estrangeiras',       'Yasmin',    'Duarte',    '(89) 98873-6365'),
+(29,  NULL,                         'Tadeu',     'Guedes',    '(84) 93328-1819'),
+(30,  'Filosofia',                  'Maurício',  'Rezende',   '(78) 96652-5253');
 
 /* ------------------------------------------------------
    Tabela 10 – Disciplina  (30 linhas)
@@ -390,14 +512,20 @@ VALUES
 (127, 3, 'Cartilha de primeiros socorros'),
 (128, 2, NULL),
 (129, 6, 'Gramática francesa contemporânea'),
-(130, 3, NULL);
-
-
+(130, 3, NULL),
+(133, 3, NULL),
+(134, 2, NULL),
+(135, 4, NULL),
+(136, 3, 'Artigos PDF'),
+(137, 2, NULL),
+(138, 3, NULL),
+(139, 4, 'Manual de Campo'),
+(140, 3, NULL),
+(141, 2, NULL);
 
 
 /* ======================================================
    Tabela 11 – Infraestrutura  (30 linhas)
-   (descrição às vezes NULL)
 ====================================================== */
 INSERT INTO Infraestrutura
     (id_estrutura, descricao)
@@ -435,7 +563,6 @@ VALUES
 
 /* ======================================================
    Tabela 12 – Curso  (30 linhas)
-   (exemplos com valores NULL em carga_horaria ou numero_vagas)
 ====================================================== */
 INSERT INTO Curso
     (codigo_unico, nivel, carga_horaria, numero_vagas,
@@ -444,9 +571,9 @@ VALUES
 (2001, 'Graduação',   3200,  60,  1,  1),
 (2002, 'Técnico',      NULL, 40,  2,  2),
 (2003, 'Fundamental',  800,  NULL, 3,  3),
-(2004, 'Médio',        1200, 50,  4,  4),
+(2004, 'Médio',        1200, 50,  5,  4),
 (2005, 'Graduação',    NULL, 70,  5,  5),
-(2006, 'Técnico',      1600, NULL, 6,  6),
+(2006, 'Técnico',      1600, NULL, 5,  6),
 (2007, 'Fundamental',  900,  45,  7,  7),
 (2008, 'Médio',        NULL, 60,  8,  8),
 (2009, 'Graduação',    3400, NULL, 9,  9),
@@ -474,7 +601,6 @@ VALUES
 
 /* ======================================================
    Tabela 13 – Curso_pre_disc  (30 linhas)
-   (cada curso tem uma disciplina pré-requisito)
 ====================================================== */
 INSERT INTO Curso_pre_disc
     (codigo_unico_curso, codigo_disc)
@@ -512,7 +638,6 @@ VALUES
 
 /* ======================================================
    Tabela 14 – Composicao_curso  (30 linhas)
-   (associações diferentes das pré-regras, todas únicas)
 ====================================================== */
 INSERT INTO Composicao_curso
     (codigo_unico_curso, codigo_disc)
@@ -557,36 +682,50 @@ INSERT INTO Turma
      nome_prof, sobrenome_prof, telefone_prof,
      codigo_disc, qtd_alunos)
 VALUES
-(301, 1, 2025, 'Ana',      'Silva',          '(11) 91234-5678', 101, 35),
-(302, 1, 2025, 'Bruno',    'Costa',          '(21) 93456-7891', 102, 30),
-(303, 1, 2025, 'Carla',    'Oliveira',       '(31) 94567-8902', 103, NULL),
-(304, 1, 2025, 'Diego',    'Pereira',        '(41) 95678-9013', NULL, 28),
-(305, 1, 2025, 'Eliane',   'Santos',         '(51) 96789-0124', 105, 42),
-(306, 1, 2025, 'Felipe',   'Ramos',          '(61) 97890-1235', 106, NULL),
-(307, 1, 2025, 'Gabriela', 'Fernandes',      '(71) 98901-2346', 107, 33),
-(308, 1, 2025, 'Henrique', 'Gomes',          '(81) 90012-3457', 108, 50),
-(309, 1, 2025, 'Iara',     'Cruz',           '(91) 91123-4568', NULL, 27),
-(310, 1, 2025, 'João',     'Souza',          '(12) 92234-5679', 110, 25),
-(311, 1, 2025, 'Karina',   'Martins',        '(13) 93345-6780', 111, 35),
-(312, 1, 2025, 'Luís',     'Mendes',         '(14) 94456-7891', 112, NULL),
-(313, 1, 2025, 'Mariana',  'Rocha',          '(15) 95567-8902', 113, 38),
-(314, 1, 2025, 'Nilo',     'Azevedo',        '(16) 96678-9013', 114, 28),
-(315, 1, 2025, 'Otávia',   'Cardoso',        '(17) 97789-0124', 115, NULL),
-(316, 2, 2025, 'Paulo',    'Albuquerque',    '(18) 98890-1235', 116, 36),
-(317, 2, 2025, 'Quitéria', 'Lima',           '(19) 99901-2346', 117, NULL),
-(318, 2, 2025, 'Rodrigo',  'Bastos',         '(22) 91012-3457', 118, 40),
-(319, 2, 2025, 'Sabrina',  'Barros',         '(23) 92123-4568', NULL, 30),
-(320, 2, 2025, 'Tiago',    'Figueiredo',     '(24) 93234-5679', 120, 29),
-(321, 2, 2025, 'Ulisses',  'Teixeira',       '(25) 94345-6780', 121, 35),
-(322, 2, 2025, 'Valéria',  'Duarte',         '(26) 95456-7891', 122, NULL),
-(323, 2, 2025, 'Wagner',   'Pacheco',        '(27) 96567-8902', 123, 32),
-(324, 2, 2025, 'Xênia',    'Braga',          '(28) 97678-9013', 124, NULL),
-(325, 2, 2025, 'Yara',     'Falcão',         '(29) 98789-0124', 125, 30),
-(326, 2, 2025, 'Zeca',     'Brito',          '(30) 99890-1235', 126, 28),
-(327, 2, 2025, 'Álvaro',   'Tavares',        '(32) 90901-2346', 127, NULL),
-(328, 2, 2025, 'Béatrice', 'Dupont',         '(33) 92012-3457', 128, 27),
-(329, 2, 2025, 'César',    'Aguilar',        '(34) 93123-4568', 129, 31),
-(330, 2, 2025, 'Dália',    'Kovács',         '(35) 94234-5679', NULL, NULL);
+(301, 1, 2025, 'Ana',       'Silva',        '(11) 91234-5678', 101, 35),
+(302, 1, 2025, 'Bruno',     'Costa',        '(21) 93456-7891', 102, 30),
+(303, 1, 2025, 'Carla',     'Oliveira',     '(31) 94567-8902', 103, NULL),
+(304, 1, 2025, 'Dora',      'Ferraz',       '(69) 96663-6363', 104, 34),
+(305, 1, 2025, 'Eliane',    'Santos',       '(51) 96789-0124', 105, 42),
+(306, 1, 2025, 'Eduardo',   'Barros',       '(70) 97774-7474', 106, NULL),
+(307, 1, 2025, 'Fernanda',  'Assis',        '(71) 98885-8585', 107, 33),
+(308, 1, 2025, 'Henrique',  'Gomes',        '(81) 90012-3457', 108, 50),
+(309, 1, 2025, 'Iara',      'Cruz',         '(91) 91123-4568', NULL, 27),
+(310, 1, 2025, 'Juliana',   'Barreto',      '(75) 93329-2929', 110, 25),
+(311, 1, 2025, 'Kleber',    'Amaral',       '(76) 94430-3031', 111, 35),
+(312, 1, 2025, 'Larissa',   'Macedo',       '(77) 95541-4142', 112, NULL),
+(313, 1, 2025, 'Maurício',  'Rezende',      '(78) 96652-5253', 113, 38),
+(314, 1, 2025, 'Nilo',      'Azevedo',      '(16) 96678-9013', 114, 28),
+(315, 1, 2025, 'Nádia',     'Ribeiro',      '(79) 97763-6364', 115, NULL),
+(316, 2, 2025, 'Otávio',    'Godoy',        '(80) 98874-7475', 116, 36),
+(317, 2, 2025, 'Quitéria',  'Lima',         '(19) 99901-2346', 117, NULL),
+(318, 2, 2025, 'Rodrigo',   'Bastos',       '(22) 91012-3457', 118, 40),
+(319, 2, 2025, 'Priscila',  'Fidalgo',      '(81) 90085-8586', NULL, 30),
+(320, 2, 2025, 'Rogério',   'Batista',      '(82) 91196-9697', 120, 29),
+(321, 2, 2025, 'Ulisses',   'Teixeira',     '(25) 94345-6780', 121, 35),
+(322, 2, 2025, 'Sílvia',    'Pimentel',     '(83) 92217-0708', 122, NULL),
+(323, 2, 2025, 'Tadeu',     'Guedes',       '(84) 93328-1819', 123, 32),
+(324, 2, 2025, 'Ursula',    'Rezende',      '(85) 94439-2920', 124, NULL),
+(325, 2, 2025, 'Valter',    'Carvalho',     '(86) 95540-3032', 125, 30),
+(326, 2, 2025, 'Waleska',   'Braga',        '(87) 96651-4143', 126, 28),
+(327, 2, 2025, 'Álvaro',    'Tavares',      '(32) 90901-2346', 127, NULL),
+(328, 2, 2025, 'Xavier',    'Fonseca',      '(88) 97762-5254', 128, 27),
+(329, 2, 2025, 'Yasmin',    'Duarte',       '(89) 98873-6365', 129, 31),
+(330, 2, 2025, 'Zélio',     'Santiago',     '(90) 90084-7476', NULL, NULL),
+(331, 1, 2026, 'Aline',     'Vasques',      '(91) 91195-8587', 130, 56),
+(332, 1, 2026, 'Bruno',     'Henrique',     '(92) 92206-9698', 130, 57),
+(333, 1, 2026, 'Cláudia',   'Alencar',      '(93) 93317-0709', 130, 58),
+(334, 2, 2026, 'Davi',      'Serra',        '(94) 94428-1821', 130, 59),
+(335, 2, 2026, 'Emanuela',  'Cardoso',      '(95) 95539-2922', 130, 60),
+(211, 1, 2025, 'Ana', 'Silva', '(11) 91234-5678', 133, 0),
+(212, 1, 2025, 'Ana', 'Silva', '(11) 91234-5678', 134, 0),
+(213, 1, 2025, 'Ana', 'Silva', '(11) 91234-5678', 135, 0),
+(214, 1, 2025, 'Ana', 'Silva', '(11) 91234-5678', 136, 0),
+(215, 1, 2025, 'Ana', 'Silva', '(11) 91234-5678', 137, 0),
+(216, 1, 2025, 'Ana', 'Silva', '(11) 91234-5678', 138, 0),
+(217, 1, 2025, 'Ana', 'Silva', '(11) 91234-5678', 139, 0),
+(218, 1, 2025, 'Ana', 'Silva', '(11) 91234-5678', 140, 0),
+(219, 1, 2025, 'Ana', 'Silva', '(11) 91234-5678', 141, 0);
 
 /* ------------------------------------------------------
    Tabela 16 – Agendamento_salas  (30 linhas)
@@ -607,36 +746,36 @@ VALUES
 INSERT INTO Responsaveis_disc
     (nome, sobrenome, telefone, codigo_disc)
 VALUES
-('Ana',      'Silva',          '(11) 91234-5678', 101),
-('Bruno',    'Costa',          '(21) 93456-7891', 102),
-('Carla',    'Oliveira',       '(31) 94567-8902', 103),
-('Diego',    'Pereira',        '(41) 95678-9013', 104),
-('Eliane',   'Santos',         '(51) 96789-0124', 105),
-('Felipe',   'Ramos',          '(61) 97890-1235', 106),
-('Gabriela', 'Fernandes',      '(71) 98901-2346', 107),
-('Henrique', 'Gomes',          '(81) 90012-3457', 108),
-('Iara',     'Cruz',           '(91) 91123-4568', 109),
-('João',     'Souza',          '(12) 92234-5679', 110),
-('Karina',   'Martins',        '(13) 93345-6780', 111),
-('Luís',     'Mendes',         '(14) 94456-7891', 112),
-('Mariana',  'Rocha',          '(15) 95567-8902', 113),
-('Nilo',     'Azevedo',        '(16) 96678-9013', 114),
-('Otávia',   'Cardoso',        '(17) 97789-0124', 115),
-('Paulo',    'Albuquerque',    '(18) 98890-1235', 116),
-('Quitéria', 'Lima',           '(19) 99901-2346', 117),
-('Rodrigo',  'Bastos',         '(22) 91012-3457', 118),
-('Sabrina',  'Barros',         '(23) 92123-4568', 119),
-('Tiago',    'Figueiredo',     '(24) 93234-5679', 120),
-('Ulisses',  'Teixeira',       '(25) 94345-6780', 121),
-('Valéria',  'Duarte',         '(26) 95456-7891', 122),
-('Wagner',   'Pacheco',        '(27) 96567-8902', 123),
-('Xênia',    'Braga',          '(28) 97678-9013', 124),
-('Yara',     'Falcão',         '(29) 98789-0124', 125),
-('Zeca',     'Brito',          '(30) 99890-1235', 126),
-('Álvaro',   'Tavares',        '(32) 90901-2346', 127),
-('Béatrice', 'Dupont',         '(33) 92012-3457', 128),
-('César',    'Aguilar',        '(34) 93123-4568', 129),
-('Dália',    'Kovács',         '(35) 94234-5679', 130);
+('Ana',       'Silva',        '(11) 91234-5678', 101),
+('Bruno',     'Costa',        '(21) 93456-7891', 102),
+('Carla',     'Oliveira',     '(31) 94567-8902', 103),
+('Dora',      'Ferraz',       '(69) 96663-6363', 104),
+('Eliane',    'Santos',       '(51) 96789-0124', 105),
+('Eduardo',   'Barros',       '(70) 97774-7474', 106),
+('Fernanda',  'Assis',        '(71) 98885-8585', 107),
+('Henrique',  'Gomes',        '(81) 90012-3457', 108),
+('Iara',      'Cruz',         '(91) 91123-4568', 109),
+('Juliana',   'Barreto',      '(75) 93329-2929', 110),
+('Kleber',    'Amaral',       '(76) 94430-3031', 111),
+('Larissa',   'Macedo',       '(77) 95541-4142', 112),
+('Maurício',  'Rezende',      '(78) 96652-5253', 113),
+('Nilo',      'Azevedo',      '(16) 96678-9013', 114),
+('Nádia',     'Ribeiro',      '(79) 97763-6364', 115),
+('Otávio',    'Godoy',        '(80) 98874-7475', 116),
+('Quitéria',  'Lima',         '(19) 99901-2346', 117),
+('Rodrigo',   'Bastos',       '(22) 91012-3457', 118),
+('Sílvia',    'Pimentel',     '(83) 92217-0708', 119),
+('Tadeu',     'Guedes',       '(84) 93328-1819', 120),
+('Ulisses',   'Teixeira',     '(25) 94345-6780', 121),
+('Valter',    'Carvalho',     '(86) 95540-3032', 122),
+('Waleska',   'Braga',        '(87) 96651-4143', 123),
+('Xavier',    'Fonseca',      '(88) 97762-5254', 124),
+('Yasmin',    'Duarte',       '(89) 98873-6365', 125),
+('Zélio',     'Santiago',     '(90) 90084-7476', 126),
+('Álvaro',    'Tavares',      '(32) 90901-2346', 127),
+('Aline',     'Vasques',      '(91) 91195-8587', 128),
+('Bruno',     'Henrique',     '(92) 92206-9698', 129),
+('Cláudia',   'Alencar',      '(93) 93317-0709', 130);
 
 /* ------------------------------------------------------
    Tabela 18 – Infras_sala  (30 linhas)
@@ -653,7 +792,6 @@ VALUES
 
 /* ======================================================
    Tabela 19 – Necessidade_curso  (30 linhas)
-   (1-para-1 entre cursos 2001-2030 e infraestruturas 1-30)
 ====================================================== */
 INSERT INTO Necessidade_curso
     (id_estrutura, codigo_unico)
@@ -741,7 +879,6 @@ VALUES
 
 /* ======================================================
    Tabela 22 – Matriculas  (30 linhas)
-   (every student × turma com variações de NULL)
 ====================================================== */
 INSERT INTO Matriculas
     (nome_aluno, sobrenome_aluno, telefone_aluno,
@@ -751,41 +888,52 @@ INSERT INTO Matriculas
      dia_mudanca, mes_mudanca, ano_mudanca,
      taxa)
 VALUES
-('Ana',      'Silva',          '(11) 91234-5678', 301,  5,  2, 2025, 'Ativa',     NULL, NULL, NULL, 1000),
-('Bruno',    'Costa',          '(21) 93456-7891', 302,  6,  2, 2025, 'Pendente',  NULL, NULL, NULL, NULL),
-('Carla',    'Oliveira',       '(31) 94567-8902', 303,  7,  2, 2025, 'Cancelada', 15,   3,   2025,  500),
-('Diego',    'Pereira',        '(41) 95678-9013', 304,  8,  2, 2025, 'Inativa',   20,   3,   2025,  600),
-('Eliane',   'Santos',         '(51) 96789-0124', 305,  9,  2, 2025, 'Ativa',     NULL, NULL, NULL, 1100),
-('Felipe',   'Ramos',          '(61) 97890-1235', 306, 10,  2, 2025, 'Ativa',     NULL, NULL, NULL, 1200),
-('Gabriela', 'Fernandes',      '(71) 98901-2346', 301, 11,  2, 2025, 'Pendente',  NULL, NULL, NULL, NULL),
-('Henrique', 'Gomes',          '(81) 90012-3457', 301, 12,  2, 2025, 'Ativa',     NULL, NULL, NULL, 1150),
-('Iara',     'Cruz',           '(91) 91123-4568', 301, 13,  2, 2025, 'Cancelada', 25,   3,   2025, NULL),
-('João',     'Souza',          '(12) 92234-5679', 310, 14,  2, 2025, 'Inativa',   28,   3,   2025,  650),
-('Karina',   'Martins',        '(13) 93345-6780', 311, 15,  2, 2025, 'Ativa',     NULL, NULL, NULL, 1080),
-('Luís',     'Mendes',         '(14) 94456-7891', 312, 16,  2, 2025, 'Pendente',  NULL, NULL, NULL, NULL),
-('Mariana',  'Rocha',          '(15) 95567-8902', 313, 17,  2, 2025, 'Ativa',     NULL, NULL, NULL, 1120),
-('Nilo',     'Azevedo',        '(16) 96678-9013', 314, 18,  2, 2025, 'Ativa',     NULL, NULL, NULL, 1180),
-('Otávia',   'Cardoso',        '(17) 97789-0124', 315, 19,  2, 2025, 'Cancelada',  2,   4,   2025,  NULL),
-('Paulo',    'Albuquerque',    '(18) 98890-1235', 316, 20,  2, 2025, 'Ativa',     NULL, NULL, NULL, 1200),
-('Quitéria', 'Lima',           '(19) 99901-2346', 317, 21,  2, 2025, 'Inativa',   10,   4,   2025,  600),
-('Rodrigo',  'Bastos',         '(22) 91012-3457', 318, 22,  2, 2025, 'Ativa',     NULL, NULL, NULL, 1130),
-('Sabrina',  'Barros',         '(23) 92123-4568', 319, 23,  2, 2025, 'Pendente',  NULL, NULL, NULL, NULL),
-('Tiago',    'Figueiredo',     '(24) 93234-5679', 320, 24,  2, 2025, 'Ativa',     NULL, NULL, NULL, 1190),
-('Ulisses',  'Teixeira',       '(25) 94345-6780', 321, 25,  2, 2025, 'Cancelada', 12,   4,   2025,  NULL),
-('Valéria',  'Duarte',         '(26) 95456-7891', 322, 26,  2, 2025, 'Inativa',   18,   4,   2025,  680),
-('Wagner',   'Pacheco',        '(27) 96567-8902', 323, 27,  2, 2025, 'Ativa',     NULL, NULL, NULL, 1110),
-('Xênia',    'Braga',          '(28) 97678-9013', 324, 28,  2, 2025, 'Ativa',     NULL, NULL, NULL, 1070),
-('Yara',     'Falcão',         '(29) 98789-0124', 325,  1,  3, 2025, 'Pendente',  NULL, NULL, NULL, NULL),
-('Zeca',     'Brito',          '(30) 99890-1235', 326,  2,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1090),
-('Pedro',   'Monteiro',        '(32) 90901-2346', 327,  3,  3, 2025, 'Ativa', 20,   4,   2025, NULL),
-('Luana', 'Prudenciato',         '(33) 92012-3457', 327,  4,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1140),
-('Theo',    'Guimaraes',        '(34) 93123-4568', 327,  5,  3, 2025, 'Ativa',  NULL, NULL, NULL, NULL),
-('Eduardo',    'Camargo',         '(35) 94234-5679', 327,  6,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1160);
-
--- ('Álvaro',   'Tavares',        '(32) 90901-2346', 327,  3,  3, 2025, 'Ativa', 20,   4,   2025, NULL),
--- ('Béatrice', 'Dupont',         '(33) 92012-3457', 327,  4,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1140),
--- ('César',    'Aguilar',        '(34) 93123-4568', 327,  5,  3, 2025, 'Ativa',  NULL, NULL, NULL, NULL),
--- ('Dália',    'Kovács',         '(35) 94234-5679', 327,  6,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1160);
+('Diego',     'Pereira',     '(41) 95678-9013', 304,  8,  2, 2025, 'Inativa',   20,  3, 2025,  600),
+('Felipe',    'Ramos',       '(61) 97890-1235', 306, 10,  2, 2025, 'Ativa',     NULL, NULL, NULL, 1200),
+('Gabriela',  'Fernandes',   '(71) 98901-2346', 307, 11,  2, 2025, 'Pendente',  NULL, NULL, NULL, NULL),
+('Iara',      'Cruz',        '(91) 91123-4568', 309, 13,  2, 2025, 'Cancelada', 25,  3, 2025, NULL),
+('Karina',    'Martins',     '(13) 93345-6780', 311, 15,  2, 2025, 'Ativa',     NULL, NULL, NULL, 1080),
+('Mariana',   'Rocha',       '(15) 95567-8902', 313, 17,  2, 2025, 'Ativa',     NULL, NULL, NULL, 1120),
+('Otávia',    'Cardoso',     '(17) 97789-0124', 315, 19,  2, 2025, 'Cancelada',  2,  4, 2025, NULL),
+('Quitéria',  'Lima',        '(19) 99901-2346', 317, 21,  2, 2025, 'Inativa',   10,  4, 2025,  600),
+('Tiago',     'Figueiredo',  '(24) 93234-5679', 320, 24,  2, 2025, 'Ativa',     NULL, NULL, NULL, 1190),
+('Xênia',     'Braga',       '(28) 97678-9013', 324, 28,  2, 2025, 'Ativa',     NULL, NULL, NULL, 1070),
+('Yara',      'Falcão',      '(29) 98789-0124', 325,  1,  3, 2025, 'Pendente',  NULL, NULL, NULL, NULL),
+('Zeca',      'Brito',       '(30) 99890-1235', 326,  2,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1090),
+('Luana',     'Prudenciato', '(33) 92012-3457', 327,  4,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1140),
+('Theo',      'Guimarães',   '(34) 93000-1122', 327,  5,  3, 2025, 'Ativa',     NULL, NULL, NULL, NULL),
+('César',     'Aguilar',     '(34) 93123-4568', 328,  6,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1160),
+('Béatrice',  'Dupont',      '(33) 92012-3457', 329,  7,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1150),
+('Adriana',  'Mendonça', '(36) 90011-1111', 330,  8,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1080),
+('Bernardo', 'Vieira',   '(37) 91122-2222', 331,  8,  3, 2025, 'Pendente',  NULL, NULL, NULL, NULL),
+('Camila',   'Albuquerque','(38) 92233-3333',332,  8,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1120),
+('Daniel',   'Siqueira', '(39) 93344-4444', 333,  9,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1110),
+('Elisa',    'Moura',    '(40) 94455-5555', 334,  9,  3, 2025, 'Pendente',  NULL, NULL, NULL, NULL),
+('Fábio',    'Queiroz',  '(41) 95566-6666', 335,  9,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1090),
+('Giovana',  'Nunes',     '(42) 96677-7777', 328, 10,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1070),
+('Heitor',   'Batista',   '(43) 97788-8888', 329, 10,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1180),
+('Isabela',  'Correia',   '(44) 98899-9999', 330, 10,  3, 2025, 'Pendente',  NULL, NULL, NULL, NULL),
+('João',     'Peixoto',   '(45) 90110-1010', 331, 11,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1130),
+('Kelly',    'Reis',      '(46) 91221-2121', 332, 11,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1140),
+('Leonardo', 'Pires',     '(47) 92332-3232', 333, 11,  3, 2025, 'Pendente',  NULL, NULL, NULL, NULL),
+('Marina',   'Barbosa',   '(48) 93443-4343', 334, 12,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1150),
+('Natália',  'Araújo',    '(49) 94554-5454', 335, 12,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1080),
+('Omar',     'Rodrigues', '(50) 95665-6565', 328, 12,  3, 2025, 'Inativa',   20,  4, 2025,  600),
+('Patrícia', 'Freitas',   '(51) 96776-7676', 329, 13,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1100),
+('Rafael',   'Barcellos', '(52) 97887-8787', 330, 13,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1090),
+('Sara',     'Meireles',  '(53) 98998-9898', 331, 13,  3, 2025, 'Pendente',  NULL, NULL, NULL, NULL),
+('Thiago',   'Damasceno', '(54) 90009-0909', 332, 14,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1120),
+('Úrsula',   'Valente',   '(55) 91119-1919', 333, 14,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1130),
+('Victor',   'Galvão',    '(56) 92229-2929', 334, 14,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1140),
+('Wallace',  'Lacerda',   '(57) 93339-3939', 335, 15,  3, 2025, 'Cancelada', 30,  4, 2025, NULL),
+('Xuxa',     'Costa',     '(58) 94449-4949', 328, 15,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1060),
+('Yuri',     'Campos',    '(59) 95559-5959', 329, 15,  3, 2025, 'Pendente',  NULL, NULL, NULL, NULL),
+('Zélia',    'Sales',     '(60) 96669-6969', 330, 16,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1070),
+('Artur',    'Cavalcante','(61) 97779-7979', 331, 16,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1080),
+('Brisa',    'Machado',   '(62) 98889-8989', 332, 16,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1090),
+('Caio',     'Lins',      '(63) 90019-1910', 333, 17,  3, 2025, 'Pendente',  NULL, NULL, NULL, NULL),
+('Denise',   'Pinto',     '(64) 91191-9101', 334, 17,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1100),
+('Eduarda',  'Farias',    '(65) 92292-0202', 335, 17,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1110);
 
 /* ======================================================
    Tabela 23 – Avaliacao_Matricula  (30 linhas)
@@ -795,41 +943,36 @@ INSERT INTO Avaliacao_Matricula
      comentario, classificacao_didatica, material_apoio,
      relevancia_conteudo, infraestrutura_sala)
 VALUES
-('Ana',      'Silva',          '(11) 91234-5678', 301, 'Ótimo curso!',                   5,  'Slides PDF',                  5, 4),
-('Bruno',    'Costa',          '(21) 93456-7891', 302, NULL,                             4,  NULL,                         4, 4),
-('Carla',    'Oliveira',       '(31) 94567-8902', 303, 'Conteúdo denso.',                3,  'Livro impresso',             3, 3),
-('Diego',    'Pereira',        '(41) 95678-9013', 304, 'Aulas práticas boas.',           4,  NULL,                         4, 5),
-('Eliane',   'Santos',         '(51) 96789-0124', 305, NULL,                             5,  'Vídeos online',              5, 4),
-('Felipe',   'Ramos',          '(61) 97890-1235', 306, 'Professor atencioso.',           4,  NULL,                         5, 5),
-('Gabriela', 'Fernandes',      '(71) 98901-2346', 301, 'Material de apoio insuficiente', 2,  NULL,                         2, 3),
-('Henrique', 'Gomes',          '(81) 90012-3457', 301, NULL,                             5,  'Manual laboratório',         5, 5),
-('Iara',     'Cruz',           '(91) 91123-4568', 301, 'Sala quente.',                   3,  NULL,                         3, 2),
-('João',     'Souza',          '(12) 92234-5679', 310, NULL,                             4,  'Lista exercícios',           4, 3),
-('Karina',   'Martins',        '(13) 93345-6780', 311, 'Excelente didática.',            5,  NULL,                         5, 5),
-('Luís',     'Mendes',         '(14) 94456-7891', 312, NULL,                             4,  NULL,                         4, 4),
-('Mariana',  'Rocha',          '(15) 95567-8902', 313, 'Infraestrutura top.',            5,  'Apostila digital',           5, 5),
-('Nilo',     'Azevedo',        '(16) 96678-9013', 314, NULL,                             5,  NULL,                         4, 4),
-('Otávia',   'Cardoso',        '(17) 97789-0124', 315, 'Muito teórico.',                 3,  'Leituras extra',             3, 3),
-('Paulo',    'Albuquerque',    '(18) 98890-1235', 316, NULL,                             4,  NULL,                         5, 4),
-('Quitéria', 'Lima',           '(19) 99901-2346', 317, 'Ajustar ritmo das aulas.',       2,  NULL,                         2, 3),
-('Rodrigo',  'Bastos',         '(22) 91012-3457', 318, NULL,                             5,  'Banco de questões',          5, 5),
-('Sabrina',  'Barros',         '(23) 92123-4568', 319, 'Precisa de mais exemplos.',      3,  NULL,                         3, 3),
-('Tiago',    'Figueiredo',     '(24) 93234-5679', 320, NULL,                             4,  'Vídeos curtos',              4, 4),
-('Ulisses',  'Teixeira',       '(25) 94345-6780', 321, 'Material excelente.',            5,  NULL,                         5, 5),
-('Valéria',  'Duarte',         '(26) 95456-7891', 322, NULL,                             3,  NULL,                         3, 3),
-('Wagner',   'Pacheco',        '(27) 96567-8902', 323, 'Professor dinâmico.',            5,  'Podcast semanal',            5, 4),
-('Xênia',    'Braga',          '(28) 97678-9013', 324, NULL,                             4,  NULL,                         4, 4),
-('Yara',     'Falcão',         '(29) 98789-0124', 325, 'Precisa melhorar slides.',       3,  NULL,                         3, 3),
-('Zeca',     'Brito',          '(30) 99890-1235', 326, NULL,                             4,  'Infográficos',               4, 4),
-('Pedro',    'Monteiro',        '(32) 90901-2346', 327, 'Excelente laboratório.',         5,  NULL,                         5, 5),
-('Luana',  'Prudenciato',         '(33) 92012-3457', 327, NULL,                             4,  'Exercícios extras',          4, 4),
-('Theo',     'Guimaraes',        '(34) 93123-4568', 327, 'Conteúdo avançado.',             4,  NULL,                         4, 4),
-('Eduardo',     'Camargo',         '(35) 94234-5679', 327, NULL,                             5,  'Casos de estudo',            5, 5);
-
--- ('Pedro',    'Monteiro',        '(32) 90901-2346', 26,  6, 1992, 'Vitória',       'ES', 'Brasil', NULL,           'alvaro.tavares@corp.com',    'At!205',           'Masculino',   'Professor'),
--- ('Luana',  'Prudenciato',         '(33) 92012-3457', 10,  9, 1984, 'Paris',         NULL, 'França', 'Apt 102',      'beatrice.dupont@ex.fr',      'Bd#194',           'Feminino',    NULL),
--- ('Theo',     'Guimaraes',        '(34) 93123-4568', 15, 12, 1993, 'Lima',          NULL, 'Peru',   NULL,           'cesar.aguilar@mail.pe',      'CaPwd!9',          'Masculino',   'Aluno'),
--- ('Eduardo',     'Camargo',         '(35) 94234-5679', 24,  4, 1991, NULL,            NULL, NULL,     'Bloco D',      'dalia.kovacs@ex.hu',         'Dk_191$',          'Feminino',    'Administrador'),
+('Diego',     'Pereira',     '(41) 95678-9013', 304, 'Aulas práticas ótimas.',       4,  'Vídeos',                4, 5),
+('Felipe',    'Ramos',       '(61) 97890-1235', 306, 'Professor atencioso.',         5,  NULL,                   5, 5),
+('Gabriela',  'Fernandes',   '(71) 98901-2346', 307, 'Material poderia melhorar.',   3,  NULL,                   3, 3),
+('Iara',      'Cruz',        '(91) 91123-4568', 309, 'Sala quente.',                 3,  NULL,                   3, 2),
+('Karina',    'Martins',     '(13) 93345-6780', 311, 'Excelente didática.',          5,  NULL,                   5, 5),
+('Mariana',   'Rocha',       '(15) 95567-8902', 313, 'Infraestrutura top.',          5,  'Apostila digital',     5, 5),
+('Otávia',    'Cardoso',     '(17) 97789-0124', 315, 'Muito teórico.',               3,  'Leituras extra',       3, 3),
+('Quitéria',  'Lima',        '(19) 99901-2346', 317, 'Ajustar ritmo das aulas.',     2,  NULL,                   2, 3),
+('Tiago',     'Figueiredo',  '(24) 93234-5679', 320, 'Vídeos curtos ajudam.',        4,  'Playlist',             4, 4),
+('Xênia',     'Braga',       '(28) 97678-9013', 324, NULL,                           4,  NULL,                   4, 4),
+('Yara',      'Falcão',      '(29) 98789-0124', 325, 'Precisa melhorar slides.',     3,  NULL,                   3, 3),
+('Zeca',      'Brito',       '(30) 99890-1235', 326, NULL,                           4,  'Infográficos',         4, 4),
+('Luana',     'Prudenciato', '(33) 92012-3457', 327, NULL,                           4,  'Exercícios extras',    4, 4),
+('Theo',      'Guimarães',   '(34) 93000-1122', 327, 'Conteúdo avançado.',           4,  NULL,                   4, 4),
+('Adriana',   'Mendonça',    '(36) 90011-1111', 330, 'Curso motivador.',             5,  NULL,                   5, 5),
+('Bernardo',  'Vieira',      '(37) 91122-2222', 331, NULL,                           4,  NULL,                   4, 4),
+('Camila',    'Albuquerque', '(38) 92233-3333', 332, 'Leituras interessantes.',      4,  'Artigos PDF',          4, 4),
+('Daniel',    'Siqueira',    '(39) 93344-4444', 333, NULL,                           3,  NULL,                   3, 3),
+('Elisa',     'Moura',       '(40) 94455-5555', 334, 'Gostei das dinâmicas.',        5,  NULL,                   5, 5),
+('Fábio',     'Queiroz',     '(41) 95566-6666', 335, NULL,                           4,  NULL,                   4, 4),
+('Giovana',   'Nunes',       '(42) 96677-7777', 328, 'Necessita mais exemplos.',     3,  NULL,            3, 3),
+('Heitor',    'Batista',     '(43) 97788-8888', 329, NULL,                           4,  'Checklist',     4, 4),
+('Isabela',   'Correia',     '(44) 98899-9999', 330, 'Bom ritmo de aula.',           4,  NULL,            4, 4),
+('João',      'Peixoto',     '(45) 90110-1010', 331, NULL,                           5,  'Lista exercícios',5, 4),
+('Kelly',     'Reis',        '(46) 91221-2121', 332, NULL,                           4,  NULL,            4, 4),
+('Leonardo',  'Pires',       '(47) 92332-3232', 333, 'Professor domina assunto.',    5,  NULL,            5, 5),
+('Marina',    'Barbosa',     '(48) 93443-4343', 334, NULL,                           4,  'Podcast',       4, 4),
+('Natália',   'Araújo',      '(49) 94554-5454', 335, 'Slides confusos.',             3,  NULL,            3, 3),
+('Omar',      'Rodrigues',   '(50) 95665-6565', 328, 'Sala lotada.',                 3,  NULL,            3, 2),
+('Rafael',    'Barcellos',   '(52) 97887-8787', 330, NULL,                           4,  'Banco de questões',4, 4);
 
 /* ======================================================
    Tabela 24 – Notas_Matricula  (30 linhas)
@@ -837,41 +980,37 @@ VALUES
 INSERT INTO Notas_Matricula
     (nome_aluno, sobrenome_aluno, telefone_aluno, id_turma, nota)
 VALUES
-('Ana',      'Silva',          '(11) 91234-5678', 301,  92),
-('Bruno',    'Costa',          '(21) 93456-7891', 302,  78),
-('Carla',    'Oliveira',       '(31) 94567-8902', 303,  65),
-('Diego',    'Pereira',        '(41) 95678-9013', 304,  80),
-('Eliane',   'Santos',         '(51) 96789-0124', 305,  95),
-('Felipe',   'Ramos',          '(61) 97890-1235', 306,  88),
-('Gabriela', 'Fernandes',      '(71) 98901-2346', 301,  70),
-('Henrique', 'Gomes',          '(81) 90012-3457', 301,  96),
-('Iara',     'Cruz',           '(91) 91123-4568', 301,  68),
-('João',     'Souza',          '(12) 92234-5679', 310,  82),
-('Karina',   'Martins',        '(13) 93345-6780', 311,  94),
-('Luís',     'Mendes',         '(14) 94456-7891', 312,  76),
-('Mariana',  'Rocha',          '(15) 95567-8902', 313,  91),
-('Nilo',     'Azevedo',        '(16) 96678-9013', 314,  89),
-('Otávia',   'Cardoso',        '(17) 97789-0124', 315,  60),
-('Paulo',    'Albuquerque',    '(18) 98890-1235', 316,  87),
-('Quitéria', 'Lima',           '(19) 99901-2346', 317,  73),
-('Rodrigo',  'Bastos',         '(22) 91012-3457', 318,  90),
-('Sabrina',  'Barros',         '(23) 92123-4568', 319,  77),
-('Tiago',    'Figueiredo',     '(24) 93234-5679', 320,  86),
-('Ulisses',  'Teixeira',       '(25) 94345-6780', 321,  66),
-('Valéria',  'Duarte',         '(26) 95456-7891', 322,  72),
-('Wagner',   'Pacheco',        '(27) 96567-8902', 323,  93),
-('Xênia',    'Braga',          '(28) 97678-9013', 324,  88),
-('Yara',     'Falcão',         '(29) 98789-0124', 325,  79),
-('Zeca',     'Brito',          '(30) 99890-1235', 326,  84),
-('Pedro',    'Monteiro',        '(32) 90901-2346', 327,  97),
-('Luana',  'Prudenciato',         '(33) 92012-3457', 327,  85),
-('Theo',     'Guimaraes',        '(34) 93123-4568', 327,  88),
-('Eduardo',     'Camargo',         '(35) 94234-5679', 327,  92);
+('Diego',     'Pereira',     '(41) 95678-9013', 304,  80),
+('Felipe',    'Ramos',       '(61) 97890-1235', 306,  88),
+('Gabriela',  'Fernandes',   '(71) 98901-2346', 307,  72),
+('Iara',      'Cruz',        '(91) 91123-4568', 309,  68),
+('Karina',    'Martins',     '(13) 93345-6780', 311,  94),
+('Mariana',   'Rocha',       '(15) 95567-8902', 313,  91),
+('Otávia',    'Cardoso',     '(17) 97789-0124', 315,  60),
+('Quitéria',  'Lima',        '(19) 99901-2346', 317,  73),
+('Tiago',     'Figueiredo',  '(24) 93234-5679', 320,  86),
+('Xênia',     'Braga',       '(28) 97678-9013', 324,  88),
+('Yara',      'Falcão',      '(29) 98789-0124', 325,  79),
+('Zeca',      'Brito',       '(30) 99890-1235', 326,  84),
+('Luana',     'Prudenciato', '(33) 92012-3457', 327,  85),
+('Theo',      'Guimarães',   '(34) 93000-1122', 327,  88),
+('Adriana',   'Mendonça',    '(36) 90011-1111', 330,  90),
+('Bernardo',  'Vieira',      '(37) 91122-2222', 331,  77),
+('Camila',    'Albuquerque', '(38) 92233-3333', 332,  89),
+('Daniel',    'Siqueira',    '(39) 93344-4444', 333,  82),
+('Elisa',     'Moura',       '(40) 94455-5555', 334,  93),
+('Fábio',     'Queiroz',     '(41) 95566-6666', 335,  80),
+('Giovana',   'Nunes',       '(42) 96677-7777', 328,  78),
+('Heitor',    'Batista',     '(43) 97788-8888', 329,  84),
+('Isabela',   'Correia',     '(44) 98899-9999', 330,  85),
+('João',      'Peixoto',     '(45) 90110-1010', 331,  88),
+('Kelly',     'Reis',        '(46) 91221-2121', 332,  91),
+('Leonardo',  'Pires',       '(47) 92332-3232', 333,  87),
+('Marina',    'Barbosa',     '(48) 93443-4343', 334,  90),
+('Natália',   'Araújo',      '(49) 94554-5454', 335,  83),
+('Omar',      'Rodrigues',   '(50) 95665-6565', 328,  70),
+('Rafael',    'Barcellos',   '(52) 97887-8787', 330,  92);
 
--- ('Pedro',    'Monteiro',        '(32) 90901-2346', 327, 'Excelente laboratório.',         5,  NULL,                         5, 5),
--- ('Luana',  'Prudenciato',         '(33) 92012-3457', 327, NULL,                             4,  'Exercícios extras',          4, 4),
--- ('Theo',     'Guimaraes',        '(34) 93123-4568', 327, 'Conteúdo avançado.',             4,  NULL,                         4, 4),
--- ('Eduardo',     'Camargo',         '(35) 94234-5679', 327, NULL,                             5,  'Casos de estudo',            5, 5);
 
 /* ======================================================
    Tabela 25 – Bolsas_Estudo_Matricula  (30 linhas)
@@ -879,42 +1018,36 @@ VALUES
 INSERT INTO Bolsas_Estudo_Matricula
     (nome_aluno, sobrenome_aluno, telefone_aluno, id_turma, bolsa)
 VALUES
-('Ana',      'Silva',          '(11) 91234-5678', 301, 'Integral'),
-('Bruno',    'Costa',          '(21) 93456-7891', 302, 'Pesquisa'),
-('Carla',    'Oliveira',       '(31) 94567-8902', 303, 'Parcial 50%'),
-('Diego',    'Pereira',        '(41) 95678-9013', 304, 'Esporte'),
-('Eliane',   'Santos',         '(51) 96789-0124', 305, 'Integral'),
-('Felipe',   'Ramos',          '(61) 97890-1235', 306, 'Extensão'),
-('Gabriela', 'Fernandes',      '(71) 98901-2346', 301, 'Parcial 30%'),
-('Henrique', 'Gomes',          '(81) 90012-3457', 301, 'Integral'),
-('Iara',     'Cruz',           '(91) 91123-4568', 301, 'Cultura'),
-('João',     'Souza',          '(12) 92234-5679', 310, 'Parcial 40%'),
-('Karina',   'Martins',        '(13) 93345-6780', 311, 'Pesquisa'),
-('Luís',     'Mendes',         '(14) 94456-7891', 312, 'Integral'),
-('Mariana',  'Rocha',          '(15) 95567-8902', 313, 'Parcial 50%'),
-('Nilo',     'Azevedo',        '(16) 96678-9013', 314, 'Monitoria'),
-('Otávia',   'Cardoso',        '(17) 97789-0124', 315, 'Integral'),
-('Paulo',    'Albuquerque',    '(18) 98890-1235', 316, 'Pesquisa'),
-('Quitéria', 'Lima',           '(19) 99901-2346', 317, 'Parcial 25%'),
-('Rodrigo',  'Bastos',         '(22) 91012-3457', 318, 'Integral'),
-('Sabrina',  'Barros',         '(23) 92123-4568', 319, 'Extensão'),
-('Tiago',    'Figueiredo',     '(24) 93234-5679', 320, 'Parcial 35%'),
-('Ulisses',  'Teixeira',       '(25) 94345-6780', 321, 'Esporte'),
-('Valéria',  'Duarte',         '(26) 95456-7891', 322, 'Parcial 20%'),
-('Wagner',   'Pacheco',        '(27) 96567-8902', 323, 'Integral'),
-('Xênia',    'Braga',          '(28) 97678-9013', 324, 'Pesquisa'),
-('Yara',     'Falcão',         '(29) 98789-0124', 325, 'Parcial 40%'),
-('Zeca',     'Brito',          '(30) 99890-1235', 326, 'Monitoria'),
-('Pedro',    'Monteiro',        '(32) 90901-2346', 327, 'Integral'),
-('Luana',  'Prudenciato',         '(33) 92012-3457', 327, 'Parcial 30%'),
-('Theo',     'Guimaraes',        '(34) 93123-4568', 327, 'Pesquisa'),
-('Eduardo',     'Camargo',         '(35) 94234-5679', 327, 'Integral');
-
-
--- ('Pedro',    'Monteiro',        '(32) 90901-2346', 327, 'Excelente laboratório.',         5,  NULL,                         5, 5),
--- ('Luana',  'Prudenciato',         '(33) 92012-3457', 327, NULL,                             4,  'Exercícios extras',          4, 4),
--- ('Theo',     'Guimaraes',        '(34) 93123-4568', 327, 'Conteúdo avançado.',             4,  NULL,                         4, 4),
--- ('Eduardo',     'Camargo',         '(35) 94234-5679', 327, NULL,                             5,  'Casos de estudo',            5, 5);
+('Diego',     'Pereira',     '(41) 95678-9013', 304, 'Esporte'),
+('Felipe',    'Ramos',       '(61) 97890-1235', 306, 'Extensão'),
+('Gabriela',  'Fernandes',   '(71) 98901-2346', 307, 'Parcial 30%'),
+('Iara',      'Cruz',        '(91) 91123-4568', 309, 'Cultura'),
+('Karina',    'Martins',     '(13) 93345-6780', 311, 'Pesquisa'),
+('Mariana',   'Rocha',       '(15) 95567-8902', 313, 'Parcial 50%'),
+('Otávia',    'Cardoso',     '(17) 97789-0124', 315, 'Integral'),
+('Quitéria',  'Lima',        '(19) 99901-2346', 317, 'Parcial 25%'),
+('Tiago',     'Figueiredo',  '(24) 93234-5679', 320, 'Parcial 35%'),
+('Xênia',     'Braga',       '(28) 97678-9013', 324, 'Pesquisa'),
+('Yara',      'Falcão',      '(29) 98789-0124', 325, 'Parcial 40%'),
+('Zeca',      'Brito',       '(30) 99890-1235', 326, 'Monitoria'),
+('Luana',     'Prudenciato', '(33) 92012-3457', 327, 'Parcial 30%'),
+('Theo',      'Guimarães',   '(34) 93000-1122', 327, 'Pesquisa'),
+('Adriana',   'Mendonça',    '(36) 90011-1111', 330, 'Integral'),
+('Bernardo',  'Vieira',      '(37) 91122-2222', 331, 'Pesquisa'),
+('Camila',    'Albuquerque', '(38) 92233-3333', 332, 'Parcial 30%'),
+('Daniel',    'Siqueira',    '(39) 93344-4444', 333, 'Monitoria'),
+('Elisa',     'Moura',       '(40) 94455-5555', 334, 'Integral'),
+('Fábio',     'Queiroz',     '(41) 95566-6666', 335, 'Extensão'),
+('Giovana',   'Nunes',       '(42) 96677-7777', 328, 'Parcial 20%'),
+('Heitor',    'Batista',     '(43) 97788-8888', 329, 'Pesquisa'),
+('Isabela',   'Correia',     '(44) 98899-9999', 330, 'Parcial 25%'),
+('João',      'Peixoto',     '(45) 90110-1010', 331, 'Integral'),
+('Kelly',     'Reis',        '(46) 91221-2121', 332, 'Extensão'),
+('Leonardo',  'Pires',       '(47) 92332-3232', 333, 'Pesquisa'),
+('Marina',    'Barbosa',     '(48) 93443-4343', 334, 'Parcial 30%'),
+('Natália',   'Araújo',      '(49) 94554-5454', 335, 'Parcial 40%'),
+('Omar',      'Rodrigues',   '(50) 95665-6565', 328, 'Esporte'),
+('Rafael',    'Barcellos',   '(52) 97887-8787', 330, 'Integral');
 
 /* ======================================================
    Tabela 26 – Descontos_Matricula  (30 linhas)
@@ -922,47 +1055,39 @@ VALUES
 INSERT INTO Descontos_Matricula
     (nome_aluno, sobrenome_aluno, telefone_aluno, id_turma, desconto)
 VALUES
-('Ana',      'Silva',          '(11) 91234-5678', 301, 10),
-('Bruno',    'Costa',          '(21) 93456-7891', 302, 15),
-('Carla',    'Oliveira',       '(31) 94567-8902', 303,  5),
-('Diego',    'Pereira',        '(41) 95678-9013', 304, 20),
-('Eliane',   'Santos',         '(51) 96789-0124', 305, 10),
-('Felipe',   'Ramos',          '(61) 97890-1235', 306, 12),
-('Gabriela', 'Fernandes',      '(71) 98901-2346', 301,  8),
-('Henrique', 'Gomes',          '(81) 90012-3457', 301, 15),
-('Iara',     'Cruz',           '(91) 91123-4568', 301,  5),
-('João',     'Souza',          '(12) 92234-5679', 310, 10),
-('Karina',   'Martins',        '(13) 93345-6780', 311, 18),
-('Luís',     'Mendes',         '(14) 94456-7891', 312,  7),
-('Mariana',  'Rocha',          '(15) 95567-8902', 313, 12),
-('Nilo',     'Azevedo',        '(16) 96678-9013', 314, 10),
-('Otávia',   'Cardoso',        '(17) 97789-0124', 315,  6),
-('Paulo',    'Albuquerque',    '(18) 98890-1235', 316, 14),
-('Quitéria', 'Lima',           '(19) 99901-2346', 317,  5),
-('Rodrigo',  'Bastos',         '(22) 91012-3457', 318, 20),
-('Sabrina',  'Barros',         '(23) 92123-4568', 319,  9),
-('Tiago',    'Figueiredo',     '(24) 93234-5679', 320, 11),
-('Ulisses',  'Teixeira',       '(25) 94345-6780', 321, 13),
-('Valéria',  'Duarte',         '(26) 95456-7891', 322,  6),
-('Wagner',   'Pacheco',        '(27) 96567-8902', 323, 16),
-('Xênia',    'Braga',          '(28) 97678-9013', 324, 10),
-('Yara',     'Falcão',         '(29) 98789-0124', 325, 15),
-('Zeca',     'Brito',          '(30) 99890-1235', 326, 12),
-('Pedro',    'Monteiro',        '(32) 90901-2346', 327, 17),
-('Luana',  'Prudenciato',         '(33) 92012-3457', 327,  8),
-('Theo',     'Guimaraes',        '(34) 93123-4568', 327, 14),
-('Eduardo',     'Camargo',         '(35) 94234-5679', 327, 10);
-
-
--- ('Pedro',    'Monteiro',        '(32) 90901-2346', 327, 'Excelente laboratório.',         5,  NULL,                         5, 5),
--- ('Luana',  'Prudenciato',         '(33) 92012-3457', 327, NULL,                             4,  'Exercícios extras',          4, 4),
--- ('Theo',     'Guimaraes',        '(34) 93123-4568', 327, 'Conteúdo avançado.',             4,  NULL,                         4, 4),
--- ('Eduardo',     'Camargo',         '(35) 94234-5679', 327, NULL,                             5,  'Casos de estudo',            5, 5);
-
+('Diego',     'Pereira',     '(41) 95678-9013', 304, 20),
+('Felipe',    'Ramos',       '(61) 97890-1235', 306, 12),
+('Gabriela',  'Fernandes',   '(71) 98901-2346', 307,  8),
+('Iara',      'Cruz',        '(91) 91123-4568', 309,  5),
+('Karina',    'Martins',     '(13) 93345-6780', 311, 18),
+('Mariana',   'Rocha',       '(15) 95567-8902', 313, 12),
+('Otávia',    'Cardoso',     '(17) 97789-0124', 315,  6),
+('Quitéria',  'Lima',        '(19) 99901-2346', 317,  5),
+('Tiago',     'Figueiredo',  '(24) 93234-5679', 320, 11),
+('Xênia',     'Braga',       '(28) 97678-9013', 324, 10),
+('Yara',      'Falcão',      '(29) 98789-0124', 325, 15),
+('Zeca',      'Brito',       '(30) 99890-1235', 326, 12),
+('Luana',     'Prudenciato', '(33) 92012-3457', 327,  8),
+('Theo',      'Guimarães',   '(34) 93000-1122', 327, 14),
+('Adriana',   'Mendonça',    '(36) 90011-1111', 330, 10),
+('Bernardo',  'Vieira',      '(37) 91122-2222', 331, 15),
+('Camila',    'Albuquerque', '(38) 92233-3333', 332,  9),
+('Daniel',    'Siqueira',    '(39) 93344-4444', 333, 20),
+('Elisa',     'Moura',       '(40) 94455-5555', 334, 10),
+('Fábio',     'Queiroz',     '(41) 95566-6666', 335, 12),
+('Giovana',   'Nunes',       '(42) 96677-7777', 328,  7),
+('Heitor',    'Batista',     '(43) 97788-8888', 329, 15),
+('Isabela',   'Correia',     '(44) 98899-9999', 330,  6),
+('João',      'Peixoto',     '(45) 90110-1010', 331, 10),
+('Kelly',     'Reis',        '(46) 91221-2121', 332, 14),
+('Leonardo',  'Pires',       '(47) 92332-3232', 333, 11),
+('Marina',    'Barbosa',     '(48) 93443-4343', 334, 16),
+('Natália',   'Araújo',      '(49) 94554-5454', 335,  6),
+('Omar',      'Rodrigues',   '(50) 95665-6565', 328,  5),
+('Rafael',    'Barcellos',   '(52) 97887-8787', 330, 10);
 
 /* ======================================================
    Tabela 27 – Horario  (30 linhas)
-   (dia_semana 1–7 e horários coerentes)
 ====================================================== */
 INSERT INTO Horario
     (dia_semana, hora_ini, id_turma, num_sala, hora_fim)
@@ -1001,7 +1126,6 @@ VALUES
 
 /* ======================================================
    Tabela 28 – chat_direto  (30 linhas)
-   (mensagens entre usuários distintos)
 ====================================================== */
 INSERT INTO chat_direto
     (id_msg, nome_remetente, sobrenome_remetente, telefone_remetente,
@@ -1042,120 +1166,70 @@ VALUES
 
 /* ======================================================
    Tabela 29 – chat_turma  (30 linhas)
-   (professor conversa com sua turma)
 ====================================================== */
 INSERT INTO chat_turma
     (id_msg, nome_prof, sobrenome_prof, telefone_prof,
      id_turma, timestamp, texto)
 VALUES
-(2001,'Ana','Silva','(11) 91234-5678',301,'2025-06-20 12:00:00','Bem-vindos à disciplina!'),
-(2002,'Bruno','Costa','(21) 93456-7891',302,'2025-06-20 12:05:00',NULL),
-(2003,'Carla','Oliveira','(31) 94567-8902',303,'2025-06-20 12:10:00','Leitura para próxima aula.'),
-(2004,'Diego','Pereira','(41) 95678-9013',304,'2025-06-20 12:15:00','Lista de exercícios publicada.'),
-(2005,'Eliane','Santos','(51) 96789-0124',305,'2025-06-20 12:20:00',NULL),
-(2006,'Felipe','Ramos','(61) 97890-1235',306,'2025-06-20 12:25:00','Prova dia 30/06.'),
-(2007,'Gabriela','Fernandes','(71) 98901-2346',307,'2025-06-20 12:30:00','Vídeo complementar disponível.'),
-(2008,'Henrique','Gomes','(81) 90012-3457',308,'2025-06-20 12:35:00',NULL),
-(2009,'Iara','Cruz','(91) 91123-4568',309,'2025-06-20 12:40:00','Troca de sala amanhã.'),
-(2010,'João','Souza','(12) 92234-5679',310,'2025-06-20 12:45:00',NULL),
-(2011,'Karina','Martins','(13) 93345-6780',311,'2025-06-20 12:50:00','Projeto em grupos.'),
-(2012,'Luís','Mendes','(14) 94456-7891',312,'2025-06-20 12:55:00',NULL),
-(2013,'Mariana','Rocha','(15) 95567-8902',313,'2025-06-20 13:00:00','Visita técnica confirmada.'),
-(2014,'Nilo','Azevedo','(16) 96678-9013',314,'2025-06-20 13:05:00',NULL),
-(2015,'Otávia','Cardoso','(17) 97789-0124',315,'2025-06-20 13:10:00','Entrega do artigo prorrogada.'),
-(2016,'Paulo','Albuquerque','(18) 98890-1235',316,'2025-06-20 13:15:00',NULL),
-(2017,'Quitéria','Lima','(19) 99901-2346',317,'2025-06-20 13:20:00','Não haverá aula sexta.'),
-(2018,'Rodrigo','Bastos','(22) 91012-3457',318,'2025-06-20 13:25:00',NULL),
-(2019,'Sabrina','Barros','(23) 92123-4568',319,'2025-06-20 13:30:00','Material novo no Moodle.'),
-(2020,'Tiago','Figueiredo','(24) 93234-5679',320,'2025-06-20 13:35:00',NULL),
-(2021,'Ulisses','Teixeira','(25) 94345-6780',321,'2025-06-20 13:40:00','Revisão dia 28.'),
-(2022,'Valéria','Duarte','(26) 95456-7891',322,'2025-06-20 13:45:00',NULL),
-(2023,'Wagner','Pacheco','(27) 96567-8902',323,'2025-06-20 13:50:00','Aula extra agendada.'),
-(2024,'Xênia','Braga','(28) 97678-9013',324,'2025-06-20 13:55:00',NULL),
-(2025,'Yara','Falcão','(29) 98789-0124',325,'2025-06-20 14:00:00','Dúvidas? Enviem mensagem.'),
-(2026,'Zeca','Brito','(30) 99890-1235',326,'2025-06-20 14:05:00',NULL),
-(2027,'Álvaro','Tavares','(32) 90901-2346',327,'2025-06-20 14:10:00','Exercício 3 corrigido.'),
-(2028,'Béatrice','Dupont','(33) 92012-3457',327,'2025-06-20 14:15:00',NULL),
-(2029,'César','Aguilar','(34) 93123-4568',327,'2025-06-20 14:20:00','Bibliografia adicional postada.'),
-(2030,'Dália','Kovács','(35) 94234-5679',327,'2025-06-20 14:25:00',NULL);
+(2001,'Ana',     'Silva',        '(11) 91234-5678',301,'2025-06-20 12:00:00','Bem-vindos à disciplina!'),
+(2002,'Bruno',   'Costa',        '(21) 93456-7891',302,'2025-06-20 12:05:00',NULL),
+(2003,'Carla',   'Oliveira',     '(31) 94567-8902',303,'2025-06-20 12:10:00','Leitura para próxima aula.'),
+(2004,'Dora',    'Ferraz',       '(69) 96663-6363',304,'2025-06-20 12:15:00','Lista de exercícios publicada.'),
+(2005,'Eliane',  'Santos',       '(51) 96789-0124',305,'2025-06-20 12:20:00',NULL),
+(2006,'Eduardo', 'Barros',       '(70) 97774-7474',306,'2025-06-20 12:25:00','Prova dia 30/06.'),
+(2007,'Fernanda','Assis',        '(71) 98885-8585',307,'2025-06-20 12:30:00','Vídeo complementar disponível.'),
+(2008,'Henrique','Gomes',        '(81) 90012-3457',308,'2025-06-20 12:35:00',NULL),
+(2009,'Iara',    'Cruz',         '(91) 91123-4568',309,'2025-06-20 12:40:00','Troca de sala amanhã.'),
+(2010,'Juliana', 'Barreto',      '(75) 93329-2929',310,'2025-06-20 12:45:00',NULL),
+(2011,'Kleber',  'Amaral',       '(76) 94430-3031',311,'2025-06-20 12:50:00','Projeto em grupos.'),
+(2012,'Larissa', 'Macedo',       '(77) 95541-4142',312,'2025-06-20 12:55:00',NULL),
+(2013,'Maurício','Rezende',      '(78) 96652-5253',313,'2025-06-20 13:00:00','Visita técnica confirmada.'),
+(2014,'Nilo',    'Azevedo',      '(16) 96678-9013',314,'2025-06-20 13:05:00',NULL),
+(2015,'Nádia',   'Ribeiro',      '(79) 97763-6364',315,'2025-06-20 13:10:00','Entrega do artigo prorrogada.'),
+(2016,'Otávio',  'Godoy',        '(80) 98874-7475',316,'2025-06-20 13:15:00',NULL),
+(2017,'Quitéria','Lima',         '(19) 99901-2346',317,'2025-06-20 13:20:00','Não haverá aula sexta.'),
+(2018,'Rodrigo', 'Bastos',       '(22) 91012-3457',318,'2025-06-20 13:25:00',NULL),
+(2019,'Sílvia',  'Pimentel',     '(83) 92217-0708',319,'2025-06-20 13:30:00','Material novo no Moodle.'),
+(2020,'Tadeu',   'Guedes',       '(84) 93328-1819',320,'2025-06-20 13:35:00',NULL),
+(2021,'Ulisses', 'Teixeira',     '(25) 94345-6780',321,'2025-06-20 13:40:00','Revisão dia 28.'),
+(2022,'Valter',  'Carvalho',     '(86) 95540-3032',322,'2025-06-20 13:45:00',NULL),
+(2023,'Waleska', 'Braga',        '(87) 96651-4143',323,'2025-06-20 13:50:00','Aula extra agendada.'),
+(2024,'Xavier',  'Fonseca',      '(88) 97762-5254',324,'2025-06-20 13:55:00',NULL),
+(2025,'Yasmin',  'Duarte',       '(89) 98873-6365',325,'2025-06-20 14:00:00','Dúvidas? Enviem mensagem.'),
+(2026,'Zélio',   'Santiago',     '(90) 90084-7476',326,'2025-06-20 14:05:00',NULL),
+(2027,'Álvaro',  'Tavares',      '(32) 90901-2346',327,'2025-06-20 14:10:00','Exercício 3 corrigido.'),
+(2028,'Aline',   'Vasques',      '(91) 91195-8587',327,'2025-06-20 14:15:00',NULL),
+(2029,'Bruno',   'Henrique',     '(92) 92206-9698',327,'2025-06-20 14:20:00','Bibliografia adicional postada.'),
+(2030,'Cláudia', 'Alencar',      '(93) 93317-0709',327,'2025-06-20 14:25:00',NULL);
 
 
-/* ------------------------------------------------------------------
-1) Duas disciplinas novas **sem nenhum aluno matriculado**
------------------------------------------------------------------- */
-INSERT INTO Disciplina
-    (codigo_disc, qtd_aulas_semana, material)
-VALUES
-(131, 3, 'Livro: Ecologia Urbana'),   -- nunca aparece em nenhuma turma
-(132, 4, NULL);                       -- idem, zero matrículas
+/* ===== 1. Disciplinas novas (ainda sem turmas com alunos) */
+INSERT INTO Disciplina (codigo_disc, qtd_aulas_semana, material) VALUES
+(131, 3, 'Livro: Ecologia Urbana'),
+(132, 4, NULL);
 
-/* ------------------------------------------------------------------
-2) Mesma aluna cursando a MESMA disciplina em outra oferta
-   – Nova turma 331 da disciplina 101, semestre/ano diferentes
------------------------------------------------------------------- */
-INSERT INTO Turma
-    (id_turma, semestre, ano,
-     nome_prof, sobrenome_prof, telefone_prof,
-     codigo_disc, qtd_alunos)
-VALUES
-(331, 2, 2026,  -- semestre/ano distintos → não viola UNIQUE
- 'Ana', 'Silva', '(11) 91234-5678',
- 101, 1);        -- mesma disciplina 101, só 1 aluna por enquanto
+/* ===== 2. Turmas novas */
+INSERT INTO Turma  (id_turma, semestre, ano, nome_prof, sobrenome_prof, telefone_prof, codigo_disc, qtd_alunos) VALUES
+(340, 2, 2026, 'Ana',   'Silva',  '(11) 91234-5678', 101, 1),
+(342, 1, 2025, 'Bruno', 'Costa',  '(21) 93456-7891', 131, 0),
+(343, 2, 2025, 'Eliane','Santos', '(51) 96789-0124', 132, 0);
 
-/* Matrícula duplicada (aluna Ana já está na turma 301) */
+/* ===== 3. Matrículas */
 INSERT INTO Matriculas
-    (nome_aluno, sobrenome_aluno, telefone_aluno,
-     id_turma,
+    (nome_aluno, sobrenome_aluno, telefone_aluno, id_turma,
      dia_matricula, mes_matricula, ano_matricula,
-     status_matricula,
-     dia_mudanca, mes_mudanca, ano_mudanca,
-     taxa)
+     status_matricula, dia_mudanca, mes_mudanca, ano_mudanca, taxa)
 VALUES
-('Ana', 'Silva', '(11) 91234-5678',
- 331,
- 10, 6, 2025,
- 'Ativa',
- NULL, NULL, NULL,
- 900);
+-- turma 331 ─ nova oferta da disciplina 101
+('Adriana',  'Mendonça',  '(36) 90011-1111', 331, 10, 6, 2025, 'Ativa', NULL, NULL, NULL,  900),
 
-/* ------------------------------------------------------------------
-3) Vários alunos matriculados em UMA MESMA turma/mesma disciplina
-   – Usamos a turma 324 (disciplina 124) e adicionamos 4 alunos
------------------------------------------------------------------- */
-INSERT INTO Matriculas
-    (nome_aluno, sobrenome_aluno, telefone_aluno,
-     id_turma,
-     dia_matricula, mes_matricula, ano_matricula,
-     status_matricula,
-     dia_mudanca, mes_mudanca, ano_mudanca,
-     taxa)
-VALUES
-('Bruno',    'Costa',      '(21) 93456-7891', 324, 11, 6, 2025, 'Ativa',    NULL, NULL, NULL, 1050),
-('Diego',    'Pereira',    '(41) 95678-9013', 324, 12, 6, 2025, 'Ativa',    NULL, NULL, NULL, 1050),
-('Gabriela', 'Fernandes',  '(71) 98901-2346', 324, 13, 6, 2025, 'Ativa',    NULL, NULL, NULL, 1050),
-('Tiago',    'Figueiredo', '(24) 93234-5679', 324, 14, 6, 2025, 'Ativa',    NULL, NULL, NULL, 1050);
+-- turma 324 ─ acrescentando quatro alunos (disciplina 124)
+('Bernardo', 'Vieira',    '(37) 91122-2222', 324, 11, 6, 2025, 'Ativa', NULL, NULL, NULL, 1050),
+('Diego',    'Pereira',   '(41) 95678-9013', 324, 12, 6, 2025, 'Ativa', NULL, NULL, NULL, 1050),
+('Gabriela', 'Fernandes', '(71) 98901-2346', 324, 13, 6, 2025, 'Ativa', NULL, NULL, NULL, 1050),
+('Tiago',    'Figueiredo','(24) 93234-5679', 324, 14, 6, 2025, 'Ativa', NULL, NULL, NULL, 1050);
 
-
-/* ------------------------------------------------------------------
-A) Turmas para as disciplinas 131 e 132 – sem matriculados
------------------------------------------------------------------- */
-INSERT INTO Turma
-    (id_turma, semestre, ano,
-     nome_prof, sobrenome_prof, telefone_prof,
-     codigo_disc, qtd_alunos)
-VALUES
-(332, 1, 2025,  -- nova turma, semestre 1/2025
- 'Bruno',     'Costa',   '(21) 93456-7891',
- 131,          0),       -- disciplina 131, zero alunos
-
-(333, 2, 2025,  -- outra oferta, semestre 2/2025
- 'Eliane',    'Santos',  '(51) 96789-0124',
- 132,          0);       -- disciplina 132, zero alunos
-
-/* ------------------------------------------------------------------
-B) (Opcional, mas recomendado) reserva de sala para as turmas novas
-   – garante consistência caso você tenha gatilhos ou relatórios
------------------------------------------------------------------- */
+/* ===== 4. Agendamento de salas para as turmas 332 e 333 */
 INSERT INTO Agendamento_salas (id_turma, num_sala) VALUES
-(332, 1002),  -- sala já existente, combinação (turma,sala) é única
+(332, 1002),
 (333, 1005);
