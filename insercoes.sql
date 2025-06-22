@@ -821,10 +821,15 @@ VALUES
 ('Xênia',    'Braga',          '(28) 97678-9013', 324, NULL,                             4,  NULL,                         4, 4),
 ('Yara',     'Falcão',         '(29) 98789-0124', 325, 'Precisa melhorar slides.',       3,  NULL,                         3, 3),
 ('Zeca',     'Brito',          '(30) 99890-1235', 326, NULL,                             4,  'Infográficos',               4, 4),
-('Álvaro',   'Tavares',        '(32) 90901-2346', 327, 'Excelente laboratório.',         5,  NULL,                         5, 5),
-('Béatrice', 'Dupont',         '(33) 92012-3457', 327, NULL,                             4,  'Exercícios extras',          4, 4),
-('César',    'Aguilar',        '(34) 93123-4568', 327, 'Conteúdo avançado.',             4,  NULL,                         4, 4),
-('Dália',    'Kovács',         '(35) 94234-5679', 327, NULL,                             5,  'Casos de estudo',            5, 5);
+('Pedro',    'Monteiro',        '(32) 90901-2346', 327, 'Excelente laboratório.',         5,  NULL,                         5, 5),
+('Luana',  'Prudenciato',         '(33) 92012-3457', 327, NULL,                             4,  'Exercícios extras',          4, 4),
+('Theo',     'Guimaraes',        '(34) 93123-4568', 327, 'Conteúdo avançado.',             4,  NULL,                         4, 4),
+('Eduardo',     'Camargo',         '(35) 94234-5679', 327, NULL,                             5,  'Casos de estudo',            5, 5);
+
+-- ('Pedro',    'Monteiro',        '(32) 90901-2346', 26,  6, 1992, 'Vitória',       'ES', 'Brasil', NULL,           'alvaro.tavares@corp.com',    'At!205',           'Masculino',   'Professor'),
+-- ('Luana',  'Prudenciato',         '(33) 92012-3457', 10,  9, 1984, 'Paris',         NULL, 'França', 'Apt 102',      'beatrice.dupont@ex.fr',      'Bd#194',           'Feminino',    NULL),
+-- ('Theo',     'Guimaraes',        '(34) 93123-4568', 15, 12, 1993, 'Lima',          NULL, 'Peru',   NULL,           'cesar.aguilar@mail.pe',      'CaPwd!9',          'Masculino',   'Aluno'),
+-- ('Eduardo',     'Camargo',         '(35) 94234-5679', 24,  4, 1991, NULL,            NULL, NULL,     'Bloco D',      'dalia.kovacs@ex.hu',         'Dk_191$',          'Feminino',    'Administrador'),
 
 /* ======================================================
    Tabela 24 – Notas_Matricula  (30 linhas)
@@ -858,10 +863,15 @@ VALUES
 ('Xênia',    'Braga',          '(28) 97678-9013', 324,  88),
 ('Yara',     'Falcão',         '(29) 98789-0124', 325,  79),
 ('Zeca',     'Brito',          '(30) 99890-1235', 326,  84),
-('Álvaro',   'Tavares',        '(32) 90901-2346', 327,  97),
-('Béatrice', 'Dupont',         '(33) 92012-3457', 327,  85),
-('César',    'Aguilar',        '(34) 93123-4568', 327,  88),
-('Dália',    'Kovács',         '(35) 94234-5679', 327,  92);
+('Pedro',    'Monteiro',        '(32) 90901-2346', 327,  97),
+('Luana',  'Prudenciato',         '(33) 92012-3457', 327,  85),
+('Theo',     'Guimaraes',        '(34) 93123-4568', 327,  88),
+('Eduardo',     'Camargo',         '(35) 94234-5679', 327,  92);
+
+-- ('Pedro',    'Monteiro',        '(32) 90901-2346', 327, 'Excelente laboratório.',         5,  NULL,                         5, 5),
+-- ('Luana',  'Prudenciato',         '(33) 92012-3457', 327, NULL,                             4,  'Exercícios extras',          4, 4),
+-- ('Theo',     'Guimaraes',        '(34) 93123-4568', 327, 'Conteúdo avançado.',             4,  NULL,                         4, 4),
+-- ('Eduardo',     'Camargo',         '(35) 94234-5679', 327, NULL,                             5,  'Casos de estudo',            5, 5);
 
 /* ======================================================
    Tabela 25 – Bolsas_Estudo_Matricula  (30 linhas)
@@ -895,10 +905,16 @@ VALUES
 ('Xênia',    'Braga',          '(28) 97678-9013', 324, 'Pesquisa'),
 ('Yara',     'Falcão',         '(29) 98789-0124', 325, 'Parcial 40%'),
 ('Zeca',     'Brito',          '(30) 99890-1235', 326, 'Monitoria'),
-('Álvaro',   'Tavares',        '(32) 90901-2346', 327, 'Integral'),
-('Béatrice', 'Dupont',         '(33) 92012-3457', 327, 'Parcial 30%'),
-('César',    'Aguilar',        '(34) 93123-4568', 327, 'Pesquisa'),
-('Dália',    'Kovács',         '(35) 94234-5679', 327, 'Integral');
+('Pedro',    'Monteiro',        '(32) 90901-2346', 327, 'Integral'),
+('Luana',  'Prudenciato',         '(33) 92012-3457', 327, 'Parcial 30%'),
+('Theo',     'Guimaraes',        '(34) 93123-4568', 327, 'Pesquisa'),
+('Eduardo',     'Camargo',         '(35) 94234-5679', 327, 'Integral');
+
+
+-- ('Pedro',    'Monteiro',        '(32) 90901-2346', 327, 'Excelente laboratório.',         5,  NULL,                         5, 5),
+-- ('Luana',  'Prudenciato',         '(33) 92012-3457', 327, NULL,                             4,  'Exercícios extras',          4, 4),
+-- ('Theo',     'Guimaraes',        '(34) 93123-4568', 327, 'Conteúdo avançado.',             4,  NULL,                         4, 4),
+-- ('Eduardo',     'Camargo',         '(35) 94234-5679', 327, NULL,                             5,  'Casos de estudo',            5, 5);
 
 /* ======================================================
    Tabela 26 – Descontos_Matricula  (30 linhas)
@@ -932,10 +948,16 @@ VALUES
 ('Xênia',    'Braga',          '(28) 97678-9013', 324, 10),
 ('Yara',     'Falcão',         '(29) 98789-0124', 325, 15),
 ('Zeca',     'Brito',          '(30) 99890-1235', 326, 12),
-('Álvaro',   'Tavares',        '(32) 90901-2346', 327, 17),
-('Béatrice', 'Dupont',         '(33) 92012-3457', 327,  8),
-('César',    'Aguilar',        '(34) 93123-4568', 327, 14),
-('Dália',    'Kovács',         '(35) 94234-5679', 327, 10);
+('Pedro',    'Monteiro',        '(32) 90901-2346', 327, 17),
+('Luana',  'Prudenciato',         '(33) 92012-3457', 327,  8),
+('Theo',     'Guimaraes',        '(34) 93123-4568', 327, 14),
+('Eduardo',     'Camargo',         '(35) 94234-5679', 327, 10);
+
+
+-- ('Pedro',    'Monteiro',        '(32) 90901-2346', 327, 'Excelente laboratório.',         5,  NULL,                         5, 5),
+-- ('Luana',  'Prudenciato',         '(33) 92012-3457', 327, NULL,                             4,  'Exercícios extras',          4, 4),
+-- ('Theo',     'Guimaraes',        '(34) 93123-4568', 327, 'Conteúdo avançado.',             4,  NULL,                         4, 4),
+-- ('Eduardo',     'Camargo',         '(35) 94234-5679', 327, NULL,                             5,  'Casos de estudo',            5, 5);
 
 
 /* ======================================================
