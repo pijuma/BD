@@ -1,5 +1,5 @@
 /* ------------------------------------------------------
-   Tabela 1 – Usuario 
+   Tabela 1 – Usuario (90 linhas)
 ------------------------------------------------------ */
 INSERT INTO Usuario
     (nome, sobrenome, telefone,
@@ -94,31 +94,15 @@ VALUES
 ('Ulisses',   'Teixeira',     '(25) 94345-6780',  4,  3, 1986, 'Brasília',       'DF', 'Brasil', NULL,            'ulisses.teix@corp.com',      'Ut_pass86',    'Masculino','Professor'),
 ('Pedro',     'Monteiro',     '(32) 90000-1234', 26,  6, 1992, 'Vitória',        'ES', 'Brasil', NULL,            'pedro.monteiro@corp.com',    'Pm@2025',      'Masculino','Professor'),
 ('Álvaro',    'Tavares',      '(32) 90901-2346', 26,  6, 1992, 'Vitória',        'ES', 'Brasil', NULL,            'alvaro.tavares@corp.com',    'At!2025',      'Masculino','Professor'),
-('Bruno',    'Almeida', '(11) 90001-0001',  5,  3, 1980, 'Santo André',           'SP', 'Brasil', 'Sala 101', 'bruno.almeida@bio.uni.br',  'Ba@1980Bio',   'Masculino', 'Professor'),
-
-('Camila',   'Garcia',  '(11) 90002-0002', 14,  7, 1984, 'Campinas',              'SP', 'Brasil', 'Casa 8',
- 'camila.garcia@bio.uni.br',  'Cg#1984!',     'Feminino',  'Professor'),
-
-('Daniel',   'Moreira', '(11) 90003-0003', 22, 11, 1979, 'Ribeirão Preto',        'SP', 'Brasil', NULL,
- 'daniel.moreira@bio.uni.br', 'Dm*1979Bio',   'Masculino', 'Professor'),
-
-('Elisa',    'Pereira', '(11) 90004-0004',  9,  2, 1985, 'Santos',                'SP', 'Brasil', 'Apt 33',
- 'elisa.pereira@bio.uni.br',  'Ep@1985#',     'Feminino',  'Professor'),
-
-('Fernando', 'Rocha',   '(11) 90005-0005', 18,  9, 1978, 'São Paulo',             'SP', 'Brasil', NULL,
- 'fernando.rocha@bio.uni.br', 'Fr$1978',      'Masculino', 'Professor'),
-
-('Gabriela', 'Lima',    '(11) 90006-0006', 27,  5, 1983, 'Guarulhos',             'SP', 'Brasil', 'Bloco D',
- 'gabriela.lima@bio.uni.br',  'Gl@1983!',     'Feminino',  'Professor'),
-
-('Henrique', 'Barros',  '(11) 90007-0007',  3, 12, 1981, 'São Bernardo do Campo', 'SP', 'Brasil', NULL,
- 'henrique.barros@bio.uni.br','Hb*1981Bio',   'Masculino', 'Professor'),
-
-('Isabela',  'Nunes',   '(11) 90008-0008', 30,  4, 1986, 'São Paulo',             'SP', 'Brasil', 'Ap 404',
- 'isabela.nunes@bio.uni.br',  'In1986$',      'Feminino',  'Professor'),
-
-('João',     'Martins', '(11) 90009-0009', 11,  8, 1982, 'São José dos Campos',   'SP', 'Brasil', 'Casa 21',
- 'joao.martins@bio.uni.br',   'Jm@1982!',     'Masculino', 'Professor'),
+('Bruno',    'Almeida',       '(11) 90001-0001',  5,  3, 1980, 'Santo André',           'SP', 'Brasil',           'Sala 101', 'bruno.almeida@bio.uni.br',  'Ba@1980Bio',   'Masculino', 'Professor'),
+('Camila',   'Garcia',        '(11) 90002-0002', 14,  7, 1984, 'Campinas',              'SP', 'Brasil',           'Casa 8', 'camila.garcia@bio.uni.br',  'Cg#1984!',     'Feminino',  'Professor'),
+('Daniel',   'Moreira',       '(11) 90003-0003', 22, 11, 1979, 'Ribeirão Preto',        'SP', 'Brasil',           NULL, 'daniel.moreira@bio.uni.br', 'Dm*1979Bio',   'Masculino', 'Professor'),
+('Elisa',    'Pereira',       '(11) 90004-0004',  9,  2, 1985, 'Santos',                'SP', 'Brasil',           'Apt 33', 'elisa.pereira@bio.uni.br',  'Ep@1985#',     'Feminino',  'Professor'),
+('Fernando', 'Rocha',         '(11) 90005-0005', 18,  9, 1978, 'São Paulo',             'SP', 'Brasil',           NULL, 'fernando.rocha@bio.uni.br', 'Fr$1978',      'Masculino', 'Professor'),
+('Gabriela', 'Lima',          '(11) 90006-0006', 27,  5, 1983, 'Guarulhos',             'SP', 'Brasil',          'Bloco D', 'gabriela.lima@bio.uni.br',  'Gl@1983!',     'Feminino',  'Professor'),
+('Henrique', 'Barros',        '(11) 90007-0007',  3, 12, 1981, 'São Bernardo do Campo', 'SP', 'Brasil',          NULL, 'henrique.barros@bio.uni.br','Hb*1981Bio',   'Masculino', 'Professor'),
+('Isabela',  'Nunes',         '(11) 90008-0008', 30,  4, 1986, 'São Paulo',             'SP', 'Brasil',          'Ap 404', 'isabela.nunes@bio.uni.br',  'In1986$',      'Feminino',  'Professor'),
+('João',     'Martins',       '(11) 90009-0009', 11,  8, 1982, 'São José dos Campos',   'SP', 'Brasil',          'Casa 21', 'joao.martins@bio.uni.br',   'Jm@1982!',     'Masculino', 'Professor'),
 
 -- ---------- 30 ADMINISTRADORES ----------
 ('Adriano',  'Abreu',         '(96) 90010-1001',  1,  1, 1980, 'Macapá',              'AP', 'Brasil', NULL,           'adriano.abreu@example.com',     'Aa#1980',  'Masculino','Administrador'),
@@ -546,7 +530,9 @@ VALUES
 (127, 3, 'Cartilha de primeiros socorros'),
 (128, 2, NULL),
 (129, 6, 'Gramática francesa contemporânea'),
+(131, 3, 'Livro: Ecologia Urbana'),
 (130, 3, NULL),
+(132, 4, NULL),
 (133, 3, NULL),
 (134, 2, NULL),
 (135, 4, NULL),
@@ -565,6 +551,7 @@ VALUES
 (148, 3, NULL),
 (149, 2, NULL),
 (150, 3, 'Artigos');
+
 
 
 /* ======================================================
@@ -777,7 +764,10 @@ VALUES
 (226, 1, 2025, 'Gabriela', 'Lima',    '(11) 90006-0006', 147, 0),
 (227, 1, 2025, 'Henrique', 'Barros',  '(11) 90007-0007', 148, 0),
 (228, 1, 2025, 'Isabela',  'Nunes',   '(11) 90008-0008', 149, 0),
-(229, 1, 2025, 'João',     'Martins', '(11) 90009-0009', 150, 0);
+(229, 1, 2025, 'João',     'Martins', '(11) 90009-0009', 150, 0),
+(340, 2, 2026, 'Ana',   'Silva',  '(11) 91234-5678', 101, 1),
+(342, 1, 2025, 'Bruno', 'Costa',  '(21) 93456-7891', 131, 0),
+(343, 2, 2025, 'Eliane','Santos', '(51) 96789-0124', 132, 0);
 
 /* ------------------------------------------------------
    Tabela 16 – Agendamento_salas  (30 linhas)
@@ -790,7 +780,8 @@ VALUES
 (311,1011),(312,1012),(313,1013),(314,1014),(315,1015),
 (316,1016),(317,1017),(318,1018),(319,1019),(320,1020),
 (321,1021),(322,1022),(323,1023),(324,1024),(325,1025),
-(326,1026),(327,1027),(328,1028),(329,1029),(330,1030);
+(326,1026),(327,1027),(328,1028),(329,1029),(330,1030),
+(332, 1002),(333, 1005);
 
 /* ------------------------------------------------------
    Tabela 17 – Responsaveis_disc  (30 linhas)
@@ -985,7 +976,12 @@ VALUES
 ('Brisa',    'Machado',   '(62) 98889-8989', 332, 16,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1090),
 ('Caio',     'Lins',      '(63) 90019-1910', 333, 17,  3, 2025, 'Pendente',  NULL, NULL, NULL, NULL),
 ('Denise',   'Pinto',     '(64) 91191-9101', 334, 17,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1100),
-('Eduarda',  'Farias',    '(65) 92292-0202', 335, 17,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1110);
+('Eduarda',  'Farias',    '(65) 92292-0202', 335, 17,  3, 2025, 'Ativa',     NULL, NULL, NULL, 1110),
+('Adriana',  'Mendonça',  '(36) 90011-1111', 331, 10, 6, 2025, 'Ativa',      NULL, NULL, NULL,  900),
+('Bernardo', 'Vieira',    '(37) 91122-2222', 324, 11, 6, 2025, 'Ativa',      NULL, NULL, NULL, 1050),
+('Diego',    'Pereira',   '(41) 95678-9013', 324, 12, 6, 2025, 'Ativa',      NULL, NULL, NULL, 1050),
+('Gabriela', 'Fernandes', '(71) 98901-2346', 324, 13, 6, 2025, 'Ativa',      NULL, NULL, NULL, 1050),
+('Tiago',    'Figueiredo','(24) 93234-5679', 324, 14, 6, 2025, 'Ativa',      NULL, NULL, NULL, 1050);
 
 /* ======================================================
    Tabela 23 – Avaliacao_Matricula  (30 linhas)
@@ -1254,34 +1250,3 @@ VALUES
 (2029,'Bruno',   'Henrique',     '(92) 92206-9698',327,'2025-06-20 14:20:00','Bibliografia adicional postada.'),
 (2030,'Cláudia', 'Alencar',      '(93) 93317-0709',327,'2025-06-20 14:25:00',NULL);
 
-
-/* ===== 1. Disciplinas novas (ainda sem turmas com alunos) */
-INSERT INTO Disciplina (codigo_disc, qtd_aulas_semana, material) VALUES
-(131, 3, 'Livro: Ecologia Urbana'),
-(132, 4, NULL);
-
-/* ===== 2. Turmas novas */
-INSERT INTO Turma  (id_turma, semestre, ano, nome_prof, sobrenome_prof, telefone_prof, codigo_disc, qtd_alunos) VALUES
-(340, 2, 2026, 'Ana',   'Silva',  '(11) 91234-5678', 101, 1),
-(342, 1, 2025, 'Bruno', 'Costa',  '(21) 93456-7891', 131, 0),
-(343, 2, 2025, 'Eliane','Santos', '(51) 96789-0124', 132, 0);
-
-/* ===== 3. Matrículas */
-INSERT INTO Matriculas
-    (nome_aluno, sobrenome_aluno, telefone_aluno, id_turma,
-     dia_matricula, mes_matricula, ano_matricula,
-     status_matricula, dia_mudanca, mes_mudanca, ano_mudanca, taxa)
-VALUES
--- turma 331 ─ nova oferta da disciplina 101
-('Adriana',  'Mendonça',  '(36) 90011-1111', 331, 10, 6, 2025, 'Ativa', NULL, NULL, NULL,  900),
-
--- turma 324 ─ acrescentando quatro alunos (disciplina 124)
-('Bernardo', 'Vieira',    '(37) 91122-2222', 324, 11, 6, 2025, 'Ativa', NULL, NULL, NULL, 1050),
-('Diego',    'Pereira',   '(41) 95678-9013', 324, 12, 6, 2025, 'Ativa', NULL, NULL, NULL, 1050),
-('Gabriela', 'Fernandes', '(71) 98901-2346', 324, 13, 6, 2025, 'Ativa', NULL, NULL, NULL, 1050),
-('Tiago',    'Figueiredo','(24) 93234-5679', 324, 14, 6, 2025, 'Ativa', NULL, NULL, NULL, 1050);
-
-/* ===== 4. Agendamento de salas para as turmas 332 e 333 */
-INSERT INTO Agendamento_salas (id_turma, num_sala) VALUES
-(332, 1002),
-(333, 1005);
