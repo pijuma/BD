@@ -12,7 +12,7 @@ CREATE TABLE Usuario(
 	email text CHECK(email ~ '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$') NOT NULL,
 	senha_acesso text NOT NULL, 
 	sexo varchar(20), 
-	vinculo varchar(20),
+	vinculo varchar(20) NOT NULL,
 	UNIQUE(email, senha_acesso),
 	PRIMARY KEY(nome, sobrenome, telefone) 
 );
