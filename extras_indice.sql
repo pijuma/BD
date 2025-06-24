@@ -1,7 +1,7 @@
 DO $$
 DECLARE
-  target_count   INTEGER := 150000;        -- quantas tuplas queremos inserir
-  inserted_count INTEGER := 0;             -- quantas já foram inseridas
+  target_count   INTEGER := 150000;       
+  inserted_count INTEGER := 0;             
   v_sem          INTEGER;
   v_ano          INTEGER;
   v_id           INTEGER;
@@ -12,30 +12,28 @@ DECLARE
   v_qtd_alunos   INTEGER;
   max_id         INTEGER;
 BEGIN
-  -- pega o maior id_turma atual para não colidir no PK
+  
   SELECT COALESCE(MAX(id_turma),0) INTO max_id FROM Turma;
 
   WHILE inserted_count < target_count LOOP
-    -- escolhe valores aleatórios
-    v_sem := (1 + floor(random() * 2))::int;                     -- 1 ou 2
-    v_ano := (2000 + floor(random() * 26))::int;                -- entre 2000 e 2025
-    v_qtd_alunos := (1 + floor(random() * 100))::int;           -- de 1 a 100 alunos
+    
+    v_sem := (1 + floor(random() * 2))::int;                    
+    v_ano := (2000 + floor(random() * 26))::int;                
+    v_qtd_alunos := (1 + floor(random() * 100))::int;           
 
-    -- pega um professor aleatório
     SELECT p.nome, p.sobrenome, p.telefone
       INTO v_nome, v_sobrenome, v_telefone
     FROM Professor p
     ORDER BY random()
     LIMIT 1;
 
-    -- pega uma disciplina aleatória
+
     SELECT d.codigo_disc
       INTO v_codigo_disc
     FROM Disciplina d
     ORDER BY random()
     LIMIT 1;
 
-    -- nova chave primária
     max_id := max_id + 1;
 
     BEGIN
@@ -59,12 +57,10 @@ BEGIN
         v_qtd_alunos
       );
 
-      -- só contabiliza se INSERT rodou sem erro
       inserted_count := inserted_count + 1;
 
-    EXCEPTION
+    EXCEPTION -- se violou alguma restrição, ignora a tupla gerada
       WHEN unique_violation THEN
-        -- se violou PK ou UNIQUE(...), ignora e tenta de novo
         NULL;
     END;
   END LOOP;
