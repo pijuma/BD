@@ -72,8 +72,7 @@ $$;
 /*
 2o script
 */
-
--- Gera 150.000 matrículas de forma eficiente, sem loops PL/pgSQL nem exceções
+--gera 150.000 matrículas de forma eficiente, evitando colisões de PK/UNIQUE
 WITH
   cnt_al AS (
     SELECT COUNT(*) AS cnt_al
@@ -102,9 +101,8 @@ WITH
   ),
   combos AS (
     SELECT
-      ((gs - 1) % cnt_al.cnt_al) + 1        AS idx_aluno,
-      (FLOOR((gs - 1)::numeric / cnt_al.cnt_al) % cnt_tu.cnt_tu)::int + 1 AS idx_turma,
-      gs
+      ((gs - 1) % cnt_al.cnt_al) + 1                             AS idx_aluno,
+      (((gs - 1) / cnt_al.cnt_al) % cnt_tu.cnt_tu) + 1           AS idx_turma
     FROM seq
     CROSS JOIN cnt_al
     CROSS JOIN cnt_tu
@@ -128,31 +126,19 @@ SELECT
   a.sobrenome,
   a.telefone,
   t.id_turma,
-  -- dia entre 1 e 28
-  (FLOOR(RANDOM() * 28) + 1)::int AS dia_matricula,
-  -- mês entre 1 e 12
-  (FLOOR(RANDOM() * 12) + 1)::int AS mes_matricula,
-  -- ano entre 2000 e 2025
-  (FLOOR(RANDOM() * 26) + 2000)::int AS ano_matricula,
-  -- status aleatório dentre os quatro possíveis
-  (ARRAY['Ativa','Inativa','Pendente','Cancelada']
-    )[ (FLOOR(RANDOM() * 4) + 1)::int ] AS status_matricula,
-  -- 50% NULL, senão dia entre 1 e 28
-  CASE WHEN RANDOM() < 0.5
-       THEN NULL
-       ELSE (FLOOR(RANDOM() * 28) + 1)::int
-  END AS dia_mudanca,
-  -- 50% NULL, senão mês entre 1 e 12
-  CASE WHEN RANDOM() < 0.5
-       THEN NULL
-       ELSE (FLOOR(RANDOM() * 12) + 1)::int
-  END AS mes_mudanca,
-  -- 50% NULL, senão ano entre 2000 e 2025
-  CASE WHEN RANDOM() < 0.5
-       THEN NULL
-       ELSE (FLOOR(RANDOM() * 26) + 2000)::int
-  END AS ano_mudanca,
-  -- taxa entre 0 e 999
+  (floor(random() * 28) + 1)::int,                                                  -- dia 1–28
+  (floor(random() * 12) + 1)::int,                                                  -- mês 1–12
+  (floor(random() * 26) + 2000)::int,                                                -- ano 2000–2025
+  (array['Ativa','Inativa','Pendente','Cancelada'])[(floor(random() * 4) + 1)::int],-- status
+  CASE WHEN random() < 0.5 THEN NULL ELSE (floor(random() * 28) + 1)::int END,        -- dia mudança
+  CASE WHEN random() < 0.5 THEN NULL ELSE (floor(random() * 12) + 1)::int END,        -- mês mudança
+  CASE WHEN random() < 0.5 THEN NULL ELSE (floor(random() * 26) + 2000)::int END,      -- ano mudança
+  (floor(random() * 1000))::int                                                      -- taxa 0–999
+FROM combos c
+JOIN alunos a ON a.rn = c.idx_aluno
+JOIN turmas t ON t.rn = c.idx_turma
+ON CONFLICT (nome_aluno, sobrenome_aluno, telefone_aluno, id_turma) DO NOTHING;
+
   (FLOOR(RANDOM() * 1000))::int AS taxa
 FROM combos c
 JOIN alunos a ON a.rn = c.idx_aluno
